@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sandbags
+* source:	https://sketchfab.com/3d-models/sandbags-439006249cdb4f6684d27b34f0987bfb
+* author:	lojo.pcv (https://sketchfab.com/lojo.pcv)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sandbags" (https://sketchfab.com/3d-models/sandbags-439006249cdb4f6684d27b34f0987bfb) by lojo.pcv (https://sketchfab.com/lojo.pcv) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

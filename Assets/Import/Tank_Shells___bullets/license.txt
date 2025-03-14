@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tank Shells / bullets
+* source:	https://sketchfab.com/3d-models/tank-shells-bullets-956167d81e8f4412bb19d8c0ef9e4cb7
+* author:	Sellpet (https://sketchfab.com/Sellpet)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tank Shells / bullets" (https://sketchfab.com/3d-models/tank-shells-bullets-956167d81e8f4412bb19d8c0ef9e4cb7) by Sellpet (https://sketchfab.com/Sellpet) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	French House WW2
+* source:	https://sketchfab.com/3d-models/french-house-ww2-b79fc74625354c2c8b693ae3b5645cf0
+* author:	Thomas Visonà (https://sketchfab.com/TakeAndPlay)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "French House WW2" (https://sketchfab.com/3d-models/french-house-ww2-b79fc74625354c2c8b693ae3b5645cf0) by Thomas Visonà (https://sketchfab.com/TakeAndPlay) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

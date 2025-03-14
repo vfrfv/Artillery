@@ -1,0 +1,203 @@
+{
+  "ignores": [
+    "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs",
+    "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs",
+    "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+  ],
+  "groups": [
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/Sketchfab For Unity/Scripts/AssetBrowser/SketchfabBrowserManager.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/Sketchfab For Unity/Scripts/AssetBrowser/SketchfabBrowserWindow.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/Sketchfab For Unity/Scripts/AssetBrowser/SketchfabModelWindow.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/Sketchfab For Unity/Scripts/Resizer.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/Sketchfab For Unity/Scripts/SketchfabApi.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/Sketchfab For Unity/Scripts/SketchfabExporter.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/Sketchfab For Unity/Scripts/SketchfabImporter.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/Sketchfab For Unity/Scripts/SketchfabImporterWindow.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/Sketchfab For Unity/Scripts/SketchfabLogger.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/Sketchfab For Unity/Scripts/SketchfabPlugin.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/Sketchfab For Unity/Scripts/SketchfabUI.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Scripts/SpawnEffect.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/UnityTechnologies/ParticlePack/Shared/Ramps/Runtime/RampAsset.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/UnityTechnologies/ParticlePack/Shared/Scripts/AdjustTimeScale.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/UnityTechnologies/ParticlePack/Shared/Scripts/ProximityActivate.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/UnityTechnologies/ParticlePack/Shared/Scripts/SimpleCameraController.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/UnityTechnologies/ParticlePack/Shared/Scripts/SimpleCharacterMotor.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/ETFXButtonScript.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/ETFXFireProjectile.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/ETFXProjectileScript.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/ETFXEffectController.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/ETFXMouseOrbit.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/ETFXEffectControllerPooled.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/ETFXEffectCycler.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/ETFXLoopScript.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/ETFXSceneManager.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/ETFXTarget.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/VFX Library/ParticleEffectsLibrary.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/VFX Library/UICanvasManager.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/VFX Library/PEButtonScript.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Scripts/ETFXLightFade.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Scripts/ETFXPitchRandomizer.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Scripts/ETFXRotation.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Demo/Assets/CFX_AutoStopLoopedEffect.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_New.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_Wall.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Demo/Assets/CFX_Demo_RotateCamera.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Scripts/CFX_AutoDestructShuriken.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Spawn System/CFX_SpawnSystem.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Scripts/CFX_LightIntensityFade.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Demo/Assets/CFX_Demo_Translate.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Demo/Assets/CFX_Demo_RandomDir.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_DeleteAfterDelay.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_RandomDir.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Scripts/WFX_BulletHoleDecal.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/JMO Assets/WarFX/Scripts/WFX_LightFlicker.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Joystick Pack/Examples/JoystickSetterExample.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Joystick Pack/Scripts/Base/Joystick.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/LookAtTarget.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/PlayerZoom.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/LookAtReticle.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/PlayerShooting.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/PlayerShootingCooldown.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/ObjectPoolShooting.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/Projectile.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/BehaviourAI/TankAI.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Fabric/TanksFabric.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/Bootstrap.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/ScenarioGame.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/EnemySpawnBootstrap.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TankKillStatistics.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TankKillCounter.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/PlayerUIController.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/CrosshairMovement.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Luna Terrain Exporter/Scripts/ExportTerrain.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Fabric/ProjectileFactory.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/ButtonPulse.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/EndCardAnimation.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TutorialHand.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/TurnOnAfterSeconds.cs"
+    ],
+    [
+      "D:/Luna/PA/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "D:/Luna/PA/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "D:/Luna/PA/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}

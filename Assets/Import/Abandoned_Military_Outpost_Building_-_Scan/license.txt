@@ -1,0 +1,11 @@
+Model Information:
+* title:	Abandoned Military Outpost Building - Scan
+* source:	https://sketchfab.com/3d-models/abandoned-military-outpost-building-scan-01ed189ae2434275a747747b7613b9f0
+* author:	illusoXR (https://sketchfab.com/illusoXR)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Abandoned Military Outpost Building - Scan" (https://sketchfab.com/3d-models/abandoned-military-outpost-building-scan-01ed189ae2434275a747747b7613b9f0) by illusoXR (https://sketchfab.com/illusoXR) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

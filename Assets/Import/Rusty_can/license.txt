@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rusty can
+* source:	https://sketchfab.com/3d-models/rusty-can-09e994a3203e4c848f2a99c2ce60d674
+* author:	Universe UA (https://sketchfab.com/UniverseUA)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rusty can" (https://sketchfab.com/3d-models/rusty-can-09e994a3203e4c848f2a99c2ce60d674) by Universe UA (https://sketchfab.com/UniverseUA) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
