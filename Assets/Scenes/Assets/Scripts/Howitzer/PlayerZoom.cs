@@ -42,7 +42,17 @@ namespace Howitzer
 
         public bool CheckZoom() { return _isZoomed; }
         public void ChangeZoomForAirStrike() { ToggleZoom(); }
-        
+
+        public void EnableZoomUI()
+        {
+            zoomImage.SetActive(true);
+        }
+
+        public void DisableZoomUI()
+        {
+            zoomImage.SetActive(false);
+        }
+
         private void ToggleZoom()
         {
             _isZoomed = !_isZoomed;
@@ -119,23 +129,5 @@ namespace Howitzer
             mainCamera.transform.DORotate(new Vector3(targetRotationX, targetRotationY, 0), duration)
                 .SetEase(Ease.OutQuad);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

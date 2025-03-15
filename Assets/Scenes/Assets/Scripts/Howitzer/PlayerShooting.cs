@@ -66,11 +66,12 @@ namespace Howitzer
 
         private void Shoot()
         {
-            _timeController.StartSlowMotion();
+            //_timeController.StartSlowMotion();
 
             Vector3 shootDirection;
             if (_isZoomed)
             {
+                _timeController.StartSlowMotion();
                 shootDirection = mainCamera.transform.forward;
             }
             else

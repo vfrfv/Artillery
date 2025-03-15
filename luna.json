@@ -131,9 +131,11 @@
             ]
         },
         "scenes": [
+            "Assets/Scenes/Assets/Scenes/GameScene.unity"
+        ],
+        "disabledScenes": [
             "Assets/Scenes/SampleScene.unity"
         ],
-        "disabledScenes": [],
         "startupScene": 0,
         "packages": {
             "default": {
