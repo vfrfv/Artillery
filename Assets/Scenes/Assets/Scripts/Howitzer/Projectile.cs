@@ -1,5 +1,5 @@
 ﻿using BehaviourAI;
-using TMPro;
+//using TMPro;
 using UnityEngine;
 using DG.Tweening;
 using UI;
@@ -9,7 +9,7 @@ namespace Howitzer
 {
     public class Projectile : MonoBehaviour
     {
-        private TextMeshProUGUI _missText; // UI-текст
+        //private TextMeshProUGUI _missText; // UI-текст
         private ObjectPoolShooting _explosionPool;
         private float _speed;
         private Rigidbody _rigidbody;
@@ -17,14 +17,14 @@ namespace Howitzer
 
         public event Action Crashed;
 
-        public void Initialize(float speed, ObjectPoolShooting explosionPool, GameObject explosionParticle, TextMeshProUGUI text)
+        public void Initialize(float speed, ObjectPoolShooting explosionPool, GameObject explosionParticle/*, TextMeshProUGUI text*/)
         {
             _speed = speed;
             _explosionPool = explosionPool;
             _rigidbody = GetComponent<Rigidbody>();
             _rigidbody.velocity = transform.forward * _speed;
             _explosionParticle = explosionParticle;
-            _missText = text;
+            //_missText = text;
         }
 
         private void OnCollisionEnter(Collision collision)
@@ -42,7 +42,7 @@ namespace Howitzer
             }
             else if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Tree"))
             {
-                ShowMissText();
+                //ShowMissText();
             }
 
             gameObject.SetActive(false);
@@ -66,22 +66,22 @@ namespace Howitzer
             }
         }
 
-        private void ShowMissText()
-        {
-            if (_missText != null)
-            {
-                _missText.text = "Target tank missed!";
-                _missText.gameObject.SetActive(true);
-                _missText.alpha = 0f;
-                _missText.transform.localScale = Vector3.one * 0.5f;
+        //private void ShowMissText()
+        //{
+        //    if (_missText != null)
+        //    {
+        //        _missText.text = "Target tank missed!";
+        //        _missText.gameObject.SetActive(true);
+        //        _missText.alpha = 0f;
+        //        _missText.transform.localScale = Vector3.one * 0.5f;
                 
-                _missText.DOFade(1f, 0.5f);
-                _missText.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack);
+        //        _missText.DOFade(1f, 0.5f);
+        //        _missText.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack);
                 
-                _missText.DOFade(0f, 0.5f).SetDelay(2f);
-                _missText.transform.DOScale(0.5f, 0.5f).SetEase(Ease.InBack).SetDelay(2f)
-                    .OnComplete(() => _missText.gameObject.SetActive(false));
-            }
-        }
+        //        _missText.DOFade(0f, 0.5f).SetDelay(2f);
+        //        _missText.transform.DOScale(0.5f, 0.5f).SetEase(Ease.InBack).SetDelay(2f)
+        //            .OnComplete(() => _missText.gameObject.SetActive(false));
+        //    }
+        //}
     }
 }

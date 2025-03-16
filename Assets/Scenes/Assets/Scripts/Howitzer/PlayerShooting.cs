@@ -3,7 +3,7 @@ using UI;
 using UnityEngine;
 using DG.Tweening;
 using Fabric;
-using TMPro;
+//using TMPro;
 using System.Threading.Tasks;
 
 namespace Howitzer
@@ -17,7 +17,7 @@ namespace Howitzer
         [SerializeField] private RectTransform crosshairUI;
 
         [Header("Эффекты")]
-        [SerializeField] private TextMeshProUGUI missText;
+        //[SerializeField] private TextMeshProUGUI missText;
         [SerializeField] private GameObject muzzleFlash;
         [SerializeField] private GameObject explosionEffect;
         
@@ -90,7 +90,7 @@ namespace Howitzer
             projectile.SetActive(true);
 
             Projectile projectileComponent = projectile.GetComponent<Projectile>();
-            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, missText);
+            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect);
 
             _managerCamers.GetBullet(projectileComponent);
 
