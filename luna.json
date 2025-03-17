@@ -125,9 +125,10 @@
                 "Stubs/MoreMountains.NiceVibrations"
             ],
             "includes": [
+                "Assets/Import/UnityTechnologies/ParticlePack/TextMesh Pro/Resources/TMP Settings.asset",
+                "Assets/QuickOutline/",
                 "Assets/Resources/DOTweenSettings.asset",
-                "Assets/UnityTechnologies/ParticlePack/TextMesh Pro/Resources/TMP Settings.asset",
-                "Assets/Import/UnityTechnologies/ParticlePack/TextMesh Pro/Resources/TMP Settings.asset"
+                "Assets/UnityTechnologies/ParticlePack/TextMesh Pro/Resources/TMP Settings.asset"
             ]
         },
         "scenes": [
@@ -2115,10 +2116,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.TextAsset",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.Timeline.TimeFieldAttribute",
                 "excluded": true
             },
@@ -2496,10 +2493,6 @@
             },
             {
                 "name": "UnityEngine.Playables.PlayableDirector",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.SkinnedMeshRenderer",
                 "excluded": true
             },
             {
@@ -4816,7 +4809,7 @@
             },
             {
                 "name": "UnityEngine.Rendering.CompareFunction",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.Rendering.ComputeQueueType",
@@ -5244,7 +5237,7 @@
             },
             {
                 "name": "UnityEngine.Space",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.SpriteAlignment",
@@ -8788,6 +8781,14 @@
             },
             {
                 "name": "DG.Tweening.Plugins.Core.ITPlugin$4",
+                "excluded": false
+            },
+            {
+                "name": "OutlineScript.ListVector3",
+                "excluded": false
+            },
+            {
+                "name": "OutlineScript.Mode",
                 "excluded": false
             }
         ],
@@ -12366,7 +12367,7 @@
                 "instanceMethods": [
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "HashSetEquals",
@@ -12390,11 +12391,11 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor3",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor1",
@@ -12410,7 +12411,7 @@
                     },
                     {
                         "name": "add",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "clear",
@@ -12502,19 +12503,19 @@
                     },
                     {
                         "name": "Initialize",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "IncreaseCapacity",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetCapacity",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AddIfNotPresent",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ContainsAllElements",
@@ -12558,7 +12559,7 @@
                     },
                     {
                         "name": "InternalGetHashCode",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -12652,11 +12653,11 @@
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getHashCode",
@@ -12668,7 +12669,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -16060,7 +16061,7 @@
                     },
                     {
                         "name": "Load",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Load$2",
@@ -16068,11 +16069,11 @@
                     },
                     {
                         "name": "UpdateUnityObject",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "LoadObjectFromResources",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "LoadComponent",
@@ -17312,7 +17313,7 @@
                     },
                     {
                         "name": "SetFloat$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetFloat",
@@ -17758,7 +17759,7 @@
                     },
                     {
                         "name": "Rotate",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Rotate$1",
@@ -17766,7 +17767,7 @@
                     },
                     {
                         "name": "Rotate$2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RotateAround",
@@ -18358,7 +18359,7 @@
                     },
                     {
                         "name": "targetDisplay#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "targetDisplay#set",
@@ -18422,7 +18423,7 @@
                     },
                     {
                         "name": "ScreenToViewportPoint",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ViewportToScreenPoint",
@@ -18620,7 +18621,7 @@
                     },
                     {
                         "name": "sharedMaterials#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sharedMaterials#set",
@@ -18648,7 +18649,7 @@
                     },
                     {
                         "name": "materials#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "bounds#get",
@@ -19256,7 +19257,7 @@
                     },
                     {
                         "name": "worldCamera#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "worldCamera#set",
@@ -22338,7 +22339,7 @@
                     },
                     {
                         "name": "vertices#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "vertices#set",
@@ -22378,7 +22379,7 @@
                     },
                     {
                         "name": "normals#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "normals#set",
@@ -22446,7 +22447,7 @@
                     },
                     {
                         "name": "subMeshCount#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "subMeshCount#set",
@@ -22510,7 +22511,7 @@
                     },
                     {
                         "name": "ConvertUVChannelToSemantics",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetUVs",
@@ -22530,7 +22531,7 @@
                     },
                     {
                         "name": "SetUVs$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetUVs$2",
@@ -22554,11 +22555,11 @@
                     },
                     {
                         "name": "GetVertices",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetNormals",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetNormals",
@@ -24144,7 +24145,7 @@
                     },
                     {
                         "name": "blockingObjects#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "blockingObjects#set",
@@ -24160,7 +24161,7 @@
                     },
                     {
                         "name": "GetMainCamera",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -25925,6 +25926,10 @@
                     {
                         "name": "IsTankFacingTarget",
                         "excluded": false
+                    },
+                    {
+                        "name": "ShowSign",
+                        "excluded": false
                     }
                 ]
             },
@@ -26319,6 +26324,14 @@
                     {
                         "name": "Spawn",
                         "excluded": false
+                    },
+                    {
+                        "name": "Tanks#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
                     }
                 ]
             },
@@ -26696,6 +26709,10 @@
                 "instanceMethods": [
                     {
                         "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ShowCross",
                         "excluded": false
                     }
                 ]
@@ -28552,7 +28569,7 @@
                     },
                     {
                         "name": "sharedMesh#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sharedMesh#set",
@@ -28560,7 +28577,7 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "UpdateMeshInHandle",
@@ -28582,6 +28599,200 @@
                     },
                     {
                         "name": "SetClass",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "Cross",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ScaleAndDisable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ScaleOverTime",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "ExclamationMark",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SwitchOff",
+                        "excluded": false
+                    },
+                    {
+                        "name": "LateUpdate",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "OutlineScript",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OutlineMode#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OutlineMode#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OutlineColor#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OutlineColor#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OutlineWidth#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OutlineWidth#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnValidate",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDestroy",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Bake",
+                        "excluded": true
+                    },
+                    {
+                        "name": "LoadSmoothNormals",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SmoothNormals",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CombineSubmeshes",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UpdateMaterialProperties",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.TextAsset",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "text#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "bytes#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "toString",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.SkinnedMeshRenderer",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "m_BlendShapeWeights#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "m_BlendShapeWeights#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "sharedMesh#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "sharedMesh#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "rootBone#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "rootBone#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "bones#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "bones#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "blendShape#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetBlendShapeWeight",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetBlendShapeWeight",
                         "excluded": true
                     }
                 ]
@@ -28623,8 +28834,8 @@
                         "name": "Resources/unity_builtin_extra/Default-Particle"
                     },
                     {
-                        "maxWidth": 1024,
-                        "maxHeight": 1024,
+                        "maxWidth": 2048,
+                        "maxHeight": 2048,
                         "format": "png32",
                         "compression": "quantSize",
                         "quality": 65,

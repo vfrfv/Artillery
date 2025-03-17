@@ -8,6 +8,7 @@ namespace UI
         [SerializeField] private Button shootButton;
         [SerializeField] private Button zoomButton;
         [SerializeField] Cross _cross;
+        [SerializeField] Cross _mark;
 
         public delegate void ShootAction();
         public static event ShootAction OnShoot;
@@ -24,6 +25,11 @@ namespace UI
         public void ShowCross()
         {
             _cross.gameObject.SetActive(true);
+        }
+
+        public void ShowMark()
+        {
+            _mark.gameObject.SetActive(true);
         }
     }
 }

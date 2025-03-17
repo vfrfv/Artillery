@@ -46,6 +46,7 @@ namespace Howitzer
                     ChangeTankColor(collision.gameObject, Color.black);
                     SpawnExplosionEffect(transform.position);
                     TankKillCounter.NotifyTankDestroyed();
+                    _playerUIController.ShowMark();
                 }
             }
             else if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Tree"))
