@@ -7,6 +7,7 @@ namespace BehaviourAI
         [SerializeField] private float stopDistance = 10f;
         [SerializeField] private float rotationSpeed = 2f;
         [SerializeField] private float moveSpeed = 3f;
+        [SerializeField] private ExclamationMark _exclamationMark;
 
         private Transform[] _targets;
         private int _currentTargetIndex;
@@ -42,6 +43,11 @@ namespace BehaviourAI
             {
                 MoveTowardsTarget();
             }
+        }
+
+        public void ShowSign()
+        {
+            _exclamationMark.gameObject.SetActive(true);
         }
 
         public void DisableTank()

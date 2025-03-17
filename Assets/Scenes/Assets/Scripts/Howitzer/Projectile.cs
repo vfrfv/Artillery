@@ -1,24 +1,25 @@
 ﻿using BehaviourAI;
-//using TMPro;
 using UnityEngine;
 using DG.Tweening;
 using UI;
 using System;
+using System.Collections.Generic;
 
 namespace Howitzer
 {
     public class Projectile : MonoBehaviour
     {
-        //private TextMeshProUGUI _missText; // UI-текст
         private ObjectPoolShooting _explosionPool;
         private float _speed;
         private Rigidbody _rigidbody;
         private GameObject _explosionParticle;
         private PlayerUIController _playerUIController;
+        private List<TankAI> _tanks;
 
         public event Action Crashed;
 
-        public void Initialize(float speed, ObjectPoolShooting explosionPool, GameObject explosionParticle, PlayerUIController playerUIController)
+        public void Initialize(float speed, ObjectPoolShooting explosionPool, GameObject explosionParticle, 
+            PlayerUIController playerUIController, List<TankAI> tanks)
         {
             _speed = speed;
             _explosionPool = explosionPool;
@@ -26,19 +27,22 @@ namespace Howitzer
             _rigidbody.velocity = transform.forward * _speed;
             _explosionParticle = explosionParticle;
             _playerUIController = playerUIController;
-            //_missText = text;
+            _tanks = tanks;
         }
 
         private void OnCollisionEnter(Collision collision)
         {
+            TankAI hitTankAI = null;
+
             if (collision.gameObject.name == "PZ_TankPrefab(Clone)")
             {
-                TankAI tankAI = collision.gameObject.GetComponent<TankAI>();
-                if (tankAI != null && tankAI.IsAlive)
+                hitTankAI = collision.gameObject.GetComponent<TankAI>();
+
+                if (hitTankAI != null && hitTankAI.IsAlive)
                 {
-                    tankAI.DisableTank();
-                    tankAI.GetComponent<OutlineScript>().enabled = false;
-                    tankAI.GetComponent<BoxCollider>().enabled = false;
+                    hitTankAI.DisableTank();
+                    hitTankAI.GetComponent<OutlineScript>().enabled = false;
+                    hitTankAI.GetComponent<BoxCollider>().enabled = false;
                     ChangeTankColor(collision.gameObject, Color.black);
                     SpawnExplosionEffect(transform.position);
                     TankKillCounter.NotifyTankDestroyed();
@@ -49,10 +53,20 @@ namespace Howitzer
                 _playerUIController.ShowCross();
             }
 
-            gameObject.SetActive(false);
+            foreach (var tank in _tanks)
+            {
+                TankAI tankAI = tank.GetComponent<TankAI>();
 
+                if (tankAI != null && tankAI.IsAlive && tankAI != hitTankAI)
+                {
+                    tankAI.ShowSign();
+                }
+            }
+
+            gameObject.SetActive(false);
             Crashed?.Invoke();
         }
+
 
         private void SpawnExplosionEffect(Vector3 position)
         {
@@ -69,23 +83,5 @@ namespace Howitzer
                 renderer.material.color = color;
             }
         }
-
-        //private void ShowMissText()
-        //{
-        //    if (_missText != null)
-        //    {
-        //        _missText.text = "Target tank missed!";
-        //        _missText.gameObject.SetActive(true);
-        //        _missText.alpha = 0f;
-        //        _missText.transform.localScale = Vector3.one * 0.5f;
-                
-        //        _missText.DOFade(1f, 0.5f);
-        //        _missText.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack);
-                
-        //        _missText.DOFade(0f, 0.5f).SetDelay(2f);
-        //        _missText.transform.DOScale(0.5f, 0.5f).SetEase(Ease.InBack).SetDelay(2f)
-        //            .OnComplete(() => _missText.gameObject.SetActive(false));
-        //    }
-        //}
     }
 }

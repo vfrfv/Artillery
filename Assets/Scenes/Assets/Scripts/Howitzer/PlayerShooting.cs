@@ -5,6 +5,7 @@ using DG.Tweening;
 using Fabric;
 //using TMPro;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Howitzer
 {
@@ -40,6 +41,7 @@ namespace Howitzer
         [Header("UI")]
 
         [SerializeField] private PlayerUIController _playerUIController;
+        [SerializeField] private TanksFabric _tanksFabric;
 
         private ObjectPoolShooting _projectilePool;
         private ObjectPoolShooting _explosionPool;
@@ -70,8 +72,6 @@ namespace Howitzer
 
         private void Shoot()
         {
-            //_timeController.StartSlowMotion();
-
             Vector3 shootDirection;
             if (_isZoomed)
             {
@@ -93,8 +93,19 @@ namespace Howitzer
 
             projectile.SetActive(true);
 
+            //Получаем список TankAI
+            List<TankAI> tankAIList = new List<TankAI>();
+            foreach (var tankObj in _tanksFabric.Tanks)
+            {
+                TankAI tankAI = tankObj.GetComponent<TankAI>();
+                if (tankAI != null)
+                {
+                    tankAIList.Add(tankAI);
+                }
+            }
+
             Projectile projectileComponent = projectile.GetComponent<Projectile>();
-            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController);
+            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList);
 
             _managerCamers.GetBullet(projectileComponent);
 
@@ -111,6 +122,8 @@ namespace Howitzer
 
             _managerCamers.WatchingBullet();
         }
+
+
 
 
         private void ShakeCamera()
