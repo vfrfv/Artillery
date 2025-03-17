@@ -7,6 +7,7 @@ namespace UI
     {
         [SerializeField] private Button shootButton;
         [SerializeField] private Button zoomButton;
+        [SerializeField] Cross _cross;
 
         public delegate void ShootAction();
         public static event ShootAction OnShoot;
@@ -18,6 +19,11 @@ namespace UI
         {
             shootButton.onClick.AddListener(() => OnShoot?.Invoke());
             zoomButton.onClick.AddListener(() => OnZoom?.Invoke());
+        }
+
+        public void ShowCross()
+        {
+            _cross.gameObject.SetActive(true);
         }
     }
 }

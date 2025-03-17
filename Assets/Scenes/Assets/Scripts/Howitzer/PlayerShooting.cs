@@ -37,6 +37,10 @@ namespace Howitzer
 
         [SerializeField] private TimeController _timeController;
 
+        [Header("UI")]
+
+        [SerializeField] private PlayerUIController _playerUIController;
+
         private ObjectPoolShooting _projectilePool;
         private ObjectPoolShooting _explosionPool;
         private bool _isZoomed = false;
@@ -90,7 +94,7 @@ namespace Howitzer
             projectile.SetActive(true);
 
             Projectile projectileComponent = projectile.GetComponent<Projectile>();
-            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect);
+            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController);
 
             _managerCamers.GetBullet(projectileComponent);
 

@@ -14,16 +14,18 @@ namespace Howitzer
         private float _speed;
         private Rigidbody _rigidbody;
         private GameObject _explosionParticle;
+        private PlayerUIController _playerUIController;
 
         public event Action Crashed;
 
-        public void Initialize(float speed, ObjectPoolShooting explosionPool, GameObject explosionParticle/*, TextMeshProUGUI text*/)
+        public void Initialize(float speed, ObjectPoolShooting explosionPool, GameObject explosionParticle, PlayerUIController playerUIController)
         {
             _speed = speed;
             _explosionPool = explosionPool;
             _rigidbody = GetComponent<Rigidbody>();
             _rigidbody.velocity = transform.forward * _speed;
             _explosionParticle = explosionParticle;
+            _playerUIController = playerUIController;
             //_missText = text;
         }
 
@@ -44,7 +46,7 @@ namespace Howitzer
             }
             else if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Tree"))
             {
-                //ShowMissText();
+                _playerUIController.ShowCross();
             }
 
             gameObject.SetActive(false);
