@@ -10,20 +10,16 @@
   "groups": [
     [
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/BlinkingManager.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/BlinkingObject.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Fabric/TanksFabric.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/Bootstrap.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/ScenarioGame.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/EnemySpawnBootstrap.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TankKillStatistics.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TankKillCounter.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/Projectile.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Camera/ManagerCamers.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/BlinkingObject.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Cros.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/PlayerUIController.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/PlayerShooting.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/PlayerShootingCooldown.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Camera/FollowBullet.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Camera/ManagerCamers.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/TimeController.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/PlayerUIController.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/PlayerZoom.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/LookAtReticle.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Joystick Pack/Scripts/Base/Joystick.cs",
@@ -35,9 +31,15 @@
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/LookAtTarget.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/CrosshairMovement.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Cros.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/Projectile.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/ObjectPoolShooting.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/BehaviourAI/TankAI.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Fabric/TanksFabric.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/Bootstrap.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/ScenarioGame.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/EnemySpawnBootstrap.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TankKillStatistics.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TankKillCounter.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/ExclamationMark.cs"
     ],
     [

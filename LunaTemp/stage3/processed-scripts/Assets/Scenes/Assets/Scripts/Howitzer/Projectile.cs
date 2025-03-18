@@ -1,9 +1,8 @@
 using BehaviourAI;
-using UnityEngine;
-using DG.Tweening;
-using UI;
 using System;
 using System.Collections.Generic;
+using UI;
+using UnityEngine;
 
 namespace Howitzer
 {
@@ -18,7 +17,7 @@ namespace Howitzer
 
         public event Action Crashed;
 
-        public void Initialize(float speed, ObjectPoolShooting explosionPool, GameObject explosionParticle, 
+        public void Initialize(float speed, ObjectPoolShooting explosionPool, GameObject explosionParticle,
             PlayerUIController playerUIController, List<TankAI> tanks)
         {
             _speed = speed;
@@ -32,22 +31,15 @@ namespace Howitzer
 
         private void OnCollisionEnter(Collision collision)
         {
-            TankAI hitTankAI = null;
-
-            if (collision.gameObject.name == "PZ_TankPrefab(Clone)")
+            if (collision.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
             {
-                hitTankAI = collision.gameObject.GetComponent<TankAI>();
+                hitTankAI.DisableTank();
+                hitTankAI.GetComponent<BoxCollider>().enabled = false;
+                ChangeTankColor(collision.gameObject, Color.black);
+                SpawnExplosionEffect(transform.position);
+                TankKillCounter.NotifyTankDestroyed();
+                _playerUIController.ShowMark();
 
-                if (hitTankAI != null && hitTankAI.IsAlive)
-                {
-                    hitTankAI.DisableTank();
-                    //hitTankAI.GetComponent<OutlineScript>().enabled = false;
-                    hitTankAI.GetComponent<BoxCollider>().enabled = false;
-                    ChangeTankColor(collision.gameObject, Color.black);
-                    SpawnExplosionEffect(transform.position);
-                    TankKillCounter.NotifyTankDestroyed();
-                    _playerUIController.ShowMark();
-                }
             }
             else if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Tree"))
             {
@@ -79,9 +71,17 @@ namespace Howitzer
         private void ChangeTankColor(GameObject tank, [Bridge.Ref] Color color)
         {
             Renderer[] renderers = tank.GetComponentsInChildren<Renderer>();
+
             foreach (Renderer renderer in renderers)
             {
-                renderer.material.color = color;
+                Material[] materials = renderer.materials;
+
+                if (materials.Length >= 4)
+                {
+                    materials[3] = new Material(materials[0]);
+                }
+
+                renderer.materials = materials;
             }
         }
     }
