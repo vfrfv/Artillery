@@ -19,10 +19,10 @@ namespace Fabric
             _tanks = new List<GameObject>();  
         }
 
-        private void Start()
-        {
-            StartCoroutine(BlinkingStart());
-        }
+        //private void Start()
+        //{
+        //    StartCoroutine(BlinkingStart());
+        //}
 
         public List<GameObject> Tanks => _tanks;
 
@@ -45,14 +45,14 @@ namespace Fabric
             _indexPoint++;
         }
 
-        private IEnumerator BlinkingStart()
-        {
-            yield return new WaitForSeconds(1);
+        //private IEnumerator BlinkingStart()
+        //{
+        //    yield return new WaitForSeconds(1);
 
-            foreach(var tank in _tanks)
-            {
-                tank.GetComponentInChildren<BlinkingObject>().StartBlinking();   
-            }
-        }
+        //    foreach(var tank in _tanks)
+        //    {
+        //        tank.GetComponentInChildren<BlinkingObject>().StartBlinking();   
+        //    }
+        //}
     }
 }

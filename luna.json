@@ -1,7 +1,7 @@
 {
     "version": "6.2.1",
     "projectId": "6c12a4f49c2e1c74dbc0beaf340cbc67",
-    "applicationID": 0,
+    "applicationID": 27856,
     "creativeName": "vfrfv",
     "pgServer": "EU",
     "window": {
@@ -8784,12 +8784,8 @@
                 "excluded": false
             },
             {
-                "name": "OutlineScript.ListVector3",
-                "excluded": false
-            },
-            {
-                "name": "OutlineScript.Mode",
-                "excluded": false
+                "name": "BlinkingManager",
+                "excluded": true
             }
         ],
         "unusedMethods": [
@@ -17229,7 +17225,7 @@
                     },
                     {
                         "name": "color#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "color#set",
@@ -17353,7 +17349,7 @@
                     },
                     {
                         "name": "GetColor$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetColor",
@@ -26332,6 +26328,14 @@
                     {
                         "name": "Awake",
                         "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "BlinkingStart",
+                        "excluded": false
                     }
                 ]
             },
@@ -26714,6 +26718,10 @@
                     {
                         "name": "ShowCross",
                         "excluded": false
+                    },
+                    {
+                        "name": "ShowMark",
+                        "excluded": true
                     }
                 ]
             },
@@ -28648,84 +28656,6 @@
                 ]
             },
             {
-                "className": "OutlineScript",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OutlineMode#get",
-                        "excluded": true
-                    },
-                    {
-                        "name": "OutlineMode#set",
-                        "excluded": true
-                    },
-                    {
-                        "name": "OutlineColor#get",
-                        "excluded": true
-                    },
-                    {
-                        "name": "OutlineColor#set",
-                        "excluded": true
-                    },
-                    {
-                        "name": "OutlineWidth#get",
-                        "excluded": true
-                    },
-                    {
-                        "name": "OutlineWidth#set",
-                        "excluded": true
-                    },
-                    {
-                        "name": "Awake",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnEnable",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnValidate",
-                        "excluded": true
-                    },
-                    {
-                        "name": "Update",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnDisable",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnDestroy",
-                        "excluded": true
-                    },
-                    {
-                        "name": "Bake",
-                        "excluded": true
-                    },
-                    {
-                        "name": "LoadSmoothNormals",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SmoothNormals",
-                        "excluded": false
-                    },
-                    {
-                        "name": "CombineSubmeshes",
-                        "excluded": false
-                    },
-                    {
-                        "name": "UpdateMaterialProperties",
-                        "excluded": false
-                    }
-                ]
-            },
-            {
                 "className": "UnityEngine.TextAsset",
                 "staticMethods": [],
                 "instanceMethods": [
@@ -28794,6 +28724,32 @@
                     {
                         "name": "GetBlendShapeWeight",
                         "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "BlinkingObject",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StartBlinking",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StopBlinking",
+                        "excluded": true
+                    },
+                    {
+                        "name": "BlinkCoroutine",
+                        "excluded": false
                     }
                 ]
             }
