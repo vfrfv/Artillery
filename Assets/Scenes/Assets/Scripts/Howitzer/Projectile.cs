@@ -41,7 +41,7 @@ namespace Howitzer
                 if (hitTankAI != null && hitTankAI.IsAlive)
                 {
                     hitTankAI.DisableTank();
-                    hitTankAI.GetComponent<OutlineScript>().enabled = false;
+                    //hitTankAI.GetComponent<OutlineScript>().enabled = false;
                     hitTankAI.GetComponent<BoxCollider>().enabled = false;
                     ChangeTankColor(collision.gameObject, Color.black);
                     SpawnExplosionEffect(transform.position);
