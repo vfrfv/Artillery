@@ -8,11 +8,17 @@ public class TutorialHand : MonoBehaviour
     [SerializeField] private RectTransform handImage; 
     [SerializeField] private float moveDistance = 100f; 
     [SerializeField] private float moveDuration = 1f;
+    [SerializeField] private TutorialHand2 _tutorialHand2;
+    [SerializeField] private Button _shootButton;
+    [SerializeField] private Button _zoomButton;
 
     private bool _isTouched = false;
 
     private void Start()
     {
+        _tutorialHand2.gameObject.SetActive(false);
+        _shootButton.gameObject.SetActive(false);
+        _zoomButton.gameObject.SetActive(false);
         StartHandMovement();
     }
 
@@ -36,6 +42,9 @@ public class TutorialHand : MonoBehaviour
 
     private void HideHand()
     {
+        _tutorialHand2.gameObject.SetActive(true);
+        _zoomButton.gameObject.SetActive(true);
+
         handImage.DOKill(); // Остановить движение руки
         handImage.DOScale(Vector3.zero, 0.3f).SetEase(Ease.InBack).OnComplete(() =>
         {

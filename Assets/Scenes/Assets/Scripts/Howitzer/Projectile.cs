@@ -14,11 +14,12 @@ namespace Howitzer
         private GameObject _explosionParticle;
         private PlayerUIController _playerUIController;
         private List<TankAI> _tanks;
+        private Pumping _pumping;
 
         public event Action Crashed;
 
         public void Initialize(float speed, ObjectPoolShooting explosionPool, GameObject explosionParticle,
-            PlayerUIController playerUIController, List<TankAI> tanks)
+            PlayerUIController playerUIController, List<TankAI> tanks, Pumping pumping)
         {
             _speed = speed;
             _explosionPool = explosionPool;
@@ -27,6 +28,7 @@ namespace Howitzer
             _explosionParticle = explosionParticle;
             _playerUIController = playerUIController;
             _tanks = tanks;
+            _pumping = pumping;
         }
 
         private void OnCollisionEnter(Collision collision)
@@ -44,6 +46,7 @@ namespace Howitzer
             else if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Tree"))
             {
                 _playerUIController.ShowCross();
+                _pumping.gameObject.SetActive(true);
             }
 
             foreach (var tank in _tanks)

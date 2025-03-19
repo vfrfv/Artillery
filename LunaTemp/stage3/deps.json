@@ -40,13 +40,18 @@
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/EnemySpawnBootstrap.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TankKillStatistics.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TankKillCounter.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/ExclamationMark.cs"
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/ExclamationMark.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/TutorialHand2.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TutorialHand.cs"
     ],
     [
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Scripts/SpawnEffect.cs"
     ],
     [
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Import/UnityTechnologies/ParticlePack/Shared/Ramps/Runtime/RampAsset.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Pumping.cs"
     ],
     [
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Epic Toon FX/Demo/Scripts/ETFXButtonScript.cs",
@@ -140,9 +145,6 @@
     ],
     [
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/EndCardAnimation.cs"
-    ],
-    [
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TutorialHand.cs"
     ],
     [
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/TurnOnAfterSeconds.cs"

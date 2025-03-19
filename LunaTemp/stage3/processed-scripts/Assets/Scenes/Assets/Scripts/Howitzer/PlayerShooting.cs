@@ -18,7 +18,7 @@ namespace Howitzer
         [SerializeField] private RectTransform crosshairUI;
 
         [Header("Эффекты")]
-        //[SerializeField] private TextMeshProUGUI missText;
+
         [SerializeField] private GameObject muzzleFlash;
         [SerializeField] private GameObject explosionEffect;
         
@@ -43,9 +43,14 @@ namespace Howitzer
         [SerializeField] private PlayerUIController _playerUIController;
         [SerializeField] private TanksFabric _tanksFabric;
 
+        [Header("Точка попадания")]
+
+        [SerializeField] private Transform _missPoint;
+
         private ObjectPoolShooting _projectilePool;
         private ObjectPoolShooting _explosionPool;
         private bool _isZoomed = false;
+        private bool _firstShot = false;
 
         private void Awake()
         {
@@ -73,16 +78,27 @@ namespace Howitzer
         private void Shoot()
         {
             Vector3 shootDirection;
-            if (_isZoomed)
+
+            if (!_firstShot)
             {
+                // Первый выстрел идет в _missPoint
                 _timeController.StartSlowMotion();
-                shootDirection = mainCamera.transform.forward;
+                shootDirection = (_missPoint.position - projectilePosition.position).normalized;
+                _firstShot = true; // Теперь следующие выстрелы пойдут как обычно
             }
             else
             {
-                Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(null, crosshairUI.position);
-                Ray ray = mainCamera.ScreenPointToRay(screenPoint);
-                shootDirection = ray.direction.normalized;
+                if (_isZoomed)
+                {
+                    _timeController.StartSlowMotion();
+                    shootDirection = mainCamera.transform.forward;
+                }
+                else
+                {
+                    Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(null, crosshairUI.position);
+                    Ray ray = mainCamera.ScreenPointToRay(screenPoint);
+                    shootDirection = ray.direction.normalized;
+                }
             }
 
             Debug.DrawRay(projectilePosition.position, shootDirection * 10f, Color.green, 2f);
@@ -93,8 +109,8 @@ namespace Howitzer
 
             projectile.SetActive(true);
 
-            //Получаем список TankAI
             List<TankAI> tankAIList = new List<TankAI>();
+
             foreach (var tankObj in _tanksFabric.Tanks)
             {
                 TankAI tankAI = tankObj.GetComponent<TankAI>();
@@ -122,9 +138,6 @@ namespace Howitzer
 
             _managerCamers.WatchingBullet();
         }
-
-
-
 
         private void ShakeCamera()
         {

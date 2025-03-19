@@ -9,6 +9,7 @@ namespace UI
         [SerializeField] private Button zoomButton;
         [SerializeField] Cross _cross;
         [SerializeField] Cross _mark;
+        [SerializeField] TutorialHand2 _tutorialHand2;
 
         public delegate void ShootAction();
         public static event ShootAction OnShoot;
@@ -19,7 +20,7 @@ namespace UI
         private void Start()
         {
             shootButton.onClick.AddListener(() => OnShoot?.Invoke());
-            zoomButton.onClick.AddListener(() => OnZoom?.Invoke());
+            zoomButton.onClick.AddListener(FinishTraining);
         }
 
         public void ShowCross()
@@ -30,6 +31,12 @@ namespace UI
         public void ShowMark()
         {
             _mark.gameObject.SetActive(true);
+        }
+
+        private void FinishTraining()
+        {
+            OnZoom?.Invoke();
+            _tutorialHand2.FinishTraining();
         }
     }
 }
