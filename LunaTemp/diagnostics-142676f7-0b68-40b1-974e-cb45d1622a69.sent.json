@@ -1,0 +1,563 @@
+{
+    "BuildID": "142676f7-0b68-40b1-974e-cb45d1622a69",
+    "Command": "project:deploy",
+    "ProjectID": "6c12a4f49c2e1c74dbc0beaf340cbc67",
+    "ProjectStateHash": "d7ff4a04bed674c975dc09eca6d894a1da914709b9d9ba03cca957ad283c71ad",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 3,
+    "StartTime": 1742481767781,
+    "EndTime": 1742482016192,
+    "PlaygroundUserID": 21453,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "playground",
+    "UnityVersion": "2022.3.7f1",
+    "LunaVersion": "6.2.1",
+    "LogCount": 23,
+    "Logs": [
+        {
+            "LogID": "6e4855bd-fb70-4aaf-a0bf-2567327e9ba9",
+            "Order": 18,
+            "Timestamp": 1742482016757,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "LP3005",
+            "Description": "You are using a Luna reserved keyword: Handle",
+            "Details": [
+                "You are using a reserved keyword: Handle for Luna. Please change the name of the field/class"
+            ],
+            "DescriptionValues": [
+                "Handle"
+            ],
+            "DetailsValues": [
+                "Handle"
+            ],
+            "LogCount": 1,
+            "LinePosition": 35,
+            "FilePath": "D:\\UnityPri\\My project\\Assets\\Scenes\\Assets\\Joystick Pack\\Scripts\\Base\\Joystick.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "ad9efe90-9b86-4b78-9ed6-74dca89cfdcf",
+            "Order": 18,
+            "Timestamp": 1742482016758,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "LP3005",
+            "Description": "You are using a Luna reserved keyword: handle",
+            "Details": [
+                "You are using a reserved keyword: handle for Luna. Please change the name of the field/class"
+            ],
+            "DescriptionValues": [
+                "handle"
+            ],
+            "DetailsValues": [
+                "handle"
+            ],
+            "LogCount": 1,
+            "LinePosition": 35,
+            "FilePath": "D:\\UnityPri\\My project\\Assets\\Scenes\\Assets\\Joystick Pack\\Scripts\\Base\\Joystick.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "3c24801b-be6f-43aa-af55-4805211cc81e",
+            "Order": 18,
+            "Timestamp": 1742482017014,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3006",
+            "Description": "You are not using the Luna API: Playable.InstallFullGame",
+            "Details": [
+                "You are not using the Luna API: Playable.InstallFullGame. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+            ],
+            "DescriptionValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "DetailsValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "8de986ec-afaf-4f37-93d1-ef23e3a9a1a5",
+            "Order": 18,
+            "Timestamp": 1742482017014,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3006",
+            "Description": "You are not using the Luna API: LifeCycle.GameEnded",
+            "Details": [
+                "You are not using the Luna API: LifeCycle.GameEnded. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+            ],
+            "DescriptionValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "DetailsValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "481c84a3-f52a-48be-bcd4-25f47b152f31",
+            "Order": 18,
+            "Timestamp": 1742482017017,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "13626c40-fa1e-4985-bc83-ef3a30fdc5a3",
+            "Order": 18,
+            "Timestamp": 1742482017018,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3011",
+            "Description": "You are not using any LunaPlaygroundFields attributes.",
+            "Details": [
+                "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": null,
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "9dcc973e-c51c-4d5f-8138-e2666f051d61",
+            "Order": 0,
+            "Timestamp": 1742481909785,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of ParticleSystem Component",
+            "Details": [
+                "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 36."
+            ],
+            "DescriptionValues": [
+                "ParticleSystem"
+            ],
+            "DetailsValues": [
+                "ParticleSystem",
+                "10",
+                "36"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "b0a36e68-0e08-43ab-a5b1-05396f1a3f98",
+            "Order": 1,
+            "Timestamp": 1742481909785,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1022",
+            "Description": "Extensive use of shader variants",
+            "Details": [
+                "Extensive usage of shader variants negatively affects playable startup time. Please consider them to be less than 20 (28 found). Check Runtime analysis -> shader tab to see used shaders."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "20",
+                "28"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "a469b3bc-870e-44dd-be3f-a8e50478acca",
+            "Order": 2,
+            "Timestamp": 1742481909785,
+            "Stage": 1,
+            "ErrorType": 1,
+            "ErrorCode": "LP1023",
+            "Description": "Too many files for facebook platform",
+            "Details": [
+                "Too many files for facebook platform in use ($150) only $100 available"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "150",
+                "100"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "20897550-7121-4b21-88a5-d249660c62ea",
+            "Order": 3,
+            "Timestamp": 1742481909837,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1027",
+            "Description": "This DOTween version is not supported",
+            "Details": [
+                "The incorrect DOTween version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "ead49df6-7a3f-4159-8d3c-b91fed3a930d",
+            "Order": 4,
+            "Timestamp": 1742481909841,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1026",
+            "Description": "This Cinemachine version is not supported",
+            "Details": [
+                "The incorrect Cinemachine version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "26fa95b6-e85a-4001-822c-49b76c6ccf4f",
+            "Order": 5,
+            "Timestamp": 1742481909841,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1015",
+            "Description": "This TMP version is not fully supported",
+            "Details": [
+                "The incorrect Text Mesh Pro for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "88219d2b-8b73-441e-a01c-4b50fd48936c",
+            "Order": 6,
+            "Timestamp": 1742481909841,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.7.5)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "D:/UnityPri/My project/Packages\\manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "b561847d-a6c3-44d5-9216-1a3fb01f8422",
+            "Order": 7,
+            "Timestamp": 1742481909842,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1010",
+            "Description": "Looks like a collider was scaled, this might affect performance.",
+            "Details": [
+                "TankPrefab",
+                "SM_Wep_Mortar_Shell_01 (1) Variant",
+                "SM_Wep_Mortar_Shell_01 (1) Variant 1",
+                "ground",
+                "ground",
+                "ground",
+                "generic_cliff"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 7,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "97dbd5c9-b1d9-4a2e-90c0-69dc0d06fcde",
+            "Order": 8,
+            "Timestamp": 1742481909842,
+            "Stage": 1,
+            "ErrorType": 3,
+            "ErrorCode": "LP1008",
+            "Description": "There are missing components on Text (TMP).",
+            "Details": [
+                "Text (TMP)",
+                "Text (TMP)"
+            ],
+            "DescriptionValues": [
+                "Text (TMP)"
+            ],
+            "DetailsValues": [],
+            "LogCount": 2,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "b2db32cd-5ae0-47f6-af40-738613706ace",
+            "Order": 9,
+            "Timestamp": 1742481909842,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1000",
+            "Description": "Big mesh usage, this might significantly increase output files size.",
+            "Details": [
+                "Cube.001_mach_conector4_0",
+                "Cube.001__0"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 2,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "f691ccbf-0da3-484b-a204-d36db0543b80",
+            "Order": 10,
+            "Timestamp": 1742482016183,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "CS0234",
+            "Description": "The type or namespace name 'VisualScripting' does not exist in the namespace 'Unity' (are you missing an assembly reference?)",
+            "Details": [
+                "using Unity.VisualScripting;"
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 5,
+            "FilePath": "D:\\UnityPri\\My project\\Assets\\Pumping.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 1
+        },
+        {
+            "LogID": "4f0eb806-17ea-4a0d-ac39-b75037dd4bf2",
+            "Order": 11,
+            "Timestamp": 1742482016185,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "CS0246",
+            "Description": "The type or namespace name 'Mutex' could not be found (are you missing a using directive or an assembly reference?)",
+            "Details": [
+                "private static Mutex mutex;"
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 28,
+            "FilePath": "D:\\UnityPri\\My project\\Assets\\Sketchfab For Unity\\Scripts\\Resizer.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 1
+        },
+        {
+            "LogID": "1a5bbd6f-ab34-40f2-b5ae-a51b1f8f59f2",
+            "Order": 12,
+            "Timestamp": 1742482016185,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "CS0246",
+            "Description": "The type or namespace name 'Mutex' could not be found (are you missing a using directive or an assembly reference?)",
+            "Details": [
+                "mutex = new Mutex(false);"
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 62,
+            "FilePath": "D:\\UnityPri\\My project\\Assets\\Sketchfab For Unity\\Scripts\\Resizer.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 1
+        },
+        {
+            "LogID": "97c879da-0d94-492b-bd9b-fac630398867",
+            "Order": 13,
+            "Timestamp": 1742482016190,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "CS0123",
+            "Description": "No overload for 'BilinearScale' matches delegate 'ParameterizedThreadStart'",
+            "Details": [
+                "ParameterizedThreadStart ts = useBilinear ? new ParameterizedThreadStart(BilinearScale) : new ParameterizedThreadStart(PointScale);"
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 71,
+            "FilePath": "D:\\UnityPri\\My project\\Assets\\Sketchfab For Unity\\Scripts\\Resizer.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 1
+        },
+        {
+            "LogID": "23ca13ee-0ba4-4976-afd4-447adfd0f2cb",
+            "Order": 14,
+            "Timestamp": 1742482016190,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "CS0123",
+            "Description": "No overload for 'PointScale' matches delegate 'ParameterizedThreadStart'",
+            "Details": [
+                "ParameterizedThreadStart ts = useBilinear ? new ParameterizedThreadStart(BilinearScale) : new ParameterizedThreadStart(PointScale);"
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 71,
+            "FilePath": "D:\\UnityPri\\My project\\Assets\\Sketchfab For Unity\\Scripts\\Resizer.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 1
+        },
+        {
+            "LogID": "aae4c853-7d85-4214-ba6f-8982a994de70",
+            "Order": 15,
+            "Timestamp": 1742482016190,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "CS1503",
+            "Description": "Argument 1: cannot convert from 'System.Threading.ParameterizedThreadStart' to 'System.Threading.Thread.ThreadStart'",
+            "Details": [
+                "Thread thread = new Thread(ts);"
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 72,
+            "FilePath": "D:\\UnityPri\\My project\\Assets\\Sketchfab For Unity\\Scripts\\Resizer.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 1
+        },
+        {
+            "LogID": "5aca19d1-b505-44f5-9fca-783cd0cac44a",
+            "Order": 16,
+            "Timestamp": 1742482016192,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "CS1061",
+            "Description": "'Texture2D' does not contain a definition for 'Reinitialize' and no accessible extension method 'Reinitialize' accepting a first argument of type 'Texture2D' could be found (are you missing a using directive or an assembly reference?)",
+            "Details": [
+                "tex.Reinitialize(newWidth, newHeight);"
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 102,
+            "FilePath": "D:\\UnityPri\\My project\\Assets\\Sketchfab For Unity\\Scripts\\Resizer.cs",
+            "ClassName": "Texture2D",
+            "MemberName": "Reinitialize",
+            "Severity": 1
+        }
+    ]
+}

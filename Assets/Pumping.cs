@@ -1,3 +1,5 @@
+using BehaviourAI;
+using Fabric;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -13,6 +15,7 @@ public class Pumping : MonoBehaviour
     [SerializeField] private HandAnimation _arm;
     [SerializeField] private Shopping _shopping;
     [SerializeField] private InteractiveArt _interactiveArt;
+    [SerializeField] private TanksFabric _tacticsFabric;
 
     private void OnEnable()
     {
@@ -50,11 +53,17 @@ public class Pumping : MonoBehaviour
         _pumpingCamera.gameObject.SetActive(false);
         _UI.SetActive(true);
          _shopping.gameObject.SetActive(false);
+
+        foreach (var tank in _tacticsFabric.Tanks)
+        {
+            TankAI tankObg = tank.GetComponent<TankAI>();
+            tankObg.ShowHover();
+        }
     }
 
     private void SetNormalPositionArte()
     {
-        _arta1.transform.localPosition = new Vector3(0.9f, 17.2f, -4f);
+        _arta1.transform.localPosition = new Vector3(0.9f, 17.5f, -4f);
         _arta1.transform.localRotation = Quaternion.Euler(-1.1f, -1.7f, -8f);
     }
 }

@@ -18,7 +18,7 @@ public class Cross : MonoBehaviour
         yield return ScaleOverTime(Vector3.one, 0.2f);
 
         // ���� 2 ������� ����� �����������
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         gameObject.SetActive(false);
     }
 

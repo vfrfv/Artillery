@@ -8,6 +8,7 @@ namespace BehaviourAI
         [SerializeField] private float rotationSpeed = 2f;
         [SerializeField] private float moveSpeed = 3f;
         [SerializeField] private ExclamationMark _exclamationMark;
+        [SerializeField] private GameObject _guidance;
 
         private Transform[] _targets;
         private int _currentTargetIndex;
@@ -43,6 +44,11 @@ namespace BehaviourAI
             {
                 MoveTowardsTarget();
             }
+        }
+
+        public void ShowHover()
+        {
+            _guidance.gameObject. SetActive(true);
         }
 
         public void ShowSign()

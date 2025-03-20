@@ -47,10 +47,15 @@ namespace Howitzer
 
         [SerializeField] private Transform _missPoint;
 
+        [Header("Прокачка")]
+
+        [SerializeField] private Pumping _pumping;
+
         private ObjectPoolShooting _projectilePool;
         private ObjectPoolShooting _explosionPool;
         private bool _isZoomed = false;
         private bool _firstShot = false;
+        private bool _newArt = false;
 
         private void Awake()
         {
@@ -60,14 +65,19 @@ namespace Howitzer
 
         private void OnEnable()
         {
-            PlayerUIController.OnShoot += Shoot;
+            PlayerUIController.OnShoot += ChooseShootingRange;
             PlayerZoom.OnZoomChanged += SetZoomState;
         }
 
         private void OnDisable()
         {
-            PlayerUIController.OnShoot -= Shoot;
+            PlayerUIController.OnShoot -= ChooseShootingRange;
             PlayerZoom.OnZoomChanged -= SetZoomState;
+        }
+
+        public void Upgrade()
+        {
+            _newArt = true;
         }
 
         private void SetZoomState(bool isZoomed)
@@ -75,16 +85,27 @@ namespace Howitzer
             _isZoomed = isZoomed;
         }
 
-        private void Shoot()
+        private void ChooseShootingRange()
+        {
+            if(_newArt == false)
+            {
+                Shoot1();
+            }
+            else
+            {
+                Shoot2();
+            }
+        }
+
+        private void Shoot1()
         {
             Vector3 shootDirection;
 
             if (!_firstShot)
             {
-                // Первый выстрел идет в _missPoint
                 _timeController.StartSlowMotion();
                 shootDirection = (_missPoint.position - projectilePosition.position).normalized;
-                _firstShot = true; // Теперь следующие выстрелы пойдут как обычно
+                _firstShot = true;
             }
             else
             {
@@ -121,7 +142,7 @@ namespace Howitzer
             }
 
             Projectile projectileComponent = projectile.GetComponent<Projectile>();
-            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList);
+            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping);
 
             _managerCamers.GetBullet(projectileComponent);
 
@@ -138,6 +159,55 @@ namespace Howitzer
 
             _managerCamers.WatchingBullet();
         }
+
+        private async void Shoot2()
+        {
+            List<TankAI> tankAIList = new List<TankAI>();
+            foreach (var tankObj in _tanksFabric.Tanks)
+            {
+                TankAI tankAI = tankObj.GetComponent<TankAI>();
+                if (tankAI != null)
+                {
+                    tankAIList.Add(tankAI);
+                }
+            }
+
+            int shots = Mathf.Min(3, tankAIList.Count);
+
+            for (int i = 0; i < shots; i++)
+            {
+                GameObject projectile = _projectilePool.GetObject();
+                projectile.transform.position = projectilePosition.position;
+
+                Vector3 targetPosition = tankAIList[i].transform.position + Vector3.up * 1.8f; // Смещение вверх на 1.5 единицы
+                Vector3 shootDirection = (targetPosition - projectilePosition.position).normalized;
+
+                projectile.transform.rotation = Quaternion.LookRotation(shootDirection, Vector3.up);
+                projectile.SetActive(true);
+
+                Projectile projectileComponent = projectile.GetComponent<Projectile>();
+                projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping);
+
+                playerShootingCooldown.StartCooldown();
+
+                if (muzzleFlash != null)
+                {
+                    muzzleFlash.GetComponent<ParticleSystem>().Play();
+                }
+
+                ShakeCamera();
+
+                if (i == shots - 1) // Последний снаряд
+                {
+                    _timeController.StartSlowMotion();
+                    _followBullet.GetBullet(projectile);
+                    _managerCamers.WatchingBullet();
+                }
+
+                await Task.Delay(50);
+            }
+        }
+
 
         private void ShakeCamera()
         {
