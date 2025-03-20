@@ -1,0 +1,11 @@
+Model Information:
+* title:	PLA Type 63 rocket launcher 107mm
+* source:	https://sketchfab.com/3d-models/pla-type-63-rocket-launcher-107mm-c74cc81f8c684ed6b65d6e5eff766179
+* author:	kumeli1 (https://sketchfab.com/Kumel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "PLA Type 63 rocket launcher 107mm" (https://sketchfab.com/3d-models/pla-type-63-rocket-launcher-107mm-c74cc81f8c684ed6b65d6e5eff766179) by kumeli1 (https://sketchfab.com/Kumel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

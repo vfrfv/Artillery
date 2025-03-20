@@ -12,12 +12,19 @@ public class Pumping : MonoBehaviour
     [SerializeField] private GameObject _arta1;
     [SerializeField] private HandAnimation _arm;
     [SerializeField] private Shopping _shopping;
+    [SerializeField] private InteractiveArt _interactiveArt;
 
     private void OnEnable()
     {
         _shopping.gameObject.SetActive(false);
         _pumpingCamera.gameObject.SetActive(false);
+        _interactiveArt.Changed += TurnPlayerCamera;
         StartCoroutine(StartPumping());
+    }
+
+    private void OnDisable()
+    {
+        _interactiveArt.Changed -= TurnPlayerCamera;
     }
 
     private IEnumerator StartPumping()
@@ -35,6 +42,14 @@ public class Pumping : MonoBehaviour
     {
         m_Camera.gameObject.SetActive(false);
         _pumpingCamera.gameObject.SetActive(true);
+    }
+
+    private void TurnPlayerCamera()
+    {
+        m_Camera.gameObject.SetActive(true);
+        _pumpingCamera.gameObject.SetActive(false);
+        _UI.SetActive(true);
+         _shopping.gameObject.SetActive(false);
     }
 
     private void SetNormalPositionArte()
