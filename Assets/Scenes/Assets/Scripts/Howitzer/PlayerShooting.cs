@@ -142,7 +142,7 @@ namespace Howitzer
             }
 
             Projectile projectileComponent = projectile.GetComponent<Projectile>();
-            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping);
+            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping, null);
 
             _managerCamers.GetBullet(projectileComponent);
 
@@ -179,14 +179,14 @@ namespace Howitzer
                 GameObject projectile = _projectilePool.GetObject();
                 projectile.transform.position = projectilePosition.position;
 
-                Vector3 targetPosition = tankAIList[i].transform.position + Vector3.up * 1.8f; // Смещение вверх на 1.5 единицы
+                Vector3 targetPosition = tankAIList[i].transform.position + Vector3.up * 3f; // Смещение вверх на 1.5 единицы
                 Vector3 shootDirection = (targetPosition - projectilePosition.position).normalized;
 
                 projectile.transform.rotation = Quaternion.LookRotation(shootDirection, Vector3.up);
                 projectile.SetActive(true);
 
                 Projectile projectileComponent = projectile.GetComponent<Projectile>();
-                projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping);
+                projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping, tankAIList[i]);
 
                 playerShootingCooldown.StartCooldown();
 
@@ -206,6 +206,8 @@ namespace Howitzer
 
                 await Task.Delay(50);
             }
+
+            _pumping.RemoveSprites();
         }
 
 

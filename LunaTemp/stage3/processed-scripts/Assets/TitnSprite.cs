@@ -14,6 +14,11 @@ public class TitnSprite : MonoBehaviour
         _camera = Camera.main;
     }
 
+    public void Initialize(GameObject tank)
+    {
+        _tank = tank;
+    }
+
     private void LateUpdate()
     {
         if (_camera == null || _tank == null) return;

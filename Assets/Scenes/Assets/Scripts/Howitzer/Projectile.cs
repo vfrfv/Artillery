@@ -15,11 +15,12 @@ namespace Howitzer
         private PlayerUIController _playerUIController;
         private List<TankAI> _tanks;
         private Pumping _pumping;
+        private TankAI _targetTank; // Цель снаряда
 
         public event Action Crashed;
 
         public void Initialize(float speed, ObjectPoolShooting explosionPool, GameObject explosionParticle,
-            PlayerUIController playerUIController, List<TankAI> tanks, Pumping pumping)
+            PlayerUIController playerUIController, List<TankAI> tanks, Pumping pumping, TankAI targetTank)
         {
             _speed = speed;
             _explosionPool = explosionPool;
@@ -29,40 +30,60 @@ namespace Howitzer
             _playerUIController = playerUIController;
             _tanks = tanks;
             _pumping = pumping;
+            _targetTank = targetTank; // Запоминаем цель
+
+            // Игнорируем столкновения с другими танками, если цель указана
+            if (_targetTank != null)
+            {
+                foreach (var tank in _tanks)
+                {
+                    if (tank != _targetTank)
+                    {
+                        Physics.IgnoreCollision(GetComponent<Collider>(), tank.GetComponent<Collider>(), true);
+                    }
+                }
+            }
         }
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
+            if (_targetTank != null) // Если цель задана, проверяем попадание только в неё
             {
-                hitTankAI.DisableTank();
-                hitTankAI.GetComponent<BoxCollider>().enabled = false;
-                ChangeTankColor(collision.gameObject, Color.black);
-                SpawnExplosionEffect(transform.position);
-                TankKillCounter.NotifyTankDestroyed();
-                _playerUIController.ShowMark();
-
+                if (collision.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
+                {
+                    if (hitTankAI == _targetTank) // Проверяем, что попали именно в цель
+                    {
+                        DestroyTank(hitTankAI);
+                    }
+                }
             }
-            else if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Tree"))
+            else // Если цели нет (обычный выстрел), проверяем любое попадание в танк
+            {
+                if (collision.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
+                {
+                    DestroyTank(hitTankAI);
+                }
+            }
+
+            if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Tree"))
             {
                 _playerUIController.ShowCross();
                 _pumping.gameObject.SetActive(true);
-            }
-
-            foreach (var tank in _tanks)
-            {
-                TankAI tankAI = tank.GetComponent<TankAI>();
-
-                if (tankAI != null && tankAI.IsAlive && tankAI != hitTankAI)
-                {
-                    tankAI.ShowSign();
-                }
             }
 
             gameObject.SetActive(false);
             Crashed?.Invoke();
         }
 
+        private void DestroyTank(TankAI hitTankAI)
+        {
+            hitTankAI.DisableTank();
+            hitTankAI.GetComponent<BoxCollider>().enabled = false;
+            ChangeTankColor(hitTankAI.gameObject, Color.black);
+            SpawnExplosionEffect(transform.position);
+            TankKillCounter.NotifyTankDestroyed();
+            _playerUIController.ShowMark();
+        }
 
         private void SpawnExplosionEffect(Vector3 position)
         {

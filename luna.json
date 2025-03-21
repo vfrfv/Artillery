@@ -1,7 +1,7 @@
 {
     "version": "6.2.1",
     "projectId": "6c12a4f49c2e1c74dbc0beaf340cbc67",
-    "applicationID": 0,
+    "applicationID": 27856,
     "creativeName": "vfrfv",
     "pgServer": "EU",
     "window": {
@@ -122,9 +122,11 @@
                 "Stubs/AppsFlyer",
                 "Stubs/IronSource",
                 "Stubs/Vungle",
-                "Stubs/MoreMountains.NiceVibrations"
+                "Stubs/MoreMountains.NiceVibrations",
+                "Assets/Import/PLA_Type_63_rocket_launcher_107mm/meshes/Cube.001_mach_conector4_0_3_0.asset"
             ],
             "includes": [
+                "Assets/Import/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/BigExplosion.prefab",
                 "Assets/Import/UnityTechnologies/ParticlePack/TextMesh Pro/Resources/TMP Settings.asset",
                 "Assets/QuickOutline/",
                 "Assets/Resources/DOTweenSettings.asset",
@@ -177,8 +179,8 @@
             },
             {
                 "name": "physics2d",
-                "excluded": true,
-                "forceIncluded": false
+                "excluded": false,
+                "forceIncluded": true
             },
             {
                 "name": "particle-system",
@@ -2348,10 +2350,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.Collider2D",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.Joint",
                 "excluded": true
             },
@@ -2393,10 +2391,6 @@
             },
             {
                 "name": "UnityEngine.Animator",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.BoxCollider2D",
                 "excluded": true
             },
             {
@@ -3801,7 +3795,7 @@
             },
             {
                 "name": "UnityEngine.CollisionDetectionMode2D",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.CollisionFlags",
@@ -5089,7 +5083,7 @@
             },
             {
                 "name": "UnityEngine.RigidbodyConstraints2D",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.RigidbodyInterpolation",
@@ -5105,7 +5099,7 @@
             },
             {
                 "name": "UnityEngine.RigidbodyType2D",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.RotationDriveMode",
@@ -8784,7 +8778,71 @@
                 "excluded": false
             },
             {
-                "name": "BlinkingManager",
+                "name": "Newtonsoft.Json.JsonException",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.JsonPropertyAttribute",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.JsonSerializerSettings",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Utils.AssemblyVersion",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.JsonSerializationException",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.DefaultValueHandling",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Formatting",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.JsonConstructorAttribute",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.JsonIgnoreAttribute",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.NullValueHandling",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.ObjectCreationHandling",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Required",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Serialization.IContractResolver",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Serialization.ISerializationBinder",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.TypeNameHandling",
+                "excluded": true
+            },
+            {
+                "name": "Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver",
+                "excluded": true
+            },
+            {
+                "name": "Guidance",
                 "excluded": true
             }
         ],
@@ -8905,7 +8963,7 @@
                     },
                     {
                         "name": "isWhiteSpace",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isDigit",
@@ -15499,7 +15557,7 @@
                     },
                     {
                         "name": "PingPong",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SmoothDamp",
@@ -17611,7 +17669,7 @@
                     },
                     {
                         "name": "localRotation#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "rotation#get",
@@ -18395,7 +18453,7 @@
                     },
                     {
                         "name": "WorldToScreenPoint",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ScreenToWorldPoint",
@@ -19333,7 +19391,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDestroy",
@@ -21843,7 +21901,7 @@
                     },
                     {
                         "name": "IgnoreCollision",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Simulate",
@@ -22207,7 +22265,7 @@
                     },
                     {
                         "name": "RemoveListener",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -22827,7 +22885,7 @@
                     },
                     {
                         "name": "attachedRigidbody#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "attachedRigidbody#set",
@@ -23271,7 +23329,7 @@
                     },
                     {
                         "name": "RemoveRaycasters",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -23695,7 +23753,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnCanvasHierarchyChanged",
@@ -24213,7 +24271,7 @@
                 "instanceMethods": [
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "VirtualCamera#get",
@@ -25926,6 +25984,10 @@
                     {
                         "name": "ShowSign",
                         "excluded": false
+                    },
+                    {
+                        "name": "ShowHover",
+                        "excluded": false
                     }
                 ]
             },
@@ -26328,14 +26390,6 @@
                     {
                         "name": "Awake",
                         "excluded": false
-                    },
-                    {
-                        "name": "Start",
-                        "excluded": false
-                    },
-                    {
-                        "name": "BlinkingStart",
-                        "excluded": false
                     }
                 ]
             },
@@ -26461,18 +26515,30 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetZoomState",
                         "excluded": false
                     },
                     {
-                        "name": "Shoot",
+                        "name": "ShakeCamera",
                         "excluded": false
                     },
                     {
-                        "name": "ShakeCamera",
+                        "name": "Upgrade",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ChooseShootingRange",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Shoot1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Shoot2",
                         "excluded": false
                     }
                 ]
@@ -26513,7 +26579,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Update",
@@ -26571,6 +26637,10 @@
                     },
                     {
                         "name": "ChangeTankColor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DestroyTank",
                         "excluded": false
                     }
                 ]
@@ -26721,7 +26791,11 @@
                     },
                     {
                         "name": "ShowMark",
-                        "excluded": true
+                        "excluded": false
+                    },
+                    {
+                        "name": "FinishTraining",
+                        "excluded": false
                     }
                 ]
             },
@@ -28217,7 +28291,7 @@
                     },
                     {
                         "name": "WakeUp",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Sleep",
@@ -28271,7 +28345,7 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -28728,7 +28802,237 @@
                 ]
             },
             {
-                "className": "BlinkingObject",
+                "className": "Newtonsoft.Json.JsonConvert",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "stringify",
+                        "excluded": true
+                    },
+                    {
+                        "name": "parse",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getEnumerableElementType",
+                        "excluded": true
+                    },
+                    {
+                        "name": "validateReflectable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "defaultGuard",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getCacheByType",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getMembers",
+                        "excluded": true
+                    },
+                    {
+                        "name": "preRawProcess",
+                        "excluded": true
+                    },
+                    {
+                        "name": "preProcess",
+                        "excluded": true
+                    },
+                    {
+                        "name": "PopulateObject",
+                        "excluded": true
+                    },
+                    {
+                        "name": "BindToName",
+                        "excluded": true
+                    },
+                    {
+                        "name": "BindToType",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SplitFullyQualifiedTypeName",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetAssemblyDelimiterIndex",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Trim",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SerializeObject",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getInstanceBuilder",
+                        "excluded": true
+                    },
+                    {
+                        "name": "createInstance",
+                        "excluded": true
+                    },
+                    {
+                        "name": "needReuse",
+                        "excluded": true
+                    },
+                    {
+                        "name": "tryToGetCastOperator",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DeserializeObject",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Collider2D",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "attachedRigidbody#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "isTrigger#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "isTrigger#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "usedByEffector#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "usedByEffector#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "usedByComposite#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "usedByComposite#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "density#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "density#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "offset#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "offset#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "shapeCount#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "bounds#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "sharedMaterial#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "sharedMaterial#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsTouching",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OverlapPoint",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OverlapPoint$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OverlapCollider",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetContacts$2",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetContacts",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetContacts$3",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetContacts$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Raycast$2",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Raycast$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Raycast",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.BoxCollider2D",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "size#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "size#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "HandAnimation",
                 "staticMethods": [],
                 "instanceMethods": [
                     {
@@ -28740,15 +29044,133 @@
                         "excluded": false
                     },
                     {
-                        "name": "StartBlinking",
+                        "name": "Update",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "InteractiveArt",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
                         "excluded": false
                     },
                     {
-                        "name": "StopBlinking",
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SwapArtPieces",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AnimateSwap",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "Pumping",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
                         "excluded": true
                     },
                     {
-                        "name": "BlinkCoroutine",
+                        "name": "StartPumping",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TurnPumpingCamera",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TurnPlayerCamera",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetNormalPositionArte",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RemoveSprites",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "Shopping",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ShowShopping",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OffShoping",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "TitnSprite",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "LateUpdate",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Initialize",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "TutorialHand2",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "FinishTraining",
                         "excluded": false
                     }
                 ]
@@ -28798,6 +29220,86 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/Scenes/Assets/UI/HUD/Ресурс 1@3x 1.png"
+                    },
+                    {
+                        "maxWidth": 32,
+                        "maxHeight": 32,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/textures/gear_metallicRoughness_75_metal.png"
+                    },
+                    {
+                        "maxWidth": 64,
+                        "maxHeight": 64,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/textures/tire_in_inter_metallicRoughness_66_metal.png"
+                    },
+                    {
+                        "maxWidth": 64,
+                        "maxHeight": 64,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/textures/dirtcutcher_metallicRoughness_48_metal.png"
+                    },
+                    {
+                        "maxWidth": 128,
+                        "maxHeight": 128,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Scenes/Assets/Prefabs/6e0b5faa0c096eb1ee649405d5f333a6.png"
+                    },
+                    {
+                        "maxWidth": 128,
+                        "maxHeight": 128,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Scenes/Assets/3D assets/Terrain/TexturesCom_Grass0043_1_seamless_S.jpg"
+                    },
+                    {
+                        "maxWidth": 128,
+                        "maxHeight": 128,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/textures/tire_out_baseColor_59.png"
+                    },
+                    {
+                        "maxWidth": 128,
+                        "maxHeight": 128,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Import/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/shockwave.tif"
+                    },
+                    {
+                        "maxWidth": 128,
+                        "maxHeight": 128,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/textures/mach_conector1.001_metallicRoughness_13_metal.png"
                     }
                 ]
             },
@@ -28828,7 +29330,16 @@
                 "default": {
                     "halfPrecision": true
                 },
-                "overrides": []
+                "overrides": [
+                    {
+                        "halfPrecision": true,
+                        "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/meshes/Circle_mach_conector1.001_0_4_0.asset"
+                    },
+                    {
+                        "halfPrecision": true,
+                        "name": "Assets/Import/Sandbags/meshes/Cube.001__0_0_0.asset"
+                    }
+                ]
             },
             "animations": {
                 "default": {

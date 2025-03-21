@@ -2,9 +2,7 @@ using BehaviourAI;
 using Fabric;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class Pumping : MonoBehaviour
 {
@@ -17,6 +15,15 @@ public class Pumping : MonoBehaviour
     [SerializeField] private InteractiveArt _interactiveArt;
     [SerializeField] private TanksFabric _tacticsFabric;
 
+    [SerializeField] private TitnSprite _titnSprite;
+
+    private List<TitnSprite> _sprites;
+
+    private void Awake()
+    {
+        _sprites = new List<TitnSprite>();
+    }
+
     private void OnEnable()
     {
         _shopping.gameObject.SetActive(false);
@@ -28,6 +35,14 @@ public class Pumping : MonoBehaviour
     private void OnDisable()
     {
         _interactiveArt.Changed -= TurnPlayerCamera;
+    }
+
+    public void RemoveSprites()
+    {
+        foreach (var item in _sprites)
+        {
+            item.gameObject.SetActive(false);
+        }
     }
 
     private IEnumerator StartPumping()
@@ -52,12 +67,13 @@ public class Pumping : MonoBehaviour
         m_Camera.gameObject.SetActive(true);
         _pumpingCamera.gameObject.SetActive(false);
         _UI.SetActive(true);
-         _shopping.gameObject.SetActive(false);
+        _shopping.gameObject.SetActive(false);
 
         foreach (var tank in _tacticsFabric.Tanks)
         {
-            TankAI tankObg = tank.GetComponent<TankAI>();
-            tankObg.ShowHover();
+            TitnSprite titnSprite= Instantiate(_titnSprite);
+            titnSprite.Initialize(tank);
+            _sprites.Add(titnSprite);
         }
     }
 
