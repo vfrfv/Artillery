@@ -69,10 +69,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopDistance: 5
-  rotationSpeed: 1
+  rotationSpeed: 0.6
   moveSpeed: 3
   _exclamationMark: {fileID: 301579872362779765}
   _guidance: {fileID: 0}
+  avoidanceDistance: 6
+  tankLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &819193612317288539
 GameObject:
   m_ObjectHideFlags: 0

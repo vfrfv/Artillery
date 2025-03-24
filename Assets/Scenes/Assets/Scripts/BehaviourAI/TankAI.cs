@@ -9,12 +9,14 @@ namespace BehaviourAI
         [SerializeField] private float moveSpeed = 3f;
         [SerializeField] private ExclamationMark _exclamationMark;
         [SerializeField] private GameObject _guidance;
+        [SerializeField] private float avoidanceDistance = 2f; 
+        [SerializeField] private LayerMask tankLayer; 
 
         private Transform[] _targets;
         private int _currentTargetIndex;
         private Transform _currentTarget;
         private bool _isDisabled;
-        private bool _isWaiting; // Флаг ожидания, если танк остановился из-за другого танка
+        private bool _isWaiting;
 
         public bool IsAlive => !_isDisabled;
 
@@ -36,7 +38,19 @@ namespace BehaviourAI
 
         private void Update()
         {
-            if (_isDisabled || _currentTarget == null || _isWaiting) return;
+            if (_isDisabled || _currentTarget == null) return;
+
+            Debug.DrawRay(transform.position, transform.forward * avoidanceDistance, Color.red);
+
+            if (IsPathBlocked())
+            {
+                _isWaiting = true; 
+                return;
+            }
+            else
+            {
+                _isWaiting = false;
+            }
 
             RotateTank();
 
@@ -48,7 +62,7 @@ namespace BehaviourAI
 
         public void ShowHover()
         {
-            _guidance.gameObject. SetActive(true);
+            _guidance.gameObject.SetActive(true);
         }
 
         public void ShowSign()
@@ -98,6 +112,19 @@ namespace BehaviourAI
             float dotProduct = Vector3.Dot(transform.forward, directionToTarget);
 
             return dotProduct > 0.99f;
+        }
+
+        private bool IsPathBlocked()
+        {
+            RaycastHit hit;
+
+            if (Physics.Raycast(transform.position, transform.forward, out hit, avoidanceDistance))
+            {
+                _currentTargetIndex = Random.Range(0, _targets.Length);
+                _currentTarget = _targets[_currentTargetIndex];
+            }
+
+            return false;
         }
     }
 }
