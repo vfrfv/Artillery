@@ -1,8 +1,8 @@
-using BehaviourAI;
 using Fabric;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Pumping : MonoBehaviour
 {
@@ -14,7 +14,7 @@ public class Pumping : MonoBehaviour
     [SerializeField] private Shopping _shopping;
     [SerializeField] private InteractiveArt _interactiveArt;
     [SerializeField] private TanksFabric _tacticsFabric;
-
+    [SerializeField] private Button _button;
     [SerializeField] private TitnSprite _titnSprite;
 
     private List<TitnSprite> _sprites;
@@ -60,6 +60,7 @@ public class Pumping : MonoBehaviour
     {
         m_Camera.gameObject.SetActive(false);
         _pumpingCamera.gameObject.SetActive(true);
+        _button.gameObject.SetActive(true);
     }
 
     private void TurnPlayerCamera()
@@ -71,7 +72,7 @@ public class Pumping : MonoBehaviour
 
         foreach (var tank in _tacticsFabric.Tanks)
         {
-            TitnSprite titnSprite= Instantiate(_titnSprite);
+            TitnSprite titnSprite = Instantiate(_titnSprite);
             titnSprite.Initialize(tank);
             _sprites.Add(titnSprite);
         }

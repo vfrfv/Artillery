@@ -29300,6 +29300,56 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/textures/mach_conector1.001_metallicRoughness_13_metal.png"
+                    },
+                    {
+                        "maxWidth": 128,
+                        "maxHeight": 128,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/textures/tire_out_metallicRoughness_60_metal.png"
+                    },
+                    {
+                        "maxWidth": 128,
+                        "maxHeight": 128,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/textures/tirein_metallicRoughness_63_metal.png"
+                    },
+                    {
+                        "maxWidth": 128,
+                        "maxHeight": 128,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/textures/stand2_metallicRoughness_78_metal.png"
+                    },
+                    {
+                        "maxWidth": 128,
+                        "maxHeight": 128,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/textures/mach_conector2_metallicRoughness_19_metal.png"
+                    },
+                    {
+                        "maxWidth": 128,
+                        "maxHeight": 128,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Import/PLA_Type_63_rocket_launcher_107mm/textures/transformer1_metallicRoughness_39_metal.png"
                     }
                 ]
             },

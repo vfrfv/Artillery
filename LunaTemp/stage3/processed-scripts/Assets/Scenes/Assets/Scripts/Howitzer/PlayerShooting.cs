@@ -6,6 +6,7 @@ using Fabric;
 //using TMPro;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 namespace Howitzer
 {
@@ -50,6 +51,7 @@ namespace Howitzer
         [Header("Прокачка")]
 
         [SerializeField] private Pumping _pumping;
+        [SerializeField] private Button button;
 
         private ObjectPoolShooting _projectilePool;
         private ObjectPoolShooting _explosionPool;
@@ -156,8 +158,8 @@ namespace Howitzer
             ShakeCamera();
 
             _followBullet.GetBullet(projectile);
-
             _managerCamers.WatchingBullet();
+            button.gameObject.SetActive(false);
         }
 
         private async void Shoot2()
