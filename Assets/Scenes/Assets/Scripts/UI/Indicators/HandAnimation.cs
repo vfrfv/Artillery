@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class HandAnimation : MonoBehaviour
 {
-    public float scaleSpeed = 1f;
-    public float scaleAmount = 0.2f;
+    [SerializeField] private float scaleSpeed = 1f;
+    [SerializeField] private float scaleAmount = 0.2f;
 
     private Vector3 initialScale;
 

@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class BlinkingObject : MonoBehaviour
 {
-    public GameObject _tower;  // Объект, который тоже будет мигать
-    public Color blinkColor = Color.red; // Цвет мигания
-    public float blinkInterval = 0.5f; // Интервал мигания
-    public float blinkDuration = 0.5f; // Длительность плавного мигания
+    [SerializeField] private GameObject _tower;
+    [SerializeField] private Color blinkColor = Color.red;
+    [SerializeField] private float blinkInterval = 0.5f;
+    [SerializeField] private float blinkDuration = 0.5f;
 
     private Renderer objectRenderer;
     private Renderer towerRenderer;
@@ -16,8 +16,8 @@ public class BlinkingObject : MonoBehaviour
 
     void Start()
     {
-        // Получаем рендереры для объектов
         objectRenderer = GetComponent<Renderer>();
+
         if (objectRenderer != null)
         {
             originalColor = objectRenderer.material.color;
@@ -61,48 +61,38 @@ public class BlinkingObject : MonoBehaviour
     {
         while (isBlinking)
         {
-            // Плавное изменение цвета в сторону blinkColor для обоих объектов
             float lerpTime = 0f;
+
             while (lerpTime < 1f)
             {
                 lerpTime += Time.deltaTime / blinkDuration;
 
                 if (objectRenderer != null)
-                {
                     objectRenderer.material.color = Color.Lerp(originalColor, blinkColor, lerpTime);
-                }
 
                 if (towerRenderer != null)
-                {
                     towerRenderer.material.color = Color.Lerp(originalTowerColor, blinkColor, lerpTime);
-                }
 
                 yield return null;
             }
 
-            // Пауза перед миганием
             yield return new WaitForSeconds(blinkInterval);
 
-            // Плавное возвращение к исходному цвету для обоих объектов
             lerpTime = 0f;
+
             while (lerpTime < 1f)
             {
                 lerpTime += Time.deltaTime / blinkDuration;
 
                 if (objectRenderer != null)
-                {
                     objectRenderer.material.color = Color.Lerp(blinkColor, originalColor, lerpTime);
-                }
 
                 if (towerRenderer != null)
-                {
                     towerRenderer.material.color = Color.Lerp(blinkColor, originalTowerColor, lerpTime);
-                }
 
                 yield return null;
             }
 
-            // Пауза перед следующим миганием
             yield return new WaitForSeconds(blinkInterval);
         }
     }

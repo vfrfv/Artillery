@@ -12,8 +12,8 @@ public class InteractiveArt : MonoBehaviour
 
     [SerializeField] private ParticleSystem _particleSystem;
 
-    public Camera secondCamera;
-    public float transitionSpeed = 0.5f;
+    [SerializeField] private Camera secondCamera;
+    [SerializeField] private float transitionSpeed = 0.5f;
 
     public event Action Changed;
 
