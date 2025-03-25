@@ -9,6 +9,8 @@ namespace Bootstraps
     public class ScenarioGame : MonoBehaviour
     {
         [SerializeField] private GameObject endCard;
+        [SerializeField] private AudioSource _audioSource;
+
         private EnemySpawnBootstrap _enemySpawnBootstrap;
 
         private void OnEnable()
@@ -41,6 +43,7 @@ namespace Bootstraps
         private void ShowEndCard() // Конец сценария
         {
             endCard.SetActive(true);
+            _audioSource.Stop();
             
             //Luna.Unity.Playable.InstallFullGame();
             //Luna.Unity.LifeCycle.GameEnded();

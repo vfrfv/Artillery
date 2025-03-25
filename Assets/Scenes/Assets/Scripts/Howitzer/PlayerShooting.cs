@@ -1,11 +1,10 @@
 ﻿using BehaviourAI;
-using UI;
-using UnityEngine;
 using DG.Tweening;
 using Fabric;
-//using TMPro;
-using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using UI;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Howitzer
@@ -13,7 +12,7 @@ namespace Howitzer
     public class PlayerShooting : MonoBehaviour
     {
         [Header("Перезарядка, стрельба")]
-        
+
         [SerializeField] private PlayerShootingCooldown playerShootingCooldown;
         [SerializeField] private Camera mainCamera;
         [SerializeField] private RectTransform crosshairUI;
@@ -22,9 +21,9 @@ namespace Howitzer
 
         [SerializeField] private GameObject muzzleFlash;
         [SerializeField] private GameObject explosionEffect;
-        
+
         [Header("Снаряд")]
-        
+
         [SerializeField] private Transform projectilePosition;
         [SerializeField] private GameObject prefabProjectile;
         [SerializeField] private float projectileSpeed;
@@ -44,9 +43,9 @@ namespace Howitzer
         [SerializeField] private PlayerUIController _playerUIController;
         [SerializeField] private TanksFabric _tanksFabric;
 
-        [Header("Точка попадания")]
+        [Header("Точка промаха")]
 
-        [SerializeField] private Transform _missPoint;
+        [SerializeField] private MissPoint _missPoint;
 
         [Header("Прокачка")]
 
@@ -89,7 +88,7 @@ namespace Howitzer
 
         private void ChooseShootingRange()
         {
-            if(_newArt == false)
+            if (_newArt == false)
             {
                 Shoot1();
             }
@@ -102,29 +101,39 @@ namespace Howitzer
         private void Shoot1()
         {
             Vector3 shootDirection;
+            Ray ray;
 
-            if (!_firstShot)
+            if (_isZoomed)
             {
                 _timeController.StartSlowMotion();
-                shootDirection = (_missPoint.position - projectilePosition.position).normalized;
-                _firstShot = true;
+                shootDirection = mainCamera.transform.forward;
+                ray = new Ray(mainCamera.transform.position, shootDirection);
             }
             else
             {
-                if (_isZoomed)
-                {
-                    _timeController.StartSlowMotion();
-                    shootDirection = mainCamera.transform.forward;
-                }
-                else
-                {
-                    Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(null, crosshairUI.position);
-                    Ray ray = mainCamera.ScreenPointToRay(screenPoint);
-                    shootDirection = ray.direction.normalized;
-                }
+                Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(null, crosshairUI.position);
+                ray = mainCamera.ScreenPointToRay(screenPoint);
+                shootDirection = ray.direction.normalized;
             }
 
-            Debug.DrawRay(projectilePosition.position, shootDirection * 10f, Color.green, 2f);
+            shootDirection = Quaternion.AngleAxis(-1f, mainCamera.transform.right) * shootDirection;
+
+            if (!_firstShot && Physics.Raycast(ray, out RaycastHit hit))
+            {
+                if (hit.collider.TryGetComponent<TankAI>(out TankAI tankAI))
+                {
+                    Vector3 missPointPosition = tankAI.transform.position;
+                    MissPoint missPoint = Instantiate(_missPoint, missPointPosition, Quaternion.identity);
+
+                    while (missPoint.IsTank == false)
+                    {
+                        missPoint.transform.position -= Vector3.forward * 5f;
+                        missPoint.Cast();
+                    }
+
+                    shootDirection = (missPoint.transform.position - projectilePosition.position).normalized;
+                }
+            }
 
             GameObject projectile = _projectilePool.GetObject();
             projectile.transform.position = projectilePosition.position;
@@ -137,6 +146,7 @@ namespace Howitzer
             foreach (var tankObj in _tanksFabric.Tanks)
             {
                 TankAI tankAI = tankObj.GetComponent<TankAI>();
+
                 if (tankAI != null)
                 {
                     tankAIList.Add(tankAI);
@@ -181,7 +191,7 @@ namespace Howitzer
                 GameObject projectile = _projectilePool.GetObject();
                 projectile.transform.position = projectilePosition.position;
 
-                Vector3 targetPosition = tankAIList[i].transform.position + Vector3.up * 3f; // Смещение вверх на 1.5 единицы
+                Vector3 targetPosition = tankAIList[i].transform.position + Vector3.up * 3f;
                 Vector3 shootDirection = (targetPosition - projectilePosition.position).normalized;
 
                 projectile.transform.rotation = Quaternion.LookRotation(shootDirection, Vector3.up);
@@ -199,7 +209,7 @@ namespace Howitzer
 
                 ShakeCamera();
 
-                if (i == shots - 1) // Последний снаряд
+                if (i == shots - 1)
                 {
                     _timeController.StartSlowMotion();
                     _followBullet.GetBullet(projectile);
@@ -215,10 +225,10 @@ namespace Howitzer
 
         private void ShakeCamera()
         {
-            float duration = 0.3f; 
-            float strength = 1f; 
+            float duration = 0.3f;
+            float strength = 1f;
             int vibrato = 10;
-            float randomness = 90f; 
+            float randomness = 90f;
             mainCamera.transform.DOShakePosition(duration, strength, vibrato, randomness);
         }
     }
