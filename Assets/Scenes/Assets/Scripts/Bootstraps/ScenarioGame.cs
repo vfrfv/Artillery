@@ -15,7 +15,7 @@ namespace Bootstraps
 
         private void OnEnable()
         {
-            TankKillStatistics.onStartCountTankKilled += ShowEndCard; // Убийство начального количества танков
+            TankKillStatistics.onStartCountTankKilled += ShowEndCard; 
         }
 
         private void OnDisable()
@@ -23,7 +23,7 @@ namespace Bootstraps
             TankKillStatistics.onStartCountTankKilled -= ShowEndCard;
         }
 
-        public void Initialize(EnemySpawnBootstrap enemySpawnBootstrap) // Начало сценария
+        public void Initialize(EnemySpawnBootstrap enemySpawnBootstrap) 
         {
             _enemySpawnBootstrap = enemySpawnBootstrap;
 

@@ -9,11 +9,13 @@ namespace Bootstraps
     public class ScenarioGame : MonoBehaviour
     {
         [SerializeField] private GameObject endCard;
+        [SerializeField] private AudioSource _audioSource;
+
         private EnemySpawnBootstrap _enemySpawnBootstrap;
 
         private void OnEnable()
         {
-            TankKillStatistics.onStartCountTankKilled += ShowEndCard; // Убийство начального количества танков
+            TankKillStatistics.onStartCountTankKilled += ShowEndCard; 
         }
 
         private void OnDisable()
@@ -21,7 +23,7 @@ namespace Bootstraps
             TankKillStatistics.onStartCountTankKilled -= ShowEndCard;
         }
 
-        public void Initialize(EnemySpawnBootstrap enemySpawnBootstrap) // Начало сценария
+        public void Initialize(EnemySpawnBootstrap enemySpawnBootstrap) 
         {
             _enemySpawnBootstrap = enemySpawnBootstrap;
 
@@ -41,6 +43,7 @@ namespace Bootstraps
         private void ShowEndCard() // Конец сценария
         {
             endCard.SetActive(true);
+            _audioSource.Stop();
             
             //Luna.Unity.Playable.InstallFullGame();
             //Luna.Unity.LifeCycle.GameEnded();

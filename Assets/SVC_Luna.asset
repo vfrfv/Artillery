@@ -2777,7 +2777,7 @@ MonoBehaviour:
     - _NORMALMAP
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 825
+  version: 903
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0

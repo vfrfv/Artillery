@@ -132,6 +132,7 @@ namespace Howitzer
                     }
 
                     shootDirection = (missPoint.transform.position - projectilePosition.position).normalized;
+                    missPoint.gameObject.SetActive(false);
                 }
             }
 

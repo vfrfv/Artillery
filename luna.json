@@ -8844,6 +8844,10 @@
             {
                 "name": "Guidance",
                 "excluded": true
+            },
+            {
+                "name": "Shoot2",
+                "excluded": true
             }
         ],
         "unusedMethods": [
@@ -17689,7 +17693,7 @@
                     },
                     {
                         "name": "right#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "right#set",
@@ -21917,7 +21921,7 @@
                     },
                     {
                         "name": "Raycast$3",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Raycast",
@@ -22005,7 +22009,7 @@
                     },
                     {
                         "name": "OverlapSphere",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OverlapSphereNonAlloc",
@@ -25988,6 +25992,10 @@
                     {
                         "name": "ShowHover",
                         "excluded": false
+                    },
+                    {
+                        "name": "IsPathBlocked",
+                        "excluded": false
                     }
                 ]
             },
@@ -29171,6 +29179,24 @@
                     },
                     {
                         "name": "FinishTraining",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "MissPoint",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "IsTank#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Cast",
                         "excluded": false
                     }
                 ]

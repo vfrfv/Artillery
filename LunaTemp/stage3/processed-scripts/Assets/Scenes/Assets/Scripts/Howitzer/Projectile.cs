@@ -15,7 +15,7 @@ namespace Howitzer
         private PlayerUIController _playerUIController;
         private List<TankAI> _tanks;
         private Pumping _pumping;
-        private TankAI _targetTank; // Цель снаряда
+        private TankAI _targetTank;
 
         public event Action Crashed;
 
@@ -30,9 +30,8 @@ namespace Howitzer
             _playerUIController = playerUIController;
             _tanks = tanks;
             _pumping = pumping;
-            _targetTank = targetTank; // Запоминаем цель
+            _targetTank = targetTank;
 
-            // Игнорируем столкновения с другими танками, если цель указана
             if (_targetTank != null)
             {
                 foreach (var tank in _tanks)
@@ -47,17 +46,17 @@ namespace Howitzer
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (_targetTank != null) // Если цель задана, проверяем попадание только в неё
+            if (_targetTank != null) 
             {
                 if (collision.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
                 {
-                    if (hitTankAI == _targetTank) // Проверяем, что попали именно в цель
+                    if (hitTankAI == _targetTank) 
                     {
                         DestroyTank(hitTankAI);
                     }
                 }
             }
-            else // Если цели нет (обычный выстрел), проверяем любое попадание в танк
+            else 
             {
                 if (collision.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
                 {
