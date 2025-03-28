@@ -86,14 +86,12 @@
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Pumping/Shopping.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Pumping/Pumping.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/Projectile.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Shoot2.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/PlayerShootingCooldown.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Camera/FollowBullet.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/TimeController.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/ObjectPoolShooting.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/PlayerUIController.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/Cros.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TutorialHand2.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TutorialHand.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/BehaviourAI/TankAI.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Fabric/TanksFabric.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/Bootstrap.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/ScenarioGame.cs",
@@ -101,13 +99,15 @@
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TankKillStatistics.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TankKillCounter.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/Guidance.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/BehaviourAI/TankAI.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/MissPoint.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/ExclamationMark.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/ObjectPoolShooting.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/HandAnimation.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/InteractiveArt.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/TitnSprite.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/Indicatorr.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/PlayerShootingCooldown.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Camera/FollowBullet.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Bootstraps/TimeController.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/LookAtReticle.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/CrosshairMovement.cs"
     ],
@@ -153,6 +153,9 @@
     ],
     [
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/TurnOnAfterSeconds.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Shoot2.cs"
     ],
     [
       "D:/Luna/PA/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"

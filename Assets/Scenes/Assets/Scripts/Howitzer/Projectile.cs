@@ -16,11 +16,12 @@ namespace Howitzer
         private List<TankAI> _tanks;
         private Pumping _pumping;
         private TankAI _targetTank;
+        private PlayerZoom _playerZoom;
 
         public event Action Crashed;
 
         public void Initialize(float speed, ObjectPoolShooting explosionPool, GameObject explosionParticle,
-            PlayerUIController playerUIController, List<TankAI> tanks, Pumping pumping, TankAI targetTank)
+            PlayerUIController playerUIController, List<TankAI> tanks, Pumping pumping, TankAI targetTank, PlayerZoom playerZoom)
         {
             _speed = speed;
             _explosionPool = explosionPool;
@@ -31,6 +32,7 @@ namespace Howitzer
             _tanks = tanks;
             _pumping = pumping;
             _targetTank = targetTank;
+            _playerZoom = playerZoom;
 
             if (_targetTank != null)
             {
@@ -67,7 +69,9 @@ namespace Howitzer
             if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Tree"))
             {
                 _playerUIController.ShowCross();
-                _pumping.gameObject.SetActive(true);
+                //_pumping.gameObject.SetActive(true);
+                _playerZoom.ActivateTransitionToStore();
+                _playerZoom.Upgrade();
             }
 
             gameObject.SetActive(false);

@@ -9,6 +9,7 @@ public class ManagerCamers : MonoBehaviour
     [SerializeField] private PlayerZoom _playerZoom;
 
     private Projectile _bullet;
+    private bool _forceBulletCamera = false; // Новый флаг для Shoot2
 
     private void Start()
     {
@@ -17,14 +18,15 @@ public class ManagerCamers : MonoBehaviour
 
     public void WatchingBullet()
     {
-        if (!_playerZoom.CheckZoom()) return; // Следим за пулей только если был зум
+        // Следим за пулей только если зум был ИЛИ включен флаг Shoot2
+        if (!_playerZoom.CheckZoom() && !_forceBulletCamera) return;
 
         _plauerCamera.gameObject.SetActive(false);
         _bulletCamera.gameObject.SetActive(true);
         _playerZoom.DisableZoomUI(); // Выключаем zoomImage при переключении камеры
     }
 
-    public void GetBullet(Projectile bullet)
+    public void GetBullet(Projectile bullet, bool forceBulletCamera = false)
     {
         if (_bullet != null)
         {
@@ -33,6 +35,8 @@ public class ManagerCamers : MonoBehaviour
 
         _bullet = bullet;
         _bullet.Crashed += TurnPlayerCamera;
+
+        _forceBulletCamera = forceBulletCamera; // Сохраняем флаг для Shoot2
     }
 
     private void TurnPlayerCamera()
@@ -40,6 +44,7 @@ public class ManagerCamers : MonoBehaviour
         _bulletCamera.ReturnStartPosition();
         _plauerCamera.gameObject.SetActive(true);
         _bulletCamera.gameObject.SetActive(false);
+        _forceBulletCamera = false; // Сбрасываем флаг
 
         _timeController.RestoreNormalTime();
 
@@ -47,7 +52,6 @@ public class ManagerCamers : MonoBehaviour
         {
             _bullet.Crashed -= TurnPlayerCamera;
         }
-
 
         if (_playerZoom.CheckZoom())
         {

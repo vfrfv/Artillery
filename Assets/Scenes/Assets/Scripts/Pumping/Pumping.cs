@@ -16,6 +16,7 @@ public class Pumping : MonoBehaviour
     [SerializeField] private TanksFabric _tacticsFabric;
     [SerializeField] private Button _button;
     [SerializeField] private TitnSprite _titnSprite;
+    [SerializeField] private GameObject _arm2;
 
     private List<TitnSprite> _sprites;
 
@@ -48,7 +49,7 @@ public class Pumping : MonoBehaviour
     private IEnumerator StartPumping()
     {
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.5f);
 
         SetNormalPositionArte();
         TurnPumpingCamera();
@@ -69,13 +70,14 @@ public class Pumping : MonoBehaviour
         _pumpingCamera.gameObject.SetActive(false);
         _UI.SetActive(true);
         _shopping.gameObject.SetActive(false);
+        _arm2.gameObject.SetActive(true);
 
-        foreach (var tank in _tacticsFabric.Tanks)
-        {
-            TitnSprite titnSprite = Instantiate(_titnSprite);
-            titnSprite.Initialize(tank);
-            _sprites.Add(titnSprite);
-        }
+        //foreach (var tank in _tacticsFabric.Tanks)
+        //{
+        //    TitnSprite titnSprite = Instantiate(_titnSprite);
+        //    titnSprite.Initialize(tank);
+        //    _sprites.Add(titnSprite);
+        //}
     }
 
     private void SetNormalPositionArte()

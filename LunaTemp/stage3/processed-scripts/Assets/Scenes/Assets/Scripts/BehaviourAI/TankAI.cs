@@ -9,14 +9,14 @@ namespace BehaviourAI
         [SerializeField] private float moveSpeed = 3f;
         [SerializeField] private ExclamationMark _exclamationMark;
         [SerializeField] private GameObject _guidance;
-        [SerializeField] private float avoidanceDistance = 2f; 
-        [SerializeField] private LayerMask tankLayer; 
+        [SerializeField] private float avoidanceDistance = 2f;
+        [SerializeField] private LayerMask tankLayer;
 
         private Transform[] _targets;
         private int _currentTargetIndex;
         private Transform _currentTarget;
         private bool _isDisabled;
-        private bool _isWaiting;
+        private bool _isWaiting; // Флаг ожидания, если путь заблокирован
 
         public bool IsAlive => !_isDisabled;
 
@@ -33,7 +33,9 @@ namespace BehaviourAI
                 return;
             }
 
-            ChooseNextTarget();
+            // Начинаем движение с первой цели
+            _currentTargetIndex = 0;
+            _currentTarget = _targets[_currentTargetIndex];
         }
 
         private void Update()
@@ -44,11 +46,13 @@ namespace BehaviourAI
 
             if (IsPathBlocked())
             {
-                _isWaiting = true; 
+                // Путь заблокирован — останавливаем танк
+                _isWaiting = true;
                 return;
             }
             else
             {
+                // Путь освобожден — продолжаем движение
                 _isWaiting = false;
             }
 
@@ -76,14 +80,6 @@ namespace BehaviourAI
             Debug.Log($"{gameObject.name} has been disabled.");
         }
 
-        private void ChooseNextTarget()
-        {
-            if (_targets.Length == 0) return;
-
-            _currentTargetIndex = Random.Range(0, _targets.Length);
-            _currentTarget = _targets[_currentTargetIndex];
-        }
-
         private void MoveTowardsTarget()
         {
             Vector3 direction = (_currentTarget.position - transform.position).normalized;
@@ -91,10 +87,15 @@ namespace BehaviourAI
 
             if (distance > stopDistance)
             {
-                transform.position += direction * moveSpeed * Time.deltaTime;
+                // Двигаемся к цели, если путь свободен
+                if (!_isWaiting)
+                {
+                    transform.position += direction * moveSpeed * Time.deltaTime;
+                }
             }
             else
             {
+                // Если достигли цели, выбираем следующую
                 ChooseNextTarget();
             }
         }
@@ -118,13 +119,24 @@ namespace BehaviourAI
         {
             RaycastHit hit;
 
+            // Проверяем, заблокирован ли путь перед танком
             if (Physics.Raycast(transform.position, transform.forward, out hit, avoidanceDistance))
             {
-                _currentTargetIndex = Random.Range(0, _targets.Length);
-                _currentTarget = _targets[_currentTargetIndex];
+                // Путь заблокирован, возвращаем true
+                return true;
             }
 
+            // Путь свободен
             return false;
+        }
+
+        private void ChooseNextTarget()
+        {
+            if (_targets.Length == 0) return;
+
+            // Увеличиваем индекс цели, чтобы двигаться по кругу
+            _currentTargetIndex = (_currentTargetIndex + 1) % _targets.Length;
+            _currentTarget = _targets[_currentTargetIndex];
         }
     }
 }

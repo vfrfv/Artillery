@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UI;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Howitzer
 {
@@ -50,7 +49,9 @@ namespace Howitzer
         [Header("Прокачка")]
 
         [SerializeField] private Pumping _pumping;
-        [SerializeField] private Button button;
+        //[SerializeField] private Button button;
+        [SerializeField] private PlayerZoom _playerZoom;
+        [SerializeField] private GameObject _aim;
 
         private ObjectPoolShooting _projectilePool;
         private ObjectPoolShooting _explosionPool;
@@ -155,7 +156,7 @@ namespace Howitzer
             }
 
             Projectile projectileComponent = projectile.GetComponent<Projectile>();
-            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping, null);
+            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping, null, _playerZoom);
 
             _managerCamers.GetBullet(projectileComponent);
 
@@ -170,7 +171,7 @@ namespace Howitzer
 
             _followBullet.GetBullet(projectile);
             _managerCamers.WatchingBullet();
-            button.gameObject.SetActive(false);
+            //button.gameObject.SetActive(false);
         }
 
         private async void Shoot2()
@@ -186,6 +187,7 @@ namespace Howitzer
             }
 
             int shots = Mathf.Min(3, tankAIList.Count);
+            GameObject lastProjectile = null;
 
             for (int i = 0; i < shots; i++)
             {
@@ -199,7 +201,7 @@ namespace Howitzer
                 projectile.SetActive(true);
 
                 Projectile projectileComponent = projectile.GetComponent<Projectile>();
-                projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping, tankAIList[i]);
+                projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping, tankAIList[i], _playerZoom);
 
                 playerShootingCooldown.StartCooldown();
 
@@ -209,18 +211,25 @@ namespace Howitzer
                 }
 
                 ShakeCamera();
-
-                if (i == shots - 1)
-                {
-                    _timeController.StartSlowMotion();
-                    _followBullet.GetBullet(projectile);
-                    _managerCamers.WatchingBullet();
-                }
+                lastProjectile = projectile;
 
                 await Task.Delay(50);
             }
 
+            if (lastProjectile != null)
+            {
+                Projectile projectileComponent = lastProjectile.GetComponent<Projectile>();
+                if (projectileComponent != null)
+                {
+                    _followBullet.GetBullet(lastProjectile);
+                    _managerCamers.GetBullet(projectileComponent, true); // Передаем Projectile вместо GameObject
+                    _managerCamers.WatchingBullet();
+                }
+            }
+
+            _timeController.StartSlowMotion();
             _pumping.RemoveSprites();
+            _aim.gameObject.SetActive(false);
         }
 
 

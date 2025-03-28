@@ -12201,6 +12201,7 @@ MonoBehaviour:
   _tacticsFabric: {fileID: 176839866}
   _button: {fileID: 442652937}
   _titnSprite: {fileID: 5937218848910363372, guid: ad444104be608044890452a929330eab, type: 3}
+  _arm2: {fileID: 450080668}
 --- !u!1 &972178154
 GameObject:
   m_ObjectHideFlags: 0
@@ -14678,6 +14679,10 @@ MonoBehaviour:
   zoomSpeed: 10
   joystick: {fileID: 153768510}
   rotationSpeed: 50
+  pumping: {fileID: 969126249}
+  _arm: {fileID: 450080668}
+  _tacticsFabric: {fileID: 176839866}
+  _titnSprite: {fileID: 5937218848910363372, guid: ad444104be608044890452a929330eab, type: 3}
 --- !u!114 &1146711529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14706,7 +14711,8 @@ MonoBehaviour:
   _tanksFabric: {fileID: 176839866}
   _missPoint: {fileID: 7558469828875466496, guid: 08c30b4b6a974384f86b7ab399a6565b, type: 3}
   _pumping: {fileID: 969126249}
-  button: {fileID: 442652937}
+  _playerZoom: {fileID: 1146711528}
+  _aim: {fileID: 1683239397}
 --- !u!114 &1146711530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23856,7 +23862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.20188677, b: 0.20188677, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

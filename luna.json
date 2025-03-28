@@ -8844,10 +8844,6 @@
             {
                 "name": "Guidance",
                 "excluded": true
-            },
-            {
-                "name": "Shoot2",
-                "excluded": true
             }
         ],
         "unusedMethods": [
@@ -19863,11 +19859,11 @@
                     },
                     {
                         "name": "color#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "color#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -26624,6 +26620,18 @@
                     {
                         "name": "RotateCameraWithJoystick",
                         "excluded": false
+                    },
+                    {
+                        "name": "OpenStore",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Upgrade",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ActivateTransitionToStore",
+                        "excluded": false
                     }
                 ]
             },
@@ -26671,6 +26679,10 @@
                     },
                     {
                         "name": "TurnPlayerCamera",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
                         "excluded": false
                     }
                 ]
@@ -29136,6 +29148,10 @@
                     {
                         "name": "OffShoping",
                         "excluded": false
+                    },
+                    {
+                        "name": "ShowInventory",
+                        "excluded": false
                     }
                 ]
             },
@@ -29197,6 +29213,36 @@
                     },
                     {
                         "name": "Cast",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "Indicatorr",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "FadeOut",
                         "excluded": false
                     }
                 ]
