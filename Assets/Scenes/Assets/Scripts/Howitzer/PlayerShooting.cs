@@ -59,6 +59,8 @@ namespace Howitzer
         private bool _firstShot = false;
         private bool _newArt = false;
 
+        private int _shootCount = 0;
+
         private void Awake()
         {
             _projectilePool = new ObjectPoolShooting(prefabProjectile, projectilePosition.position, prefabProjectile.transform.rotation, poolSize);
@@ -101,6 +103,17 @@ namespace Howitzer
 
         private void Shoot1()
         {
+            
+            _shootCount++;
+
+           
+            if (_shootCount >= 4)
+            {
+                _playerZoom.OpenStore(); 
+                _shootCount = 0; 
+                return; 
+            }
+
             Vector3 shootDirection;
             Ray ray;
 
@@ -171,7 +184,6 @@ namespace Howitzer
 
             _followBullet.GetBullet(projectile);
             _managerCamers.WatchingBullet();
-            //button.gameObject.SetActive(false);
         }
 
         private async void Shoot2()

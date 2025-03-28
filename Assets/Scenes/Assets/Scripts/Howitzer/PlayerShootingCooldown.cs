@@ -12,13 +12,30 @@ namespace Howitzer
         [SerializeField] private float cooldownTime = 1f;
 
         private bool _isOnCooldown = false;
+        private Coroutine _coroutine;
 
         public bool CanShoot => !_isOnCooldown;
+
+        private void OnEnable()
+        {
+            if (_coroutine != null)
+            {
+                StopCoroutine(_coroutine);
+            }
+
+            _coroutine = StartCoroutine(CooldownRoutine());
+        }
 
         public void StartCooldown()
         {
             if (_isOnCooldown) return;
-            StartCoroutine(CooldownRoutine());
+
+            if (_coroutine != null)
+            {
+                StopCoroutine(_coroutine);
+            }
+
+            _coroutine = StartCoroutine(CooldownRoutine());
         }
 
         private IEnumerator CooldownRoutine()

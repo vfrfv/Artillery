@@ -49,7 +49,7 @@ namespace Howitzer
             }
         }
 
-        private void OpenStore()
+        public void OpenStore()
         {
             pumping.gameObject.SetActive(true);
         }

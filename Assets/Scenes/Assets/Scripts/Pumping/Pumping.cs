@@ -82,6 +82,8 @@ public class Pumping : MonoBehaviour
 
     private void SetNormalPositionArte()
     {
+        Debug.Log("¬џзываю");
+
         _arta1.transform.localPosition = new Vector3(0.9f, 17.5f, -4f);
         _arta1.transform.localRotation = Quaternion.Euler(-1.1f, -1.7f, -8f);
     }
