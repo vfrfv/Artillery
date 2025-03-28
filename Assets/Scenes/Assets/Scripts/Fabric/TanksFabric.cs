@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using BehaviourAI;
-using System.Collections;
 
 namespace Fabric
 {
@@ -9,50 +8,64 @@ namespace Fabric
     {
         [SerializeField] private GameObject tankPrefab;
         [SerializeField] private List<Transform> spawnPoints;
-        [SerializeField] private Transform[] targets; 
+        [SerializeField] private Transform[] targets;
+        [SerializeField] private GameObject _target;
 
-        private int _indexPoint = 0;
         private List<GameObject> _tanks;
+        private Dictionary<Transform, bool> _targetStatus; // true = занята, false = свободна
 
         private void Awake()
         {
-            _tanks = new List<GameObject>();  
-        }
+            _tanks = new List<GameObject>();
+            _targetStatus = new Dictionary<Transform, bool>();
 
-        //private void Start()
-        //{
-        //    StartCoroutine(BlinkingStart());
-        //}
+            foreach (var target in targets)
+            {
+                _targetStatus[target] = false; // Все точки свободны в начале
+            }
+        }
 
         public List<GameObject> Tanks => _tanks;
 
         public void Spawn()
         {
-            if (_indexPoint >= spawnPoints.Count) return; 
-            
-            Transform currentPoint = spawnPoints[_indexPoint];
-            
-            GameObject tankObj = Instantiate(tankPrefab.gameObject, currentPoint.position, Quaternion.identity);
+            if (_tanks.Count >= spawnPoints.Count) return;
+
+            Transform spawnPoint = spawnPoints[_tanks.Count];
+            GameObject tankObj = Instantiate(tankPrefab, spawnPoint.position, Quaternion.identity);
             _tanks.Add(tankObj);
 
             TankAI tankAI = tankObj.GetComponent<TankAI>();
-
             if (tankAI != null)
             {
-                tankAI.SetTargets(targets);
+                Transform target = GetNearestAvailableTarget(tankObj.transform);
+                if (target != null)
+                {
+                    _targetStatus[target] = true;  // Помечаем точку занятой
+                    tankAI.SetTarget(target, this); // Передаем точку + ссылку на фабрику
+                    tankAI.InitializeTarget(_target);
+                }
             }
-
-            _indexPoint++;
         }
 
-        //private IEnumerator BlinkingStart()
-        //{
-        //    yield return new WaitForSeconds(1);
+        private Transform GetNearestAvailableTarget(Transform tankTransform)
+        {
+            foreach (var target in targets)
+            {
+                if (!_targetStatus[target]) // Если точка свободна
+                {
+                    return target;
+                }
+            }
+            return null; // Нет свободных точек
+        }
 
-        //    foreach(var tank in _tanks)
-        //    {
-        //        tank.GetComponentInChildren<BlinkingObject>().StartBlinking();   
-        //    }
-        //}
+        public void FreeTarget(Transform target)
+        {
+            if (_targetStatus.ContainsKey(target))
+            {
+                _targetStatus[target] = false; // Освобождаем точку
+            }
+        }
     }
 }

@@ -34,6 +34,11 @@ namespace Howitzer
         private void OnEnable()
         {
             PlayerUIController.OnZoom += ToggleZoom;
+
+            if (_isZoomed && _isUpgraded) // Если объект уже в зуме, создаем спрайты
+            {
+                CreateTitnSprites();
+            }
         }
 
         private void OnDisable()
@@ -49,7 +54,7 @@ namespace Howitzer
             }
         }
 
-        private void OpenStore()
+        public void OpenStore()
         {
             pumping.gameObject.SetActive(true);
         }
@@ -78,8 +83,16 @@ namespace Howitzer
             zoomImage.SetActive(false);
         }
 
-        private void ToggleZoom()
+        public void ToggleZoom()
         {
+            //if (_isStore)
+            //{
+            //    OpenStore();
+            //    pumping.SetNormalPositionArte();
+            //    _isStore = false;
+            //    return;
+            //}
+
             _isZoomed = !_isZoomed;
             OnZoomChanged?.Invoke(_isZoomed);
 
@@ -123,6 +136,17 @@ namespace Howitzer
             if (_isStore)
             {
                 OpenStore();
+                pumping.SetNormalPositionArte();
+            }
+        }
+
+        private void CreateTitnSprites()
+        {
+            foreach (var tank in _tacticsFabric.Tanks)
+            {
+                TitnSprite titnSprite = Instantiate(_titnSprite);
+                titnSprite.Initialize(tank);
+                _sprites.Add(titnSprite);
             }
         }
 

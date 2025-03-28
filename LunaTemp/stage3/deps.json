@@ -100,7 +100,8 @@
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/TankKillCounter.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/Guidance.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/Howitzer/MissPoint.cs",
-      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/ExclamationMark.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/BehaviourAI/Tower.cs",
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/BehaviourAI/Gun.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/HandAnimation.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/InteractiveArt.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/TitnSprite.cs",
@@ -150,6 +151,9 @@
     [
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/BlinkingManager.cs",
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/BlinkingObject.cs"
+    ],
+    [
+      "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/Scripts/UI/Indicators/ExclamationMark.cs"
     ],
     [
       "D:/UnityPri/My project/LunaTemp/stage3/processed-scripts/Assets/Scenes/Assets/TurnOnAfterSeconds.cs"

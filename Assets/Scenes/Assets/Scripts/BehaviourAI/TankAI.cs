@@ -1,102 +1,88 @@
-﻿using UnityEngine;
+﻿using Fabric;
+using UnityEngine;
 
 namespace BehaviourAI
 {
     public class TankAI : MonoBehaviour
     {
-        [SerializeField] private float stopDistance = 10f;
+        [SerializeField] private float stopDistance = 2f;
         [SerializeField] private float rotationSpeed = 2f;
         [SerializeField] private float moveSpeed = 3f;
-        [SerializeField] private ExclamationMark _exclamationMark;
-        [SerializeField] private GameObject _guidance;
         [SerializeField] private float avoidanceDistance = 2f;
         [SerializeField] private LayerMask tankLayer;
 
-        private Transform[] _targets;
-        private int _currentTargetIndex;
+        [SerializeField] private GameObject _tower;  // Башня танка
+        [SerializeField] private GameObject _gun;    // Пушка танка
+        [SerializeField] private GameObject _target; // Цель для прицеливания
+
+        [SerializeField] private Tower Tower;
+        [SerializeField] private Gun Gun;
+
         private Transform _currentTarget;
         private bool _isDisabled;
-        private bool _isWaiting; // Флаг ожидания, если путь заблокирован
+        private bool _hasStopped;
+        private TanksFabric _fabric;
 
         public bool IsAlive => !_isDisabled;
+        public bool _arrived = false;
 
-        public void SetTargets(Transform[] newTargets)
+        public void SetTarget(Transform target, TanksFabric fabric)
         {
-            _targets = newTargets;
+            _currentTarget = target;
+            _fabric = fabric;
+            _hasStopped = false;
         }
 
         private void Start()
         {
-            if (_targets == null || _targets.Length == 0)
+            if (_currentTarget == null)
             {
-                Debug.LogError("No targets assigned to the TankAI script!");
+                Debug.LogError($"{gameObject.name}: No target assigned!");
                 return;
             }
-
-            // Начинаем движение с первой цели
-            _currentTargetIndex = 0;
-            _currentTarget = _targets[_currentTargetIndex];
         }
 
         private void Update()
         {
             if (_isDisabled || _currentTarget == null) return;
 
-            Debug.DrawRay(transform.position, transform.forward * avoidanceDistance, Color.red);
-
-            if (IsPathBlocked())
+            if (!_hasStopped)
             {
-                // Путь заблокирован — останавливаем танк
-                _isWaiting = true;
-                return;
-            }
-            else
-            {
-                // Путь освобожден — продолжаем движение
-                _isWaiting = false;
-            }
+                RotateTank();
 
-            RotateTank();
-
-            if (IsTankFacingTarget())
-            {
-                MoveTowardsTarget();
-            }
-        }
-
-        public void ShowHover()
-        {
-            _guidance.gameObject.SetActive(true);
-        }
-
-        public void ShowSign()
-        {
-            _exclamationMark.gameObject.SetActive(true);
-        }
-
-        public void DisableTank()
-        {
-            _isDisabled = true;
-            Debug.Log($"{gameObject.name} has been disabled.");
-        }
-
-        private void MoveTowardsTarget()
-        {
-            Vector3 direction = (_currentTarget.position - transform.position).normalized;
-            float distance = Vector3.Distance(transform.position, _currentTarget.position);
-
-            if (distance > stopDistance)
-            {
-                // Двигаемся к цели, если путь свободен
-                if (!_isWaiting)
+                if (IsTankFacingTarget() && !IsPathBlocked())
                 {
-                    transform.position += direction * moveSpeed * Time.deltaTime;
+                    MoveTowardsTarget();
+                }
+
+                if (HasReachedTarget())
+                {
+                    StopTank();
                 }
             }
             else
             {
-                // Если достигли цели, выбираем следующую
-                ChooseNextTarget();
+                if (_arrived == false)
+                {
+                    Tower.RotateToTarget(_target.transform.position);
+                    Gun.RotateToTarget(_target.transform.position);
+                    _arrived = true;
+                }
+            }
+        }
+
+        public void InitializeTarget(GameObject target)
+        {
+            _target = target;
+        }
+
+        private void MoveTowardsTarget()
+        {
+            float distance = Vector3.Distance(transform.position, _currentTarget.position);
+
+            if (distance > stopDistance)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, _currentTarget.position, moveSpeed * Time.deltaTime);
             }
         }
 
@@ -111,32 +97,34 @@ namespace BehaviourAI
         {
             Vector3 directionToTarget = (_currentTarget.position - transform.position).normalized;
             float dotProduct = Vector3.Dot(transform.forward, directionToTarget);
-
-            return dotProduct > 0.99f;
+            return dotProduct > 0.95f;
         }
 
         private bool IsPathBlocked()
         {
             RaycastHit hit;
-
-            // Проверяем, заблокирован ли путь перед танком
-            if (Physics.Raycast(transform.position, transform.forward, out hit, avoidanceDistance))
+            if (Physics.Raycast(transform.position + Vector3.up * 0.5f, transform.forward, out hit, avoidanceDistance, tankLayer))
             {
-                // Путь заблокирован, возвращаем true
                 return true;
             }
-
-            // Путь свободен
             return false;
         }
 
-        private void ChooseNextTarget()
+        private bool HasReachedTarget()
         {
-            if (_targets.Length == 0) return;
+            float distance = Vector3.Distance(transform.position, _currentTarget.position);
+            return distance <= stopDistance;
+        }
 
-            // Увеличиваем индекс цели, чтобы двигаться по кругу
-            _currentTargetIndex = (_currentTargetIndex + 1) % _targets.Length;
-            _currentTarget = _targets[_currentTargetIndex];
+        private void StopTank()
+        {
+            _hasStopped = true;
+        }
+
+        public void DisableTank()
+        {
+            _isDisabled = true;
+            _fabric.FreeTarget(_currentTarget);
         }
     }
 }

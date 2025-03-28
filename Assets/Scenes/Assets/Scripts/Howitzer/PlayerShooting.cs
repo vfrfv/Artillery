@@ -109,7 +109,7 @@ namespace Howitzer
            
             if (_shootCount >= 4)
             {
-                _playerZoom.OpenStore(); 
+                _playerZoom.ToggleZoom(); 
                 _shootCount = 0; 
                 return; 
             }

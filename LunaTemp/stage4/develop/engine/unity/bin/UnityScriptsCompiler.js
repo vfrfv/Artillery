@@ -1,6 +1,6 @@
-if ( TRACE ) { TRACE( JSON.parse( '["BehaviourAI.TankAI#IsAlive#get","BehaviourAI.TankAI#init","BehaviourAI.TankAI#SetTargets","BehaviourAI.TankAI#Start","BehaviourAI.TankAI#Update","BehaviourAI.TankAI#ShowHover","BehaviourAI.TankAI#ShowSign","BehaviourAI.TankAI#DisableTank","BehaviourAI.TankAI#MoveTowardsTarget","BehaviourAI.TankAI#RotateTank","BehaviourAI.TankAI#IsTankFacingTarget","BehaviourAI.TankAI#IsPathBlocked","BehaviourAI.TankAI#ChooseNextTarget","Bootstraps.Bootstrap#OnEnable","Bootstraps.EnemySpawnBootstrap#init","Bootstraps.EnemySpawnBootstrap#ctor","Bootstraps.EnemySpawnBootstrap#StartSpawnEnemy","Bootstraps.EnemySpawnBootstrap#IsStartSpawnEnd","Bootstraps.EnemySpawnBootstrap#IsAllSpawnEnd","Bootstraps.ScenarioGame#OnEnable","Bootstraps.ScenarioGame#OnDisable","Bootstraps.ScenarioGame#Initialize","Bootstraps.ScenarioGame#StartSpawnEnemy","Bootstraps.ScenarioGame#ShowEndCard","CFX_AutoDestructShuriken#OnEnable","CFX_AutoDestructShuriken#CheckIfAlive","CFX_LightIntensityFade#init","CFX_LightIntensityFade#Start","CFX_LightIntensityFade#OnEnable","CFX_LightIntensityFade#Update","CFX_SpawnSystem#AllObjectsLoaded#get","CFX_SpawnSystem#GetNextObject","CFX_SpawnSystem#PreloadObject","CFX_SpawnSystem#UnloadObjects","CFX_SpawnSystem#init","CFX_SpawnSystem#addObjectToPool","CFX_SpawnSystem#removeObjectsFromPool","CFX_SpawnSystem#increasePoolCursor","CFX_SpawnSystem#Awake","CFX_SpawnSystem#Start","Cross#OnEnable","Cross#ScaleAndDisable","Cross#ScaleOverTime","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","Joystick#Horizontal#get","Joystick#Vertical#get","Joystick#Direction#get","Joystick#HandleRange#get","Joystick#HandleRange#set","Joystick#DeadZone#get","Joystick#DeadZone#set","Joystick#AxisOptions#get","Joystick#AxisOptions#set","Joystick#SnapX#get","Joystick#SnapX#set","Joystick#SnapY#get","Joystick#SnapY#set","Joystick#init","Joystick#Start","Joystick#OnPointerDown","Joystick#OnDrag","Joystick#HandleInput","Joystick#FormatInput","Joystick#SnapFloat","Joystick#OnPointerUp","Joystick#ScreenPointToAnchoredPosition","ExclamationMark#init","ExclamationMark#Awake","ExclamationMark#OnEnable","ExclamationMark#SwitchOff","ExclamationMark#LateUpdate","Fabric.TanksFabric#Tanks#get","Fabric.TanksFabric#init","Fabric.TanksFabric#Awake","Fabric.TanksFabric#Spawn","FollowBullet#init","FollowBullet#Awake","FollowBullet#LateUpdate","FollowBullet#ReturnStartPosition","FollowBullet#GetBullet","Guidance#Update","HandAnimation#init","HandAnimation#Start","HandAnimation#Update","Howitzer.LookAtCrosshair#init","Howitzer.LookAtCrosshair#Start","Howitzer.LookAtCrosshair#Update","Howitzer.LookAtCrosshair#LookAtJoystickMovement","Howitzer.LookAtReticle#init","Howitzer.LookAtReticle#Start","Howitzer.LookAtReticle#OnEnable","Howitzer.LookAtReticle#OnDisable","Howitzer.LookAtReticle#Update","Howitzer.LookAtReticle#HandleZoom","Howitzer.LookAtReticle#RotateTowardsReticle","Howitzer.LookAtReticle#SmoothReturnToInitial","Howitzer.ObjectPoolShooting#ctor","Howitzer.ObjectPoolShooting#GetObject","Howitzer.ObjectPoolShooting#ReturnObject","Howitzer.PlayerShooting#init","Howitzer.PlayerShooting#Awake","Howitzer.PlayerShooting#OnEnable","Howitzer.PlayerShooting#OnDisable","Howitzer.PlayerShooting#Upgrade","Howitzer.PlayerShooting#SetZoomState","Howitzer.PlayerShooting#ChooseShootingRange","Howitzer.PlayerShooting#Shoot1","Howitzer.PlayerShooting#Shoot2","Howitzer.PlayerShooting#ShakeCamera","Howitzer.PlayerShootingCooldown#CanShoot#get","Howitzer.PlayerShootingCooldown#init","Howitzer.PlayerShootingCooldown#StartCooldown","Howitzer.PlayerShootingCooldown#CooldownRoutine","Howitzer.PlayerZoom#init","Howitzer.PlayerZoom#OnEnable","Howitzer.PlayerZoom#OnDisable","Howitzer.PlayerZoom#Update","Howitzer.PlayerZoom#OpenStore","Howitzer.PlayerZoom#Upgrade","Howitzer.PlayerZoom#ActivateTransitionToStore","Howitzer.PlayerZoom#CheckZoom","Howitzer.PlayerZoom#ChangeZoomForAirStrike","Howitzer.PlayerZoom#EnableZoomUI","Howitzer.PlayerZoom#DisableZoomUI","Howitzer.PlayerZoom#ToggleZoom","Howitzer.PlayerZoom#GetWorldPointFromCrosshair","Howitzer.PlayerZoom#ChangeFOV","Howitzer.PlayerZoom#RotateCameraWithJoystick","Howitzer.Projectile#Initialize","Howitzer.Projectile#OnCollisionEnter","Howitzer.Projectile#DestroyTank","Howitzer.Projectile#SpawnExplosionEffect","Howitzer.Projectile#ChangeTankColor","Indicatorr#init","Indicatorr#Awake","Indicatorr#Start","Indicatorr#OnEnable","Indicatorr#OnDisable","Indicatorr#FadeOut","InteractiveArt#init","InteractiveArt#Update","InteractiveArt#SwapArtPieces","InteractiveArt#AnimateSwap","JoystickPlayerExample#FixedUpdate","JoystickSetterExample#ModeChanged","JoystickSetterExample#AxisChanged","JoystickSetterExample#SnapX","JoystickSetterExample#SnapY","JoystickSetterExample#Update","ManagerCamers#init","ManagerCamers#Start","ManagerCamers#WatchingBullet","ManagerCamers#GetBullet","ManagerCamers#TurnPlayerCamera","MissPoint#IsTank#get","MissPoint#Update","MissPoint#Cast","Pumping#Awake","Pumping#OnEnable","Pumping#OnDisable","Pumping#RemoveSprites","Pumping#StartPumping","Pumping#TurnPumpingCamera","Pumping#TurnPlayerCamera","Pumping#SetNormalPositionArte","Shopping#OnEnable","Shopping#OnDisable","Shopping#ShowShopping","Shopping#OffShoping","Shopping#ShowInventory","TimeController#init","TimeController#StartSlowMotion","TimeController#RestoreNormalTime","TitnSprite#init","TitnSprite#OnEnable","TitnSprite#Initialize","TitnSprite#LateUpdate","TutorialHand#init","TutorialHand#Start","TutorialHand#StartHandMovement","TutorialHand#Update","TutorialHand#HideHand","TutorialHand2#init","TutorialHand2#Start","TutorialHand2#Update","TutorialHand2#FinishTraining","UI.ButtonPulse#init","UI.ButtonPulse#OnEnable","UI.ButtonPulse#OnDisable","UI.CrosshairMovement#init","UI.CrosshairMovement#Start","UI.CrosshairMovement#Update","UI.CrosshairMovement#ClampToCanvas","UI.EndCardAnimation#init","UI.EndCardAnimation#OnEnable","UI.EndCardAnimation#PlayAnimation","UI.EndCardAnimation#OnDisable","UI.EndCardAnimation#ResizeText","UI.PlayerUIController#Start","UI.PlayerUIController#ShowCross","UI.PlayerUIController#ShowMark","UI.PlayerUIController#FinishTraining","UI.TankKillCounter#KillCount#get","UI.TankKillCounter#NotifyTankDestroyed","UI.TankKillStatistics#init","UI.TankKillStatistics#Update","DynamicJoystick#MoveThreshold#get","DynamicJoystick#MoveThreshold#set","DynamicJoystick#init","DynamicJoystick#Start","DynamicJoystick#OnPointerDown","DynamicJoystick#OnPointerUp","DynamicJoystick#HandleInput","FloatingJoystick#init","FloatingJoystick#Start","FloatingJoystick#OnPointerDown","FloatingJoystick#OnPointerUp","VariableJoystick#MoveThreshold#get","VariableJoystick#MoveThreshold#set","VariableJoystick#init","VariableJoystick#SetMode","VariableJoystick#Start","VariableJoystick#OnPointerDown","VariableJoystick#OnPointerUp","VariableJoystick#HandleInput"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["BehaviourAI.TankAI#IsAlive#get","BehaviourAI.TankAI#init","BehaviourAI.TankAI#SetTarget","BehaviourAI.TankAI#Start","BehaviourAI.TankAI#Update","BehaviourAI.TankAI#InitializeTarget","BehaviourAI.TankAI#MoveTowardsTarget","BehaviourAI.TankAI#RotateTank","BehaviourAI.TankAI#IsTankFacingTarget","BehaviourAI.TankAI#IsPathBlocked","BehaviourAI.TankAI#HasReachedTarget","BehaviourAI.TankAI#StopTank","BehaviourAI.TankAI#DisableTank","Bootstraps.Bootstrap#OnEnable","Bootstraps.EnemySpawnBootstrap#init","Bootstraps.EnemySpawnBootstrap#ctor","Bootstraps.EnemySpawnBootstrap#StartSpawnEnemy","Bootstraps.EnemySpawnBootstrap#IsStartSpawnEnd","Bootstraps.EnemySpawnBootstrap#IsAllSpawnEnd","Bootstraps.ScenarioGame#OnEnable","Bootstraps.ScenarioGame#OnDisable","Bootstraps.ScenarioGame#Initialize","Bootstraps.ScenarioGame#StartSpawnEnemy","Bootstraps.ScenarioGame#ShowEndCard","CFX_AutoDestructShuriken#OnEnable","CFX_AutoDestructShuriken#CheckIfAlive","CFX_LightIntensityFade#init","CFX_LightIntensityFade#Start","CFX_LightIntensityFade#OnEnable","CFX_LightIntensityFade#Update","CFX_SpawnSystem#AllObjectsLoaded#get","CFX_SpawnSystem#GetNextObject","CFX_SpawnSystem#PreloadObject","CFX_SpawnSystem#UnloadObjects","CFX_SpawnSystem#init","CFX_SpawnSystem#addObjectToPool","CFX_SpawnSystem#removeObjectsFromPool","CFX_SpawnSystem#increasePoolCursor","CFX_SpawnSystem#Awake","CFX_SpawnSystem#Start","Cross#OnEnable","Cross#ScaleAndDisable","Cross#ScaleOverTime","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","Joystick#Horizontal#get","Joystick#Vertical#get","Joystick#Direction#get","Joystick#HandleRange#get","Joystick#HandleRange#set","Joystick#DeadZone#get","Joystick#DeadZone#set","Joystick#AxisOptions#get","Joystick#AxisOptions#set","Joystick#SnapX#get","Joystick#SnapX#set","Joystick#SnapY#get","Joystick#SnapY#set","Joystick#init","Joystick#Start","Joystick#OnPointerDown","Joystick#OnDrag","Joystick#HandleInput","Joystick#FormatInput","Joystick#SnapFloat","Joystick#OnPointerUp","Joystick#ScreenPointToAnchoredPosition","ExclamationMark#init","ExclamationMark#Awake","ExclamationMark#OnEnable","ExclamationMark#SwitchOff","ExclamationMark#LateUpdate","Fabric.TanksFabric#Tanks#get","Fabric.TanksFabric#Awake","Fabric.TanksFabric#Spawn","Fabric.TanksFabric#GetNearestAvailableTarget","Fabric.TanksFabric#FreeTarget","FollowBullet#init","FollowBullet#Awake","FollowBullet#LateUpdate","FollowBullet#ReturnStartPosition","FollowBullet#GetBullet","Guidance#Update","Gun#init","Gun#RotateToTarget","Gun#RotateTowardsTarget","Gun#PlayParticlesRandomly","HandAnimation#init","HandAnimation#Start","HandAnimation#Update","Howitzer.LookAtCrosshair#init","Howitzer.LookAtCrosshair#Start","Howitzer.LookAtCrosshair#Update","Howitzer.LookAtCrosshair#LookAtJoystickMovement","Howitzer.LookAtReticle#init","Howitzer.LookAtReticle#Start","Howitzer.LookAtReticle#OnEnable","Howitzer.LookAtReticle#OnDisable","Howitzer.LookAtReticle#Update","Howitzer.LookAtReticle#HandleZoom","Howitzer.LookAtReticle#RotateTowardsReticle","Howitzer.LookAtReticle#SmoothReturnToInitial","Howitzer.ObjectPoolShooting#ctor","Howitzer.ObjectPoolShooting#GetObject","Howitzer.ObjectPoolShooting#ReturnObject","Howitzer.PlayerShooting#init","Howitzer.PlayerShooting#Awake","Howitzer.PlayerShooting#OnEnable","Howitzer.PlayerShooting#OnDisable","Howitzer.PlayerShooting#Upgrade","Howitzer.PlayerShooting#SetZoomState","Howitzer.PlayerShooting#ChooseShootingRange","Howitzer.PlayerShooting#Shoot1","Howitzer.PlayerShooting#Shoot2","Howitzer.PlayerShooting#ShakeCamera","Howitzer.PlayerShootingCooldown#CanShoot#get","Howitzer.PlayerShootingCooldown#init","Howitzer.PlayerShootingCooldown#OnEnable","Howitzer.PlayerShootingCooldown#StartCooldown","Howitzer.PlayerShootingCooldown#CooldownRoutine","Howitzer.PlayerZoom#init","Howitzer.PlayerZoom#OnEnable","Howitzer.PlayerZoom#OnDisable","Howitzer.PlayerZoom#Update","Howitzer.PlayerZoom#OpenStore","Howitzer.PlayerZoom#Upgrade","Howitzer.PlayerZoom#ActivateTransitionToStore","Howitzer.PlayerZoom#CheckZoom","Howitzer.PlayerZoom#ChangeZoomForAirStrike","Howitzer.PlayerZoom#EnableZoomUI","Howitzer.PlayerZoom#DisableZoomUI","Howitzer.PlayerZoom#ToggleZoom","Howitzer.PlayerZoom#CreateTitnSprites","Howitzer.PlayerZoom#GetWorldPointFromCrosshair","Howitzer.PlayerZoom#ChangeFOV","Howitzer.PlayerZoom#RotateCameraWithJoystick","Howitzer.Projectile#Initialize","Howitzer.Projectile#OnCollisionEnter","Howitzer.Projectile#DestroyTank","Howitzer.Projectile#SpawnExplosionEffect","Howitzer.Projectile#ChangeTankColor","Indicatorr#init","Indicatorr#Awake","Indicatorr#Start","Indicatorr#OnEnable","Indicatorr#OnDisable","Indicatorr#FadeOut","InteractiveArt#init","InteractiveArt#Update","InteractiveArt#SwapArtPieces","InteractiveArt#AnimateSwap","JoystickPlayerExample#FixedUpdate","JoystickSetterExample#ModeChanged","JoystickSetterExample#AxisChanged","JoystickSetterExample#SnapX","JoystickSetterExample#SnapY","JoystickSetterExample#Update","ManagerCamers#init","ManagerCamers#Start","ManagerCamers#WatchingBullet","ManagerCamers#GetBullet","ManagerCamers#TurnPlayerCamera","MissPoint#IsTank#get","MissPoint#Update","MissPoint#Cast","Pumping#Awake","Pumping#OnEnable","Pumping#OnDisable","Pumping#RemoveSprites","Pumping#StartPumping","Pumping#TurnPumpingCamera","Pumping#TurnPlayerCamera","Pumping#SetNormalPositionArte","Shopping#OnEnable","Shopping#OnDisable","Shopping#ShowShopping","Shopping#OffShoping","Shopping#ShowInventory","TimeController#init","TimeController#StartSlowMotion","TimeController#RestoreNormalTime","TitnSprite#init","TitnSprite#OnEnable","TitnSprite#Initialize","TitnSprite#LateUpdate","Tower#init","Tower#RotateToTarget","Tower#RotateTowardsTarget","TutorialHand#init","TutorialHand#Start","TutorialHand#StartHandMovement","TutorialHand#Update","TutorialHand#HideHand","TutorialHand2#init","TutorialHand2#Start","TutorialHand2#Update","TutorialHand2#FinishTraining","UI.ButtonPulse#init","UI.ButtonPulse#OnEnable","UI.ButtonPulse#OnDisable","UI.CrosshairMovement#init","UI.CrosshairMovement#Start","UI.CrosshairMovement#Update","UI.CrosshairMovement#ClampToCanvas","UI.EndCardAnimation#init","UI.EndCardAnimation#OnEnable","UI.EndCardAnimation#PlayAnimation","UI.EndCardAnimation#OnDisable","UI.EndCardAnimation#ResizeText","UI.PlayerUIController#Start","UI.PlayerUIController#ShowCross","UI.PlayerUIController#ShowMark","UI.PlayerUIController#FinishTraining","UI.TankKillCounter#KillCount#get","UI.TankKillCounter#NotifyTankDestroyed","UI.TankKillStatistics#init","UI.TankKillStatistics#Update","DynamicJoystick#MoveThreshold#get","DynamicJoystick#MoveThreshold#set","DynamicJoystick#init","DynamicJoystick#Start","DynamicJoystick#OnPointerDown","DynamicJoystick#OnPointerUp","DynamicJoystick#HandleInput","FloatingJoystick#init","FloatingJoystick#Start","FloatingJoystick#OnPointerDown","FloatingJoystick#OnPointerUp","VariableJoystick#MoveThreshold#get","VariableJoystick#MoveThreshold#set","VariableJoystick#init","VariableJoystick#SetMode","VariableJoystick#Start","VariableJoystick#OnPointerDown","VariableJoystick#OnPointerUp","VariableJoystick#HandleInput"]' ) ); }
 /**
- * @version 1.0.9218.20118
+ * @version 1.0.9218.33634
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -27,15 +27,18 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
             stopDistance: 0,
             rotationSpeed: 0,
             moveSpeed: 0,
-            _exclamationMark: null,
-            _guidance: null,
             avoidanceDistance: 0,
             tankLayer: null,
-            _targets: null,
-            _currentTargetIndex: 0,
+            _tower: null,
+            _gun: null,
+            _target: null,
+            Tower: null,
+            Gun: null,
             _currentTarget: null,
             _isDisabled: false,
-            _isWaiting: false
+            _hasStopped: false,
+            _fabric: null,
+            _arrived: false
         },
         props: {
             IsAlive: {
@@ -51,33 +54,32 @@ if ( TRACE ) { TRACE( "BehaviourAI.TankAI#IsAlive#get", this ); }
 if ( TRACE ) { TRACE( "BehaviourAI.TankAI#init", this ); }
 
                 this.tankLayer = new UnityEngine.LayerMask();
-                this.stopDistance = 10.0;
+                this.stopDistance = 2.0;
                 this.rotationSpeed = 2.0;
                 this.moveSpeed = 3.0;
                 this.avoidanceDistance = 2.0;
+                this._arrived = false;
             }
         },
         methods: {
-            /*BehaviourAI.TankAI.SetTargets start.*/
-            SetTargets: function (newTargets) {
-if ( TRACE ) { TRACE( "BehaviourAI.TankAI#SetTargets", this ); }
+            /*BehaviourAI.TankAI.SetTarget start.*/
+            SetTarget: function (target, fabric) {
+if ( TRACE ) { TRACE( "BehaviourAI.TankAI#SetTarget", this ); }
 
-                this._targets = newTargets;
+                this._currentTarget = target;
+                this._fabric = fabric;
+                this._hasStopped = false;
             },
-            /*BehaviourAI.TankAI.SetTargets end.*/
+            /*BehaviourAI.TankAI.SetTarget end.*/
 
             /*BehaviourAI.TankAI.Start start.*/
             Start: function () {
 if ( TRACE ) { TRACE( "BehaviourAI.TankAI#Start", this ); }
 
-                if (this._targets == null || this._targets.length === 0) {
-                    UnityEngine.Debug.LogError$2("No targets assigned to the TankAI script!");
+                if (UnityEngine.Component.op_Equality(this._currentTarget, null)) {
+                    UnityEngine.Debug.LogError$2(System.String.format("{0}: No target assigned!", [this.gameObject.name]));
                     return;
                 }
-
-                // Начинаем движение с первой цели
-                this._currentTargetIndex = 0;
-                this._currentTarget = this._targets[this._currentTargetIndex];
             },
             /*BehaviourAI.TankAI.Start end.*/
 
@@ -89,65 +91,42 @@ if ( TRACE ) { TRACE( "BehaviourAI.TankAI#Update", this ); }
                     return;
                 }
 
-                UnityEngine.Debug.DrawRay$1(this.transform.position, this.transform.forward.$clone().clone().scale( this.avoidanceDistance ), new pc.Color( 1, 0, 0, 1 ));
+                if (!this._hasStopped) {
+                    this.RotateTank();
 
-                if (this.IsPathBlocked()) {
-                    // Путь заблокирован — останавливаем танк
-                    this._isWaiting = true;
-                    return;
+                    if (this.IsTankFacingTarget() && !this.IsPathBlocked()) {
+                        this.MoveTowardsTarget();
+                    }
+
+                    if (this.HasReachedTarget()) {
+                        this.StopTank();
+                    }
                 } else {
-                    // Путь освобожден — продолжаем движение
-                    this._isWaiting = false;
-                }
-
-                this.RotateTank();
-
-                if (this.IsTankFacingTarget()) {
-                    this.MoveTowardsTarget();
+                    if (this._arrived === false) {
+                        this.Tower.RotateToTarget(this._target.transform.position);
+                        this.Gun.RotateToTarget(this._target.transform.position);
+                        this._arrived = true;
+                    }
                 }
             },
             /*BehaviourAI.TankAI.Update end.*/
 
-            /*BehaviourAI.TankAI.ShowHover start.*/
-            ShowHover: function () {
-if ( TRACE ) { TRACE( "BehaviourAI.TankAI#ShowHover", this ); }
+            /*BehaviourAI.TankAI.InitializeTarget start.*/
+            InitializeTarget: function (target) {
+if ( TRACE ) { TRACE( "BehaviourAI.TankAI#InitializeTarget", this ); }
 
-                this._guidance.gameObject.SetActive(true);
+                this._target = target;
             },
-            /*BehaviourAI.TankAI.ShowHover end.*/
-
-            /*BehaviourAI.TankAI.ShowSign start.*/
-            ShowSign: function () {
-if ( TRACE ) { TRACE( "BehaviourAI.TankAI#ShowSign", this ); }
-
-                this._exclamationMark.gameObject.SetActive(true);
-            },
-            /*BehaviourAI.TankAI.ShowSign end.*/
-
-            /*BehaviourAI.TankAI.DisableTank start.*/
-            DisableTank: function () {
-if ( TRACE ) { TRACE( "BehaviourAI.TankAI#DisableTank", this ); }
-
-                this._isDisabled = true;
-                UnityEngine.Debug.Log$1(System.String.format("{0} has been disabled.", [this.gameObject.name]));
-            },
-            /*BehaviourAI.TankAI.DisableTank end.*/
+            /*BehaviourAI.TankAI.InitializeTarget end.*/
 
             /*BehaviourAI.TankAI.MoveTowardsTarget start.*/
             MoveTowardsTarget: function () {
 if ( TRACE ) { TRACE( "BehaviourAI.TankAI#MoveTowardsTarget", this ); }
 
-                var direction = (this._currentTarget.position.$clone().sub( this.transform.position )).clone().normalize().$clone();
                 var distance = pc.Vec3.distance( this.transform.position, this._currentTarget.position );
 
                 if (distance > this.stopDistance) {
-                    // Двигаемся к цели, если путь свободен
-                    if (!this._isWaiting) {
-                        this.transform.position = this.transform.position.$clone().add( direction.$clone().clone().scale( this.moveSpeed ).clone().scale( UnityEngine.Time.deltaTime ) );
-                    }
-                } else {
-                    // Если достигли цели, выбираем следующую
-                    this.ChooseNextTarget();
+                    this.transform.position = pc.Vec3.moveTowards( this.transform.position, this._currentTarget.position, this.moveSpeed * UnityEngine.Time.deltaTime );
                 }
             },
             /*BehaviourAI.TankAI.MoveTowardsTarget end.*/
@@ -168,8 +147,7 @@ if ( TRACE ) { TRACE( "BehaviourAI.TankAI#IsTankFacingTarget", this ); }
 
                 var directionToTarget = (this._currentTarget.position.$clone().sub( this.transform.position )).clone().normalize().$clone();
                 var dotProduct = this.transform.forward.dot( directionToTarget );
-
-                return dotProduct > 0.99;
+                return dotProduct > 0.95;
             },
             /*BehaviourAI.TankAI.IsTankFacingTarget end.*/
 
@@ -178,31 +156,38 @@ if ( TRACE ) { TRACE( "BehaviourAI.TankAI#IsTankFacingTarget", this ); }
 if ( TRACE ) { TRACE( "BehaviourAI.TankAI#IsPathBlocked", this ); }
 
                 var hit = { v : new UnityEngine.RaycastHit() };
-
-                // Проверяем, заблокирован ли путь перед танком
-                if (UnityEngine.Physics.Raycast$3(this.transform.position, this.transform.forward, hit, this.avoidanceDistance)) {
-                    // Путь заблокирован, возвращаем true
+                if (UnityEngine.Physics.Raycast$3(this.transform.position.$clone().add( pc.Vec3.UP.clone().clone().scale( 0.5 ) ), this.transform.forward, hit, this.avoidanceDistance, UnityEngine.LayerMask.op_Implicit(this.tankLayer.$clone()))) {
                     return true;
                 }
-
-                // Путь свободен
                 return false;
             },
             /*BehaviourAI.TankAI.IsPathBlocked end.*/
 
-            /*BehaviourAI.TankAI.ChooseNextTarget start.*/
-            ChooseNextTarget: function () {
-if ( TRACE ) { TRACE( "BehaviourAI.TankAI#ChooseNextTarget", this ); }
+            /*BehaviourAI.TankAI.HasReachedTarget start.*/
+            HasReachedTarget: function () {
+if ( TRACE ) { TRACE( "BehaviourAI.TankAI#HasReachedTarget", this ); }
 
-                if (this._targets.length === 0) {
-                    return;
-                }
-
-                // Увеличиваем индекс цели, чтобы двигаться по кругу
-                this._currentTargetIndex = (((this._currentTargetIndex + 1) | 0)) % this._targets.length;
-                this._currentTarget = this._targets[this._currentTargetIndex];
+                var distance = pc.Vec3.distance( this.transform.position, this._currentTarget.position );
+                return distance <= this.stopDistance;
             },
-            /*BehaviourAI.TankAI.ChooseNextTarget end.*/
+            /*BehaviourAI.TankAI.HasReachedTarget end.*/
+
+            /*BehaviourAI.TankAI.StopTank start.*/
+            StopTank: function () {
+if ( TRACE ) { TRACE( "BehaviourAI.TankAI#StopTank", this ); }
+
+                this._hasStopped = true;
+            },
+            /*BehaviourAI.TankAI.StopTank end.*/
+
+            /*BehaviourAI.TankAI.DisableTank start.*/
+            DisableTank: function () {
+if ( TRACE ) { TRACE( "BehaviourAI.TankAI#DisableTank", this ); }
+
+                this._isDisabled = true;
+                this._fabric.FreeTarget(this._currentTarget);
+            },
+            /*BehaviourAI.TankAI.DisableTank end.*/
 
 
         }
@@ -4430,8 +4415,9 @@ if ( TRACE ) { TRACE( "ExclamationMark#LateUpdate", this ); }
             tankPrefab: null,
             spawnPoints: null,
             targets: null,
-            _indexPoint: 0,
-            _tanks: null
+            _target: null,
+            _tanks: null,
+            _targetStatus: null
         },
         props: {
             Tanks: {
@@ -4442,19 +4428,26 @@ if ( TRACE ) { TRACE( "Fabric.TanksFabric#Tanks#get", this ); }
                 }
             }
         },
-        ctors: {
-            init: function () {
-if ( TRACE ) { TRACE( "Fabric.TanksFabric#init", this ); }
-
-                this._indexPoint = 0;
-            }
-        },
         methods: {
             /*Fabric.TanksFabric.Awake start.*/
             Awake: function () {
 if ( TRACE ) { TRACE( "Fabric.TanksFabric#Awake", this ); }
 
+                var $t;
                 this._tanks = new (System.Collections.Generic.List$1(UnityEngine.GameObject)).ctor();
+                this._targetStatus = new (System.Collections.Generic.Dictionary$2(UnityEngine.Transform,System.Boolean)).ctor();
+
+                $t = Bridge.getEnumerator(this.targets);
+                try {
+                    while ($t.moveNext()) {
+                        var target = $t.Current;
+                        this._targetStatus.setItem(target, false); // Все точки свободны в начале
+                    }
+                } finally {
+                    if (Bridge.is($t, System.IDisposable)) {
+                        $t.System$IDisposable$Dispose();
+                    }
+                }
             },
             /*Fabric.TanksFabric.Awake end.*/
 
@@ -4462,24 +4455,57 @@ if ( TRACE ) { TRACE( "Fabric.TanksFabric#Awake", this ); }
             Spawn: function () {
 if ( TRACE ) { TRACE( "Fabric.TanksFabric#Spawn", this ); }
 
-                if (this._indexPoint >= this.spawnPoints.Count) {
+                if (this._tanks.Count >= this.spawnPoints.Count) {
                     return;
                 }
 
-                var currentPoint = this.spawnPoints.getItem(this._indexPoint);
-
-                var tankObj = UnityEngine.Object.Instantiate$2(UnityEngine.GameObject, this.tankPrefab.gameObject, currentPoint.position, pc.Quat.IDENTITY.clone());
+                var spawnPoint = this.spawnPoints.getItem(this._tanks.Count);
+                var tankObj = UnityEngine.Object.Instantiate$2(UnityEngine.GameObject, this.tankPrefab, spawnPoint.position, pc.Quat.IDENTITY.clone());
                 this._tanks.add(tankObj);
 
                 var tankAI = tankObj.GetComponent(BehaviourAI.TankAI);
-
                 if (UnityEngine.MonoBehaviour.op_Inequality(tankAI, null)) {
-                    tankAI.SetTargets(this.targets);
+                    var target = this.GetNearestAvailableTarget(tankObj.transform);
+                    if (UnityEngine.Component.op_Inequality(target, null)) {
+                        this._targetStatus.setItem(target, true); // Помечаем точку занятой
+                        tankAI.SetTarget(target, this); // Передаем точку + ссылку на фабрику
+                        tankAI.InitializeTarget(this._target);
+                    }
                 }
-
-                this._indexPoint = (this._indexPoint + 1) | 0;
             },
             /*Fabric.TanksFabric.Spawn end.*/
+
+            /*Fabric.TanksFabric.GetNearestAvailableTarget start.*/
+            GetNearestAvailableTarget: function (tankTransform) {
+if ( TRACE ) { TRACE( "Fabric.TanksFabric#GetNearestAvailableTarget", this ); }
+
+                var $t;
+                $t = Bridge.getEnumerator(this.targets);
+                try {
+                    while ($t.moveNext()) {
+                        var target = $t.Current;
+                        if (!this._targetStatus.getItem(target)) {
+                            return target;
+                        }
+                    }
+                } finally {
+                    if (Bridge.is($t, System.IDisposable)) {
+                        $t.System$IDisposable$Dispose();
+                    }
+                }
+                return null; // Нет свободных точек
+            },
+            /*Fabric.TanksFabric.GetNearestAvailableTarget end.*/
+
+            /*Fabric.TanksFabric.FreeTarget start.*/
+            FreeTarget: function (target) {
+if ( TRACE ) { TRACE( "Fabric.TanksFabric#FreeTarget", this ); }
+
+                if (this._targetStatus.containsKey(target)) {
+                    this._targetStatus.setItem(target, false); // Освобождаем точку
+                }
+            },
+            /*Fabric.TanksFabric.FreeTarget end.*/
 
 
         }
@@ -4575,7 +4601,7 @@ if ( TRACE ) { TRACE( "Guidance#Update", this ); }
                             while ($t.moveNext()) {
                                 var tank = $t.Current;
                                 var tankObg = tank.GetComponent(BehaviourAI.TankAI);
-                                tankObg.ShowHover();
+                                //tankObg.ShowHover();
 
                             }
                         } finally {
@@ -4592,6 +4618,175 @@ if ( TRACE ) { TRACE( "Guidance#Update", this ); }
         }
     });
     /*Guidance end.*/
+
+    /*Gun start.*/
+    Bridge.define("Gun", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            rotationSpeed: 0,
+            particleSystem: null,
+            minParticleInterval: 0,
+            maxParticleInterval: 0,
+            isRotating: false,
+            coroutine: null,
+            coroutine2: null
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "Gun#init", this ); }
+
+                this.rotationSpeed = 2.0;
+                this.minParticleInterval = 0.5;
+                this.maxParticleInterval = 2.0;
+                this.isRotating = false;
+            }
+        },
+        methods: {
+            /*Gun.RotateToTarget start.*/
+            RotateToTarget: function (targetPosition) {
+if ( TRACE ) { TRACE( "Gun#RotateToTarget", this ); }
+
+                //if (!isRotating) // ���������, ��� ����� �� ��������� � ������ ������
+                //{
+
+                if (this.coroutine != null) {
+                    this.StopCoroutine$2(this.coroutine);
+                }
+
+                this.coroutine = this.StartCoroutine$1(this.RotateTowardsTarget(targetPosition));
+                //}
+            },
+            /*Gun.RotateToTarget end.*/
+
+            /*Gun.RotateTowardsTarget start.*/
+            RotateTowardsTarget: function (targetPosition) {
+if ( TRACE ) { TRACE( "Gun#RotateTowardsTarget", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    directionToTarget,
+                    targetRotation,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    if (this.coroutine2 != null) {
+                                            this.StopCoroutine$2(this.coroutine2);
+                                        }
+
+                                        //isRotating = true;
+                                        this.coroutine2 = this.StartCoroutine$1(this.PlayParticlesRandomly());
+
+                                        // �������� ����������� �� ������� � ����
+                                        directionToTarget = targetPosition.$clone().sub( this.transform.position );
+
+                                        // ��������� ������� ��������, �� ������� y (��������� ������������ ���������)
+                                        targetRotation = new pc.Quat().setLookAt( directionToTarget, pc.Vec3.UP );
+
+                                        // ������ ������������ ������ � ����
+                                    $step = 1;
+                                    continue;
+                                }
+                                case 1: {
+                                    if ( pc.Quat.angle( this.transform.rotation.$clone(), targetRotation.$clone() ) > 0.1 ) {
+                                            $step = 2;
+                                            continue;
+                                        } 
+                                        $step = 4;
+                                        continue;
+                                }
+                                case 2: {
+                                    this.transform.rotation = new pc.Quat().slerp( this.transform.rotation, targetRotation, this.rotationSpeed * UnityEngine.Time.deltaTime );
+                                        $enumerator.current = null;
+                                        $step = 3;
+                                        return true;
+                                }
+                                case 3: {
+                                    
+                                        $step = 1;
+                                        continue;
+                                }
+                                case 4: {
+                                    this.transform.rotation = targetRotation.$clone(); // ������������� ������ �����������
+
+                                        // ������ �������� ��� ���������� ��������������� ������
+
+                                        //isRotating = false;
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*Gun.RotateTowardsTarget end.*/
+
+            /*Gun.PlayParticlesRandomly start.*/
+            PlayParticlesRandomly: function () {
+if ( TRACE ) { TRACE( "Gun#PlayParticlesRandomly", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    interval,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    if ( true ) {
+                                            $step = 1;
+                                            continue;
+                                        } 
+                                        $step = 3;
+                                        continue;
+                                }
+                                case 1: {
+                                    interval = UnityEngine.Random.Range$1(this.minParticleInterval, this.maxParticleInterval);
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(interval);
+                                        $step = 2;
+                                        return true;
+                                }
+                                case 2: {
+                                    this.particleSystem.Play(); // ������������� �������
+
+                                        $step = 0;
+                                        continue;
+                                }
+                                case 3: {
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*Gun.PlayParticlesRandomly end.*/
+
+
+        }
+    });
+    /*Gun end.*/
 
     /*HandAnimation start.*/
     Bridge.define("HandAnimation", {
@@ -4924,7 +5119,8 @@ if ( TRACE ) { TRACE( "Howitzer.ObjectPoolShooting#ReturnObject", this ); }
             _explosionPool: null,
             _isZoomed: false,
             _firstShot: false,
-            _newArt: false
+            _newArt: false,
+            _shootCount: 0
         },
         ctors: {
             init: function () {
@@ -4934,6 +5130,7 @@ if ( TRACE ) { TRACE( "Howitzer.PlayerShooting#init", this ); }
                 this._isZoomed = false;
                 this._firstShot = false;
                 this._newArt = false;
+                this._shootCount = 0;
             }
         },
         methods: {
@@ -4997,6 +5194,16 @@ if ( TRACE ) { TRACE( "Howitzer.PlayerShooting#ChooseShootingRange", this ); }
 if ( TRACE ) { TRACE( "Howitzer.PlayerShooting#Shoot1", this ); }
 
                 var $t;
+
+                this._shootCount = (this._shootCount + 1) | 0;
+
+
+                if (this._shootCount >= 4) {
+                    this._playerZoom.ToggleZoom();
+                    this._shootCount = 0;
+                    return;
+                }
+
                 var shootDirection = new UnityEngine.Vector3();
                 var ray = new UnityEngine.Ray();
 
@@ -5068,7 +5275,6 @@ if ( TRACE ) { TRACE( "Howitzer.PlayerShooting#Shoot1", this ); }
 
                 this._followBullet.GetBullet(projectile);
                 this._managerCamers.WatchingBullet();
-                //button.gameObject.SetActive(false);
             },
             /*Howitzer.PlayerShooting.Shoot1 end.*/
 
@@ -5218,7 +5424,8 @@ if ( TRACE ) { TRACE( "Howitzer.PlayerShooting#ShakeCamera", this ); }
             cooldownText: null,
             cooldownImage: null,
             cooldownTime: 0,
-            _isOnCooldown: false
+            _isOnCooldown: false,
+            _coroutine: null
         },
         props: {
             CanShoot: {
@@ -5238,6 +5445,18 @@ if ( TRACE ) { TRACE( "Howitzer.PlayerShootingCooldown#init", this ); }
             }
         },
         methods: {
+            /*Howitzer.PlayerShootingCooldown.OnEnable start.*/
+            OnEnable: function () {
+if ( TRACE ) { TRACE( "Howitzer.PlayerShootingCooldown#OnEnable", this ); }
+
+                if (this._coroutine != null) {
+                    this.StopCoroutine$2(this._coroutine);
+                }
+
+                this._coroutine = this.StartCoroutine$1(this.CooldownRoutine());
+            },
+            /*Howitzer.PlayerShootingCooldown.OnEnable end.*/
+
             /*Howitzer.PlayerShootingCooldown.StartCooldown start.*/
             StartCooldown: function () {
 if ( TRACE ) { TRACE( "Howitzer.PlayerShootingCooldown#StartCooldown", this ); }
@@ -5245,7 +5464,12 @@ if ( TRACE ) { TRACE( "Howitzer.PlayerShootingCooldown#StartCooldown", this ); }
                 if (this._isOnCooldown) {
                     return;
                 }
-                this.StartCoroutine$1(this.CooldownRoutine());
+
+                if (this._coroutine != null) {
+                    this.StopCoroutine$2(this._coroutine);
+                }
+
+                this._coroutine = this.StartCoroutine$1(this.CooldownRoutine());
             },
             /*Howitzer.PlayerShootingCooldown.StartCooldown end.*/
 
@@ -5373,6 +5597,10 @@ if ( TRACE ) { TRACE( "Howitzer.PlayerZoom#init", this ); }
 if ( TRACE ) { TRACE( "Howitzer.PlayerZoom#OnEnable", this ); }
 
                 UI.PlayerUIController.addOnZoom(Bridge.fn.cacheBind(this, this.ToggleZoom));
+
+                if (this._isZoomed && this._isUpgraded) {
+                    this.CreateTitnSprites();
+                }
             },
             /*Howitzer.PlayerZoom.OnEnable end.*/
 
@@ -5456,6 +5684,14 @@ if ( TRACE ) { TRACE( "Howitzer.PlayerZoom#DisableZoomUI", this ); }
 if ( TRACE ) { TRACE( "Howitzer.PlayerZoom#ToggleZoom", this ); }
 
                 var $t, $t1, $t2;
+                //if (_isStore)
+                //{
+                //    OpenStore();
+                //    pumping.SetNormalPositionArte();
+                //    _isStore = false;
+                //    return;
+                //}
+
                 this._isZoomed = !this._isZoomed;
                 !Bridge.staticEquals(Howitzer.PlayerZoom.OnZoomChanged, null) ? Howitzer.PlayerZoom.OnZoomChanged(this._isZoomed) : null;
 
@@ -5515,9 +5751,31 @@ if ( TRACE ) { TRACE( "Howitzer.PlayerZoom#ToggleZoom", this ); }
 
                 if (this._isStore) {
                     this.OpenStore();
+                    this.pumping.SetNormalPositionArte();
                 }
             },
             /*Howitzer.PlayerZoom.ToggleZoom end.*/
+
+            /*Howitzer.PlayerZoom.CreateTitnSprites start.*/
+            CreateTitnSprites: function () {
+if ( TRACE ) { TRACE( "Howitzer.PlayerZoom#CreateTitnSprites", this ); }
+
+                var $t;
+                $t = Bridge.getEnumerator(this._tacticsFabric.Tanks);
+                try {
+                    while ($t.moveNext()) {
+                        var tank = $t.Current;
+                        var titnSprite = UnityEngine.Object.Instantiate(TitnSprite, this._titnSprite);
+                        titnSprite.Initialize(tank);
+                        this._sprites.add(titnSprite);
+                    }
+                } finally {
+                    if (Bridge.is($t, System.IDisposable)) {
+                        $t.System$IDisposable$Dispose();
+                    }
+                }
+            },
+            /*Howitzer.PlayerZoom.CreateTitnSprites end.*/
 
             /*Howitzer.PlayerZoom.GetWorldPointFromCrosshair start.*/
             GetWorldPointFromCrosshair: function () {
@@ -6263,6 +6521,7 @@ if ( TRACE ) { TRACE( "MissPoint#Cast", this ); }
 if ( TRACE ) { TRACE( "Pumping#Awake", this ); }
 
                 this._sprites = new (System.Collections.Generic.List$1(TitnSprite)).ctor();
+                this.SetNormalPositionArte();
             },
             /*Pumping.Awake end.*/
 
@@ -6270,10 +6529,12 @@ if ( TRACE ) { TRACE( "Pumping#Awake", this ); }
             OnEnable: function () {
 if ( TRACE ) { TRACE( "Pumping#OnEnable", this ); }
 
+                this.SetNormalPositionArte();
                 this._shopping.gameObject.SetActive(false);
                 this._pumpingCamera.gameObject.SetActive(false);
                 this._interactiveArt.addChanged(Bridge.fn.cacheBind(this, this.TurnPlayerCamera));
                 this.StartCoroutine$1(this.StartPumping());
+                this.SetNormalPositionArte();
             },
             /*Pumping.OnEnable end.*/
 
@@ -6327,6 +6588,7 @@ if ( TRACE ) { TRACE( "Pumping#StartPumping", this ); }
                                         this.TurnPumpingCamera();
                                         this._UI.SetActive(false);
                                         this._arm.gameObject.SetActive(true);
+                                        this.SetNormalPositionArte();
 
                                 }
                                 default: {
@@ -6375,6 +6637,8 @@ if ( TRACE ) { TRACE( "Pumping#TurnPlayerCamera", this ); }
             /*Pumping.SetNormalPositionArte start.*/
             SetNormalPositionArte: function () {
 if ( TRACE ) { TRACE( "Pumping#SetNormalPositionArte", this ); }
+
+                UnityEngine.Debug.Log$1("\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd");
 
                 this._arta1.transform.localPosition = new pc.Vec3( 0.9, 17.5, -4.0 );
                 this._arta1.transform.localRotation = new pc.Quat().setFromEulerAngles_Unity( -1.1, -1.7, -8.0 );
@@ -6567,6 +6831,103 @@ if ( TRACE ) { TRACE( "TitnSprite#LateUpdate", this ); }
         }
     });
     /*TitnSprite end.*/
+
+    /*Tower start.*/
+    Bridge.define("Tower", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            rotationSpeed: 0,
+            coroutine: null
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "Tower#init", this ); }
+
+                this.rotationSpeed = 2.0;
+            }
+        },
+        methods: {
+            /*Tower.RotateToTarget start.*/
+            RotateToTarget: function (targetPosition) {
+if ( TRACE ) { TRACE( "Tower#RotateToTarget", this ); }
+
+                if (this.coroutine != null) {
+                    this.StopCoroutine$2(this.coroutine);
+                }
+
+                this.coroutine = this.StartCoroutine$1(this.RotateTowardsTarget(targetPosition.$clone()));
+            },
+            /*Tower.RotateToTarget end.*/
+
+            /*Tower.RotateTowardsTarget start.*/
+            RotateTowardsTarget: function (targetPosition) {
+if ( TRACE ) { TRACE( "Tower#RotateTowardsTarget", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    directionToTarget,
+                    targetRotation,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    // ��������� ����������� � ���� � ���������� �����������
+                                        directionToTarget = targetPosition.$clone().sub( this.transform.position );
+                                        UnityEngine.Debug.DrawRay$1(this.transform.position, directionToTarget.clone().normalize().$clone().clone().scale( 20 ), new pc.Color( 1, 0, 1, 1 ));
+                                        directionToTarget.y = 0; // ���������� ������������ ������������, ����� ������� ������ �� ��� Y
+
+                                        // ������� ����� �� ��� Y � ���������� �����������
+                                        targetRotation = new pc.Quat().setLookAt( directionToTarget.clone().normalize(), pc.Vec3.UP.clone() );
+                                        // ������� ������� ����� � ����
+                                    $step = 1;
+                                    continue;
+                                }
+                                case 1: {
+                                    if ( pc.Quat.angle( this.transform.rotation.$clone(), targetRotation.$clone() ) > 0.1 ) {
+                                            $step = 2;
+                                            continue;
+                                        } 
+                                        $step = 4;
+                                        continue;
+                                }
+                                case 2: {
+                                    this.transform.rotation = new pc.Quat().slerp( this.transform.rotation, targetRotation, this.rotationSpeed * UnityEngine.Time.deltaTime );
+                                        $enumerator.current = null;
+                                        $step = 3;
+                                        return true;
+                                }
+                                case 3: {
+                                    
+                                        $step = 1;
+                                        continue;
+                                }
+                                case 4: {
+                                    // ����� ���������� ��������
+                                        this.transform.rotation = targetRotation.$clone();
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*Tower.RotateTowardsTarget end.*/
+
+
+        }
+    });
+    /*Tower end.*/
 
     /*TutorialHand start.*/
     Bridge.define("TutorialHand", {
@@ -7288,6 +7649,14 @@ if ( TRACE ) { TRACE( "VariableJoystick#HandleInput", this ); }
     $m("JoystickType", function () { return {"att":257,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Dynamic","is":true,"t":4,"rt":JoystickType,"sn":"Dynamic","box":function ($v) { return Bridge.box($v, JoystickType, System.Enum.toStringFn(JoystickType));}},{"a":2,"n":"Fixed","is":true,"t":4,"rt":JoystickType,"sn":"Fixed","box":function ($v) { return Bridge.box($v, JoystickType, System.Enum.toStringFn(JoystickType));}},{"a":2,"n":"Floating","is":true,"t":4,"rt":JoystickType,"sn":"Floating","box":function ($v) { return Bridge.box($v, JoystickType, System.Enum.toStringFn(JoystickType));}}]}; }, $n);
     /*JoystickType end.*/
 
+    /*Gun start.*/
+    $m("Gun", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"PlayParticlesRandomly","t":8,"sn":"PlayParticlesRandomly","rt":$n[0].IEnumerator},{"a":2,"n":"RotateToTarget","t":8,"pi":[{"n":"targetPosition","pt":$n[2].Vector3,"ps":0}],"sn":"RotateToTarget","rt":$n[1].Void,"p":[$n[2].Vector3]},{"a":1,"n":"RotateTowardsTarget","t":8,"pi":[{"n":"targetPosition","pt":$n[2].Vector3,"ps":0}],"sn":"RotateTowardsTarget","rt":$n[0].IEnumerator,"p":[$n[2].Vector3]},{"a":1,"n":"coroutine","t":4,"rt":$n[2].Coroutine,"sn":"coroutine"},{"a":1,"n":"coroutine2","t":4,"rt":$n[2].Coroutine,"sn":"coroutine2"},{"a":1,"n":"isRotating","t":4,"rt":$n[1].Boolean,"sn":"isRotating","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"maxParticleInterval","t":4,"rt":$n[1].Single,"sn":"maxParticleInterval","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"minParticleInterval","t":4,"rt":$n[1].Single,"sn":"minParticleInterval","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"particleSystem","t":4,"rt":$n[2].ParticleSystem,"sn":"particleSystem"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rotationSpeed","t":4,"rt":$n[1].Single,"sn":"rotationSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    /*Gun end.*/
+
+    /*Tower start.*/
+    $m("Tower", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"RotateToTarget","t":8,"pi":[{"n":"targetPosition","pt":$n[2].Vector3,"ps":0}],"sn":"RotateToTarget","rt":$n[1].Void,"p":[$n[2].Vector3]},{"a":1,"n":"RotateTowardsTarget","t":8,"pi":[{"n":"targetPosition","pt":$n[2].Vector3,"ps":0}],"sn":"RotateTowardsTarget","rt":$n[0].IEnumerator,"p":[$n[2].Vector3]},{"a":1,"n":"coroutine","t":4,"rt":$n[2].Coroutine,"sn":"coroutine"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rotationSpeed","t":4,"rt":$n[1].Single,"sn":"rotationSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    /*Tower end.*/
+
     /*TimeController start.*/
     $m("TimeController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"RestoreNormalTime","t":8,"sn":"RestoreNormalTime","rt":$n[1].Void},{"a":2,"n":"StartSlowMotion","t":8,"sn":"StartSlowMotion","rt":$n[1].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"restoreSpeedDuration","t":4,"rt":$n[1].Single,"sn":"restoreSpeedDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"slowMotionDuration","t":4,"rt":$n[1].Single,"sn":"slowMotionDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"slowMotionScale","t":4,"rt":$n[1].Single,"sn":"slowMotionScale","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*TimeController end.*/
@@ -7305,7 +7674,7 @@ if ( TRACE ) { TRACE( "VariableJoystick#HandleInput", this ); }
     /*MissPoint end.*/
 
     /*Pumping start.*/
-    $m("Pumping", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[1].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[1].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[1].Void},{"a":2,"n":"RemoveSprites","t":8,"sn":"RemoveSprites","rt":$n[1].Void},{"a":1,"n":"SetNormalPositionArte","t":8,"sn":"SetNormalPositionArte","rt":$n[1].Void},{"a":1,"n":"StartPumping","t":8,"sn":"StartPumping","rt":$n[0].IEnumerator},{"a":1,"n":"TurnPlayerCamera","t":8,"sn":"TurnPlayerCamera","rt":$n[1].Void},{"a":1,"n":"TurnPumpingCamera","t":8,"sn":"TurnPumpingCamera","rt":$n[1].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_UI","t":4,"rt":$n[2].GameObject,"sn":"_UI"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_arm","t":4,"rt":HandAnimation,"sn":"_arm"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_arm2","t":4,"rt":$n[2].GameObject,"sn":"_arm2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_arta1","t":4,"rt":$n[2].GameObject,"sn":"_arta1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_button","t":4,"rt":$n[4].Button,"sn":"_button"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_interactiveArt","t":4,"rt":InteractiveArt,"sn":"_interactiveArt"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumpingCamera","t":4,"rt":$n[2].Camera,"sn":"_pumpingCamera"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_shopping","t":4,"rt":Shopping,"sn":"_shopping"},{"a":1,"n":"_sprites","t":4,"rt":$n[3].List$1(TitnSprite),"sn":"_sprites"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_tacticsFabric","t":4,"rt":$n[7].TanksFabric,"sn":"_tacticsFabric"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_titnSprite","t":4,"rt":TitnSprite,"sn":"_titnSprite"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_Camera","t":4,"rt":$n[2].Camera,"sn":"m_Camera"}]}; }, $n);
+    $m("Pumping", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[1].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[1].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[1].Void},{"a":2,"n":"RemoveSprites","t":8,"sn":"RemoveSprites","rt":$n[1].Void},{"a":2,"n":"SetNormalPositionArte","t":8,"sn":"SetNormalPositionArte","rt":$n[1].Void},{"a":1,"n":"StartPumping","t":8,"sn":"StartPumping","rt":$n[0].IEnumerator},{"a":1,"n":"TurnPlayerCamera","t":8,"sn":"TurnPlayerCamera","rt":$n[1].Void},{"a":1,"n":"TurnPumpingCamera","t":8,"sn":"TurnPumpingCamera","rt":$n[1].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_UI","t":4,"rt":$n[2].GameObject,"sn":"_UI"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_arm","t":4,"rt":HandAnimation,"sn":"_arm"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_arm2","t":4,"rt":$n[2].GameObject,"sn":"_arm2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_arta1","t":4,"rt":$n[2].GameObject,"sn":"_arta1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_button","t":4,"rt":$n[4].Button,"sn":"_button"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_interactiveArt","t":4,"rt":InteractiveArt,"sn":"_interactiveArt"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumpingCamera","t":4,"rt":$n[2].Camera,"sn":"_pumpingCamera"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_shopping","t":4,"rt":Shopping,"sn":"_shopping"},{"a":1,"n":"_sprites","t":4,"rt":$n[3].List$1(TitnSprite),"sn":"_sprites"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_tacticsFabric","t":4,"rt":$n[7].TanksFabric,"sn":"_tacticsFabric"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_titnSprite","t":4,"rt":TitnSprite,"sn":"_titnSprite"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_Camera","t":4,"rt":$n[2].Camera,"sn":"m_Camera"}]}; }, $n);
     /*Pumping end.*/
 
     /*Shopping start.*/
@@ -7389,15 +7758,15 @@ if ( TRACE ) { TRACE( "VariableJoystick#HandleInput", this ); }
     /*Howitzer.ObjectPoolShooting end.*/
 
     /*Howitzer.PlayerShooting start.*/
-    $m("Howitzer.PlayerShooting", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[1].Void},{"a":1,"n":"ChooseShootingRange","t":8,"sn":"ChooseShootingRange","rt":$n[1].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[1].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[1].Void},{"a":1,"n":"SetZoomState","t":8,"pi":[{"n":"isZoomed","pt":$n[1].Boolean,"ps":0}],"sn":"SetZoomState","rt":$n[1].Void,"p":[$n[1].Boolean]},{"a":1,"n":"ShakeCamera","t":8,"sn":"ShakeCamera","rt":$n[1].Void},{"a":1,"n":"Shoot1","t":8,"sn":"Shoot1","rt":$n[1].Void},{"a":1,"n":"Shoot2","t":8,"sn":"Shoot2","rt":$n[1].Void},{"a":2,"n":"Upgrade","t":8,"sn":"Upgrade","rt":$n[1].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_aim","t":4,"rt":$n[2].GameObject,"sn":"_aim"},{"a":1,"n":"_explosionPool","t":4,"rt":$n[6].ObjectPoolShooting,"sn":"_explosionPool"},{"a":1,"n":"_firstShot","t":4,"rt":$n[1].Boolean,"sn":"_firstShot","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("\u041a\u0430\u043c\u0435\u0440\u044b"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_followBullet","t":4,"rt":FollowBullet,"sn":"_followBullet"},{"a":1,"n":"_isZoomed","t":4,"rt":$n[1].Boolean,"sn":"_isZoomed","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_managerCamers","t":4,"rt":ManagerCamers,"sn":"_managerCamers"},{"at":[new UnityEngine.HeaderAttribute("\u0422\u043e\u0447\u043a\u0430 \u043f\u0440\u043e\u043c\u0430\u0445\u0430"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_missPoint","t":4,"rt":MissPoint,"sn":"_missPoint"},{"a":1,"n":"_newArt","t":4,"rt":$n[1].Boolean,"sn":"_newArt","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("UI"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_playerUIController","t":4,"rt":$n[9].PlayerUIController,"sn":"_playerUIController"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_playerZoom","t":4,"rt":$n[6].PlayerZoom,"sn":"_playerZoom"},{"a":1,"n":"_projectilePool","t":4,"rt":$n[6].ObjectPoolShooting,"sn":"_projectilePool"},{"at":[new UnityEngine.HeaderAttribute("\u041f\u0440\u043e\u043a\u0430\u0447\u043a\u0430"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumping","t":4,"rt":Pumping,"sn":"_pumping"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_tanksFabric","t":4,"rt":$n[7].TanksFabric,"sn":"_tanksFabric"},{"at":[new UnityEngine.HeaderAttribute("\u0421\u043b\u043e\u0443\u043c\u043e"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_timeController","t":4,"rt":TimeController,"sn":"_timeController"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"crosshairUI","t":4,"rt":$n[2].RectTransform,"sn":"crosshairUI"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"explosionEffect","t":4,"rt":$n[2].GameObject,"sn":"explosionEffect"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"mainCamera","t":4,"rt":$n[2].Camera,"sn":"mainCamera"},{"at":[new UnityEngine.HeaderAttribute("\u042d\u0444\u0444\u0435\u043a\u0442\u044b"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"muzzleFlash","t":4,"rt":$n[2].GameObject,"sn":"muzzleFlash"},{"at":[new UnityEngine.HeaderAttribute("\u041f\u0435\u0440\u0435\u0437\u0430\u0440\u044f\u0434\u043a\u0430, \u0441\u0442\u0440\u0435\u043b\u044c\u0431\u0430"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"playerShootingCooldown","t":4,"rt":$n[6].PlayerShootingCooldown,"sn":"playerShootingCooldown"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"poolSize","t":4,"rt":$n[1].Int32,"sn":"poolSize","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"prefabProjectile","t":4,"rt":$n[2].GameObject,"sn":"prefabProjectile"},{"at":[new UnityEngine.HeaderAttribute("\u0421\u043d\u0430\u0440\u044f\u0434"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"projectilePosition","t":4,"rt":$n[2].Transform,"sn":"projectilePosition"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"projectileSpeed","t":4,"rt":$n[1].Single,"sn":"projectileSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    $m("Howitzer.PlayerShooting", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[1].Void},{"a":1,"n":"ChooseShootingRange","t":8,"sn":"ChooseShootingRange","rt":$n[1].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[1].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[1].Void},{"a":1,"n":"SetZoomState","t":8,"pi":[{"n":"isZoomed","pt":$n[1].Boolean,"ps":0}],"sn":"SetZoomState","rt":$n[1].Void,"p":[$n[1].Boolean]},{"a":1,"n":"ShakeCamera","t":8,"sn":"ShakeCamera","rt":$n[1].Void},{"a":1,"n":"Shoot1","t":8,"sn":"Shoot1","rt":$n[1].Void},{"a":1,"n":"Shoot2","t":8,"sn":"Shoot2","rt":$n[1].Void},{"a":2,"n":"Upgrade","t":8,"sn":"Upgrade","rt":$n[1].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_aim","t":4,"rt":$n[2].GameObject,"sn":"_aim"},{"a":1,"n":"_explosionPool","t":4,"rt":$n[6].ObjectPoolShooting,"sn":"_explosionPool"},{"a":1,"n":"_firstShot","t":4,"rt":$n[1].Boolean,"sn":"_firstShot","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("\u041a\u0430\u043c\u0435\u0440\u044b"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_followBullet","t":4,"rt":FollowBullet,"sn":"_followBullet"},{"a":1,"n":"_isZoomed","t":4,"rt":$n[1].Boolean,"sn":"_isZoomed","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_managerCamers","t":4,"rt":ManagerCamers,"sn":"_managerCamers"},{"at":[new UnityEngine.HeaderAttribute("\u0422\u043e\u0447\u043a\u0430 \u043f\u0440\u043e\u043c\u0430\u0445\u0430"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_missPoint","t":4,"rt":MissPoint,"sn":"_missPoint"},{"a":1,"n":"_newArt","t":4,"rt":$n[1].Boolean,"sn":"_newArt","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.HeaderAttribute("UI"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_playerUIController","t":4,"rt":$n[9].PlayerUIController,"sn":"_playerUIController"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_playerZoom","t":4,"rt":$n[6].PlayerZoom,"sn":"_playerZoom"},{"a":1,"n":"_projectilePool","t":4,"rt":$n[6].ObjectPoolShooting,"sn":"_projectilePool"},{"at":[new UnityEngine.HeaderAttribute("\u041f\u0440\u043e\u043a\u0430\u0447\u043a\u0430"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumping","t":4,"rt":Pumping,"sn":"_pumping"},{"a":1,"n":"_shootCount","t":4,"rt":$n[1].Int32,"sn":"_shootCount","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_tanksFabric","t":4,"rt":$n[7].TanksFabric,"sn":"_tanksFabric"},{"at":[new UnityEngine.HeaderAttribute("\u0421\u043b\u043e\u0443\u043c\u043e"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_timeController","t":4,"rt":TimeController,"sn":"_timeController"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"crosshairUI","t":4,"rt":$n[2].RectTransform,"sn":"crosshairUI"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"explosionEffect","t":4,"rt":$n[2].GameObject,"sn":"explosionEffect"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"mainCamera","t":4,"rt":$n[2].Camera,"sn":"mainCamera"},{"at":[new UnityEngine.HeaderAttribute("\u042d\u0444\u0444\u0435\u043a\u0442\u044b"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"muzzleFlash","t":4,"rt":$n[2].GameObject,"sn":"muzzleFlash"},{"at":[new UnityEngine.HeaderAttribute("\u041f\u0435\u0440\u0435\u0437\u0430\u0440\u044f\u0434\u043a\u0430, \u0441\u0442\u0440\u0435\u043b\u044c\u0431\u0430"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"playerShootingCooldown","t":4,"rt":$n[6].PlayerShootingCooldown,"sn":"playerShootingCooldown"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"poolSize","t":4,"rt":$n[1].Int32,"sn":"poolSize","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"prefabProjectile","t":4,"rt":$n[2].GameObject,"sn":"prefabProjectile"},{"at":[new UnityEngine.HeaderAttribute("\u0421\u043d\u0430\u0440\u044f\u0434"),new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"projectilePosition","t":4,"rt":$n[2].Transform,"sn":"projectilePosition"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"projectileSpeed","t":4,"rt":$n[1].Single,"sn":"projectileSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*Howitzer.PlayerShooting end.*/
 
     /*Howitzer.PlayerShootingCooldown start.*/
-    $m("Howitzer.PlayerShootingCooldown", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"CooldownRoutine","t":8,"sn":"CooldownRoutine","rt":$n[0].IEnumerator},{"a":2,"n":"StartCooldown","t":8,"sn":"StartCooldown","rt":$n[1].Void},{"a":2,"n":"CanShoot","t":16,"rt":$n[1].Boolean,"g":{"a":2,"n":"get_CanShoot","t":8,"rt":$n[1].Boolean,"fg":"CanShoot","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"CanShoot"},{"a":1,"n":"_isOnCooldown","t":4,"rt":$n[1].Boolean,"sn":"_isOnCooldown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cooldownImage","t":4,"rt":$n[4].Image,"sn":"cooldownImage"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cooldownText","t":4,"rt":$n[4].Text,"sn":"cooldownText"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cooldownTime","t":4,"rt":$n[1].Single,"sn":"cooldownTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"shootButton","t":4,"rt":$n[4].Button,"sn":"shootButton"}]}; }, $n);
+    $m("Howitzer.PlayerShootingCooldown", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"CooldownRoutine","t":8,"sn":"CooldownRoutine","rt":$n[0].IEnumerator},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[1].Void},{"a":2,"n":"StartCooldown","t":8,"sn":"StartCooldown","rt":$n[1].Void},{"a":2,"n":"CanShoot","t":16,"rt":$n[1].Boolean,"g":{"a":2,"n":"get_CanShoot","t":8,"rt":$n[1].Boolean,"fg":"CanShoot","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"CanShoot"},{"a":1,"n":"_coroutine","t":4,"rt":$n[2].Coroutine,"sn":"_coroutine"},{"a":1,"n":"_isOnCooldown","t":4,"rt":$n[1].Boolean,"sn":"_isOnCooldown","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cooldownImage","t":4,"rt":$n[4].Image,"sn":"cooldownImage"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cooldownText","t":4,"rt":$n[4].Text,"sn":"cooldownText"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"cooldownTime","t":4,"rt":$n[1].Single,"sn":"cooldownTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"shootButton","t":4,"rt":$n[4].Button,"sn":"shootButton"}]}; }, $n);
     /*Howitzer.PlayerShootingCooldown end.*/
 
     /*Howitzer.PlayerZoom start.*/
-    $m("Howitzer.PlayerZoom", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"ActivateTransitionToStore","t":8,"sn":"ActivateTransitionToStore","rt":$n[1].Void},{"a":1,"n":"ChangeFOV","t":8,"pi":[{"n":"targetFOV","pt":$n[1].Single,"ps":0}],"sn":"ChangeFOV","rt":$n[0].IEnumerator,"p":[$n[1].Single]},{"a":2,"n":"ChangeZoomForAirStrike","t":8,"sn":"ChangeZoomForAirStrike","rt":$n[1].Void},{"a":2,"n":"CheckZoom","t":8,"sn":"CheckZoom","rt":$n[1].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"DisableZoomUI","t":8,"sn":"DisableZoomUI","rt":$n[1].Void},{"a":2,"n":"EnableZoomUI","t":8,"sn":"EnableZoomUI","rt":$n[1].Void},{"a":1,"n":"GetWorldPointFromCrosshair","t":8,"sn":"GetWorldPointFromCrosshair","rt":$n[2].Vector3},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[1].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[1].Void},{"a":1,"n":"OpenStore","t":8,"sn":"OpenStore","rt":$n[1].Void},{"a":1,"n":"RotateCameraWithJoystick","t":8,"sn":"RotateCameraWithJoystick","rt":$n[1].Void},{"a":1,"n":"ToggleZoom","t":8,"sn":"ToggleZoom","rt":$n[1].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[1].Void},{"a":2,"n":"Upgrade","t":8,"sn":"Upgrade","rt":$n[1].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_arm","t":4,"rt":$n[2].GameObject,"sn":"_arm"},{"a":1,"n":"_isStore","t":4,"rt":$n[1].Boolean,"sn":"_isStore","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isUpgraded","t":4,"rt":$n[1].Boolean,"sn":"_isUpgraded","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isZoomed","t":4,"rt":$n[1].Boolean,"sn":"_isZoomed","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_lastCameraRotation","t":4,"rt":$n[2].Quaternion,"sn":"_lastCameraRotation"},{"a":1,"n":"_sprites","t":4,"rt":$n[3].List$1(TitnSprite),"sn":"_sprites"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_tacticsFabric","t":4,"rt":$n[7].TanksFabric,"sn":"_tacticsFabric"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_titnSprite","t":4,"rt":TitnSprite,"sn":"_titnSprite"},{"a":1,"n":"_zoomStartRotation","t":4,"rt":$n[2].Quaternion,"sn":"_zoomStartRotation"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"crosshair","t":4,"rt":$n[2].RectTransform,"sn":"crosshair"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"joystick","t":4,"rt":Joystick,"sn":"joystick"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"mainCamera","t":4,"rt":$n[2].Camera,"sn":"mainCamera"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"normalFOV","t":4,"rt":$n[1].Single,"sn":"normalFOV","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"objectsToDisable","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"objectsToDisable"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pumping","t":4,"rt":Pumping,"sn":"pumping"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rotationSpeed","t":4,"rt":$n[1].Single,"sn":"rotationSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"zoomFOV","t":4,"rt":$n[1].Single,"sn":"zoomFOV","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"zoomImage","t":4,"rt":$n[2].GameObject,"sn":"zoomImage"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"zoomSpeed","t":4,"rt":$n[1].Single,"sn":"zoomSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"OnZoomChanged","is":true,"t":2,"ad":{"a":2,"n":"add_OnZoomChanged","is":true,"t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addOnZoomChanged","rt":$n[1].Void,"p":[Function]},"r":{"a":2,"n":"remove_OnZoomChanged","is":true,"t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeOnZoomChanged","rt":$n[1].Void,"p":[Function]}}]}; }, $n);
+    $m("Howitzer.PlayerZoom", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"ActivateTransitionToStore","t":8,"sn":"ActivateTransitionToStore","rt":$n[1].Void},{"a":1,"n":"ChangeFOV","t":8,"pi":[{"n":"targetFOV","pt":$n[1].Single,"ps":0}],"sn":"ChangeFOV","rt":$n[0].IEnumerator,"p":[$n[1].Single]},{"a":2,"n":"ChangeZoomForAirStrike","t":8,"sn":"ChangeZoomForAirStrike","rt":$n[1].Void},{"a":2,"n":"CheckZoom","t":8,"sn":"CheckZoom","rt":$n[1].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"CreateTitnSprites","t":8,"sn":"CreateTitnSprites","rt":$n[1].Void},{"a":2,"n":"DisableZoomUI","t":8,"sn":"DisableZoomUI","rt":$n[1].Void},{"a":2,"n":"EnableZoomUI","t":8,"sn":"EnableZoomUI","rt":$n[1].Void},{"a":1,"n":"GetWorldPointFromCrosshair","t":8,"sn":"GetWorldPointFromCrosshair","rt":$n[2].Vector3},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[1].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[1].Void},{"a":2,"n":"OpenStore","t":8,"sn":"OpenStore","rt":$n[1].Void},{"a":1,"n":"RotateCameraWithJoystick","t":8,"sn":"RotateCameraWithJoystick","rt":$n[1].Void},{"a":2,"n":"ToggleZoom","t":8,"sn":"ToggleZoom","rt":$n[1].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[1].Void},{"a":2,"n":"Upgrade","t":8,"sn":"Upgrade","rt":$n[1].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_arm","t":4,"rt":$n[2].GameObject,"sn":"_arm"},{"a":1,"n":"_isStore","t":4,"rt":$n[1].Boolean,"sn":"_isStore","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isUpgraded","t":4,"rt":$n[1].Boolean,"sn":"_isUpgraded","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isZoomed","t":4,"rt":$n[1].Boolean,"sn":"_isZoomed","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_lastCameraRotation","t":4,"rt":$n[2].Quaternion,"sn":"_lastCameraRotation"},{"a":1,"n":"_sprites","t":4,"rt":$n[3].List$1(TitnSprite),"sn":"_sprites"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_tacticsFabric","t":4,"rt":$n[7].TanksFabric,"sn":"_tacticsFabric"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_titnSprite","t":4,"rt":TitnSprite,"sn":"_titnSprite"},{"a":1,"n":"_zoomStartRotation","t":4,"rt":$n[2].Quaternion,"sn":"_zoomStartRotation"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"crosshair","t":4,"rt":$n[2].RectTransform,"sn":"crosshair"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"joystick","t":4,"rt":Joystick,"sn":"joystick"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"mainCamera","t":4,"rt":$n[2].Camera,"sn":"mainCamera"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"normalFOV","t":4,"rt":$n[1].Single,"sn":"normalFOV","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"objectsToDisable","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"objectsToDisable"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"pumping","t":4,"rt":Pumping,"sn":"pumping"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rotationSpeed","t":4,"rt":$n[1].Single,"sn":"rotationSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"zoomFOV","t":4,"rt":$n[1].Single,"sn":"zoomFOV","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"zoomImage","t":4,"rt":$n[2].GameObject,"sn":"zoomImage"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"zoomSpeed","t":4,"rt":$n[1].Single,"sn":"zoomSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"OnZoomChanged","is":true,"t":2,"ad":{"a":2,"n":"add_OnZoomChanged","is":true,"t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addOnZoomChanged","rt":$n[1].Void,"p":[Function]},"r":{"a":2,"n":"remove_OnZoomChanged","is":true,"t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeOnZoomChanged","rt":$n[1].Void,"p":[Function]}}]}; }, $n);
     /*Howitzer.PlayerZoom end.*/
 
     /*Howitzer.Projectile start.*/
@@ -7405,7 +7774,7 @@ if ( TRACE ) { TRACE( "VariableJoystick#HandleInput", this ); }
     /*Howitzer.Projectile end.*/
 
     /*Fabric.TanksFabric start.*/
-    $m("Fabric.TanksFabric", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[1].Void},{"a":2,"n":"Spawn","t":8,"sn":"Spawn","rt":$n[1].Void},{"a":2,"n":"Tanks","t":16,"rt":$n[3].List$1(UnityEngine.GameObject),"g":{"a":2,"n":"get_Tanks","t":8,"rt":$n[3].List$1(UnityEngine.GameObject),"fg":"Tanks"},"fn":"Tanks"},{"a":1,"n":"_indexPoint","t":4,"rt":$n[1].Int32,"sn":"_indexPoint","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_tanks","t":4,"rt":$n[3].List$1(UnityEngine.GameObject),"sn":"_tanks"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"spawnPoints","t":4,"rt":$n[3].List$1(UnityEngine.Transform),"sn":"spawnPoints"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tankPrefab","t":4,"rt":$n[2].GameObject,"sn":"tankPrefab"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"targets","t":4,"rt":System.Array.type(UnityEngine.Transform),"sn":"targets"}]}; }, $n);
+    $m("Fabric.TanksFabric", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[1].Void},{"a":2,"n":"FreeTarget","t":8,"pi":[{"n":"target","pt":$n[2].Transform,"ps":0}],"sn":"FreeTarget","rt":$n[1].Void,"p":[$n[2].Transform]},{"a":1,"n":"GetNearestAvailableTarget","t":8,"pi":[{"n":"tankTransform","pt":$n[2].Transform,"ps":0}],"sn":"GetNearestAvailableTarget","rt":$n[2].Transform,"p":[$n[2].Transform]},{"a":2,"n":"Spawn","t":8,"sn":"Spawn","rt":$n[1].Void},{"a":2,"n":"Tanks","t":16,"rt":$n[3].List$1(UnityEngine.GameObject),"g":{"a":2,"n":"get_Tanks","t":8,"rt":$n[3].List$1(UnityEngine.GameObject),"fg":"Tanks"},"fn":"Tanks"},{"a":1,"n":"_tanks","t":4,"rt":$n[3].List$1(UnityEngine.GameObject),"sn":"_tanks"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_target","t":4,"rt":$n[2].GameObject,"sn":"_target"},{"a":1,"n":"_targetStatus","t":4,"rt":$n[3].Dictionary$2(UnityEngine.Transform,System.Boolean),"sn":"_targetStatus"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"spawnPoints","t":4,"rt":$n[3].List$1(UnityEngine.Transform),"sn":"spawnPoints"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tankPrefab","t":4,"rt":$n[2].GameObject,"sn":"tankPrefab"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"targets","t":4,"rt":System.Array.type(UnityEngine.Transform),"sn":"targets"}]}; }, $n);
     /*Fabric.TanksFabric end.*/
 
     /*Bootstraps.Bootstrap start.*/
@@ -7421,7 +7790,7 @@ if ( TRACE ) { TRACE( "VariableJoystick#HandleInput", this ); }
     /*Bootstraps.ScenarioGame end.*/
 
     /*BehaviourAI.TankAI start.*/
-    $m("BehaviourAI.TankAI", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"ChooseNextTarget","t":8,"sn":"ChooseNextTarget","rt":$n[1].Void},{"a":2,"n":"DisableTank","t":8,"sn":"DisableTank","rt":$n[1].Void},{"a":1,"n":"IsPathBlocked","t":8,"sn":"IsPathBlocked","rt":$n[1].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"IsTankFacingTarget","t":8,"sn":"IsTankFacingTarget","rt":$n[1].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"MoveTowardsTarget","t":8,"sn":"MoveTowardsTarget","rt":$n[1].Void},{"a":1,"n":"RotateTank","t":8,"sn":"RotateTank","rt":$n[1].Void},{"a":2,"n":"SetTargets","t":8,"pi":[{"n":"newTargets","pt":System.Array.type(UnityEngine.Transform),"ps":0}],"sn":"SetTargets","rt":$n[1].Void,"p":[System.Array.type(UnityEngine.Transform)]},{"a":2,"n":"ShowHover","t":8,"sn":"ShowHover","rt":$n[1].Void},{"a":2,"n":"ShowSign","t":8,"sn":"ShowSign","rt":$n[1].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[1].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[1].Void},{"a":2,"n":"IsAlive","t":16,"rt":$n[1].Boolean,"g":{"a":2,"n":"get_IsAlive","t":8,"rt":$n[1].Boolean,"fg":"IsAlive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsAlive"},{"a":1,"n":"_currentTarget","t":4,"rt":$n[2].Transform,"sn":"_currentTarget"},{"a":1,"n":"_currentTargetIndex","t":4,"rt":$n[1].Int32,"sn":"_currentTargetIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_exclamationMark","t":4,"rt":ExclamationMark,"sn":"_exclamationMark"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_guidance","t":4,"rt":$n[2].GameObject,"sn":"_guidance"},{"a":1,"n":"_isDisabled","t":4,"rt":$n[1].Boolean,"sn":"_isDisabled","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isWaiting","t":4,"rt":$n[1].Boolean,"sn":"_isWaiting","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_targets","t":4,"rt":System.Array.type(UnityEngine.Transform),"sn":"_targets"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"avoidanceDistance","t":4,"rt":$n[1].Single,"sn":"avoidanceDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"moveSpeed","t":4,"rt":$n[1].Single,"sn":"moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rotationSpeed","t":4,"rt":$n[1].Single,"sn":"rotationSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"stopDistance","t":4,"rt":$n[1].Single,"sn":"stopDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tankLayer","t":4,"rt":$n[2].LayerMask,"sn":"tankLayer"}]}; }, $n);
+    $m("BehaviourAI.TankAI", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"DisableTank","t":8,"sn":"DisableTank","rt":$n[1].Void},{"a":1,"n":"HasReachedTarget","t":8,"sn":"HasReachedTarget","rt":$n[1].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"InitializeTarget","t":8,"pi":[{"n":"target","pt":$n[2].GameObject,"ps":0}],"sn":"InitializeTarget","rt":$n[1].Void,"p":[$n[2].GameObject]},{"a":1,"n":"IsPathBlocked","t":8,"sn":"IsPathBlocked","rt":$n[1].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"IsTankFacingTarget","t":8,"sn":"IsTankFacingTarget","rt":$n[1].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"MoveTowardsTarget","t":8,"sn":"MoveTowardsTarget","rt":$n[1].Void},{"a":1,"n":"RotateTank","t":8,"sn":"RotateTank","rt":$n[1].Void},{"a":2,"n":"SetTarget","t":8,"pi":[{"n":"target","pt":$n[2].Transform,"ps":0},{"n":"fabric","pt":$n[7].TanksFabric,"ps":1}],"sn":"SetTarget","rt":$n[1].Void,"p":[$n[2].Transform,$n[7].TanksFabric]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[1].Void},{"a":1,"n":"StopTank","t":8,"sn":"StopTank","rt":$n[1].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[1].Void},{"a":2,"n":"IsAlive","t":16,"rt":$n[1].Boolean,"g":{"a":2,"n":"get_IsAlive","t":8,"rt":$n[1].Boolean,"fg":"IsAlive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsAlive"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"Gun","t":4,"rt":Gun,"sn":"Gun"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"Tower","t":4,"rt":Tower,"sn":"Tower"},{"a":2,"n":"_arrived","t":4,"rt":$n[1].Boolean,"sn":"_arrived","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_currentTarget","t":4,"rt":$n[2].Transform,"sn":"_currentTarget"},{"a":1,"n":"_fabric","t":4,"rt":$n[7].TanksFabric,"sn":"_fabric"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_gun","t":4,"rt":$n[2].GameObject,"sn":"_gun"},{"a":1,"n":"_hasStopped","t":4,"rt":$n[1].Boolean,"sn":"_hasStopped","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isDisabled","t":4,"rt":$n[1].Boolean,"sn":"_isDisabled","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_target","t":4,"rt":$n[2].GameObject,"sn":"_target"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_tower","t":4,"rt":$n[2].GameObject,"sn":"_tower"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"avoidanceDistance","t":4,"rt":$n[1].Single,"sn":"avoidanceDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"moveSpeed","t":4,"rt":$n[1].Single,"sn":"moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"rotationSpeed","t":4,"rt":$n[1].Single,"sn":"rotationSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"stopDistance","t":4,"rt":$n[1].Single,"sn":"stopDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"tankLayer","t":4,"rt":$n[2].LayerMask,"sn":"tankLayer"}]}; }, $n);
     /*BehaviourAI.TankAI end.*/
 
     /*DG.Tweening.DOTweenModuleAudio start.*/

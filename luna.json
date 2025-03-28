@@ -9265,7 +9265,7 @@
                     },
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "createInstance",
@@ -15409,7 +15409,7 @@
                     },
                     {
                         "name": "op_Implicit",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "op_Implicit$1",
@@ -25950,10 +25950,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "SetTargets",
-                        "excluded": false
-                    },
-                    {
                         "name": "Start",
                         "excluded": false
                     },
@@ -25963,10 +25959,6 @@
                     },
                     {
                         "name": "DisableTank",
-                        "excluded": false
-                    },
-                    {
-                        "name": "ChooseNextTarget",
                         "excluded": false
                     },
                     {
@@ -25982,15 +25974,23 @@
                         "excluded": false
                     },
                     {
-                        "name": "ShowSign",
-                        "excluded": false
-                    },
-                    {
-                        "name": "ShowHover",
-                        "excluded": false
-                    },
-                    {
                         "name": "IsPathBlocked",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetTarget",
+                        "excluded": false
+                    },
+                    {
+                        "name": "InitializeTarget",
+                        "excluded": false
+                    },
+                    {
+                        "name": "HasReachedTarget",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StopTank",
                         "excluded": false
                     }
                 ]
@@ -26380,10 +26380,6 @@
                 "staticMethods": [],
                 "instanceMethods": [
                     {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
                         "name": "Spawn",
                         "excluded": false
                     },
@@ -26393,6 +26389,14 @@
                     },
                     {
                         "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetNearestAvailableTarget",
+                        "excluded": false
+                    },
+                    {
+                        "name": "FreeTarget",
                         "excluded": false
                     }
                 ]
@@ -26566,6 +26570,10 @@
                     {
                         "name": "CooldownRoutine",
                         "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
                     }
                 ]
             },
@@ -26631,6 +26639,10 @@
                     },
                     {
                         "name": "ActivateTransitionToStore",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CreateTitnSprites",
                         "excluded": false
                     }
                 ]
@@ -29243,6 +29255,46 @@
                     },
                     {
                         "name": "FadeOut",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "Gun",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RotateToTarget",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RotateTowardsTarget",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlayParticlesRandomly",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "Tower",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RotateToTarget",
+                        "excluded": false
+                    },
+                    {
+                        "name": "RotateTowardsTarget",
                         "excluded": false
                     }
                 ]

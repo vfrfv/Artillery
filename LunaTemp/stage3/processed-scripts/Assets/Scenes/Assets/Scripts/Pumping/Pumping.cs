@@ -23,14 +23,17 @@ public class Pumping : MonoBehaviour
     private void Awake()
     {
         _sprites = new List<TitnSprite>();
+        SetNormalPositionArte();
     }
 
     private void OnEnable()
     {
+        SetNormalPositionArte();
         _shopping.gameObject.SetActive(false);
         _pumpingCamera.gameObject.SetActive(false);
         _interactiveArt.Changed += TurnPlayerCamera;
         StartCoroutine(StartPumping());
+        SetNormalPositionArte();
     }
 
     private void OnDisable()
@@ -55,6 +58,7 @@ public class Pumping : MonoBehaviour
         TurnPumpingCamera();
         _UI.SetActive(false);
         _arm.gameObject.SetActive(true);
+        SetNormalPositionArte();
     }
 
     private void TurnPumpingCamera()
@@ -80,8 +84,10 @@ public class Pumping : MonoBehaviour
         //}
     }
 
-    private void SetNormalPositionArte()
+    public void SetNormalPositionArte()
     {
+        Debug.Log("¬џзываю");
+
         _arta1.transform.localPosition = new Vector3(0.9f, 17.5f, -4f);
         _arta1.transform.localRotation = Quaternion.Euler(-1.1f, -1.7f, -8f);
     }

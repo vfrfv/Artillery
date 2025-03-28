@@ -22,7 +22,7 @@ public class Guidance : MonoBehaviour
                 foreach (var tank in _tanksFabric.Tanks)
                 {
                     TankAI tankObg = tank.GetComponent<TankAI>();
-                    tankObg.ShowHover();
+                    //tankObg.ShowHover();
 
                 }
             }
