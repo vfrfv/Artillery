@@ -33,32 +33,19 @@ namespace Howitzer
             _pumping = pumping;
             _targetTank = targetTank;
             _playerZoom = playerZoom;
-
-            if (_targetTank != null)
-            {
-                foreach (var tank in _tanks)
-                {
-                    if (tank != _targetTank)
-                    {
-                        Physics.IgnoreCollision(GetComponent<Collider>(), tank.GetComponent<Collider>(), true);
-                    }
-                }
-            }
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            if (_targetTank != null) 
+            if (_targetTank != null)
             {
                 if (other.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
                 {
-                    //if (hitTankAI == _targetTank) 
-                    //{
-                        DestroyTank(hitTankAI);
-                    //}
+                    DestroyTank(hitTankAI);
+                    gameObject.SetActive(false);
                 }
             }
-            else 
+            else
             {
                 if (other.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
                 {
@@ -69,12 +56,11 @@ namespace Howitzer
             if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Tree"))
             {
                 _playerUIController.ShowCross();
-                //_pumping.gameObject.SetActive(true);
                 _playerZoom.ActivateTransitionToStore();
                 _playerZoom.Upgrade();
+                gameObject.SetActive(false);
             }
 
-            gameObject.SetActive(false);
             Crashed?.Invoke();
         }
 
@@ -85,7 +71,6 @@ namespace Howitzer
             ChangeTankColor(hitTankAI.gameObject, Color.black);
             SpawnExplosionEffect(transform.position);
             TankKillCounter.NotifyTankDestroyed();
-            _playerUIController.ShowMark();
         }
 
         private void SpawnExplosionEffect([Bridge.Ref] Vector3 position)

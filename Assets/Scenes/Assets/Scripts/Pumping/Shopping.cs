@@ -1,5 +1,6 @@
 using Fabric;
 using Howitzer;
+using UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,9 @@ public class Shopping : MonoBehaviour
     [SerializeField] private TanksFabric _tanksFabric;
     [SerializeField] private InteractiveArt _interactiveArt;
     [SerializeField] private Indicatorr _indicatorr;
+    [SerializeField] private Cross _cross;
+    [SerializeField] private Cross _cross2;
+    [SerializeField] private PlayerUIController _playerUIController;
 
     private void OnEnable()
     {
@@ -40,6 +44,14 @@ public class Shopping : MonoBehaviour
     {
         _shopping.gameObject.SetActive(false);
         _shoppingPlayer.Upgrade();
+        _playerUIController.Upgraded();
+        _cross.Upgraded();
+        _cross2.Upgraded();
+    }
+
+    private void Update()
+    {
+        
     }
 
     private void ShowInventory()

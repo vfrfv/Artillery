@@ -3,9 +3,22 @@ using UnityEngine;
 
 public class Cross : MonoBehaviour
 {
+    private bool _isUpgraded = false;
+
     private void OnEnable()
     {
-        StartCoroutine(ScaleAndDisable());
+        if (_isUpgraded == false)
+            StartCoroutine(ScaleAndDisable());
+    }
+
+    public void Upgraded()
+    {
+        _isUpgraded = true;
+    }
+
+    private void Update()
+    {
+        Debug.Log("�������" +  _isUpgraded);
     }
 
     private IEnumerator ScaleAndDisable()

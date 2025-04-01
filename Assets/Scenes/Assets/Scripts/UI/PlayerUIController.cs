@@ -8,8 +8,9 @@ namespace UI
         [SerializeField] private Button shootButton;
         [SerializeField] private Button zoomButton;
         [SerializeField] Cross _cross;
-        [SerializeField] Cross _mark;
         [SerializeField] TutorialHand2 _tutorialHand2;
+
+        private bool _isUpgraded = false;
 
         public delegate void ShootAction();
         public static event ShootAction OnShoot;
@@ -23,14 +24,22 @@ namespace UI
             zoomButton.onClick.AddListener(FinishTraining);
         }
 
-        public void ShowCross()
+        public void Upgraded()
         {
-            _cross.gameObject.SetActive(true);
+            _isUpgraded = true;
         }
 
-        public void ShowMark()
+        public void ShowCross()
         {
-            _mark.gameObject.SetActive(true);
+            if (_isUpgraded == false)
+            {
+                _cross.gameObject.SetActive(true);
+            }
+        }
+
+        private void Update()
+        {
+            Debug.Log("Крестик" + _isUpgraded);
         }
 
         private void FinishTraining()

@@ -1105,8 +1105,7 @@ Deserializers["UI.PlayerUIController"] = function (request, data, root) {
   request.r(i1597[0], i1597[1], 0, i1596, 'shootButton')
   request.r(i1597[2], i1597[3], 0, i1596, 'zoomButton')
   request.r(i1597[4], i1597[5], 0, i1596, '_cross')
-  request.r(i1597[6], i1597[7], 0, i1596, '_mark')
-  request.r(i1597[8], i1597[9], 0, i1596, '_tutorialHand2')
+  request.r(i1597[6], i1597[7], 0, i1596, '_tutorialHand2')
   return i1596
 }
 
@@ -1495,6 +1494,9 @@ Deserializers["Shopping"] = function (request, data, root) {
   request.r(i1677[10], i1677[11], 0, i1676, '_tanksFabric')
   request.r(i1677[12], i1677[13], 0, i1676, '_interactiveArt')
   request.r(i1677[14], i1677[15], 0, i1676, '_indicatorr')
+  request.r(i1677[16], i1677[17], 0, i1676, '_cross')
+  request.r(i1677[18], i1677[19], 0, i1676, '_cross2')
+  request.r(i1677[20], i1677[21], 0, i1676, '_playerUIController')
   return i1676
 }
 
@@ -2072,7 +2074,7 @@ Deserializers.productName = "My project";
 
 Deserializers.lunaInitializationTime = "03/12/2025 18:23:14";
 
-Deserializers.lunaDaysRunning = "18.9";
+Deserializers.lunaDaysRunning = "19.8";
 
 Deserializers.lunaVersion = "6.2.1";
 
@@ -2128,7 +2130,7 @@ Deserializers.graphicsConstraint = 28;
 
 Deserializers.linearColorSpace = false;
 
-Deserializers.buildID = "22d8e2db-bd2a-4981-bdd4-90aa5edaad50";
+Deserializers.buildID = "44f2574b-af28-4cd2-8938-89a440a80f54";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["Cinemachine","PostFX","CinemachineVolumeSettings","InitializeModule"],["Cinemachine","PostFX","CinemachinePostProcessing","InitializeModule"],["Cinemachine","CinemachineCore","InitializeModule"],["Cinemachine","UpdateTracker","InitializeModule"],["Cinemachine","CinemachineStoryboard","InitializeModule"],["Cinemachine","CinemachineImpulseManager","InitializeModule"],["UnityEngine","Rendering","DebugUpdater","RuntimeInit"],["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"]],[],[["UnityEngine","Experimental","Rendering","XRSystem","XRSystemInit"]],[]];
 

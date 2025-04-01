@@ -182,7 +182,7 @@ namespace Howitzer
             float currentX = (currentRotation.x > 180) ? currentRotation.x - 360 : currentRotation.x;
             float currentY = (currentRotation.y > 180) ? currentRotation.y - 360 : currentRotation.y;
             float targetRotationX = Mathf.Clamp(currentX - joystickY * xSensitivity, 6f, 20f);
-            float targetRotationY = Mathf.Clamp(currentY + joystickX * ySensitivity, -90f, -30f);
+            float targetRotationY = Mathf.Clamp(currentY + joystickX * ySensitivity, -90f, -45f);
             mainCamera.transform.DORotate(new Vector3(targetRotationX, targetRotationY, 0), duration)
                 .SetEase(Ease.OutQuad);
         }

@@ -6630,7 +6630,7 @@ Transform:
   m_GameObject: {fileID: 554236047}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.22, y: 5, z: -1.96}
+  m_LocalPosition: {x: 17.43, y: 5, z: -2.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7901,7 +7901,7 @@ Transform:
   m_GameObject: {fileID: 695038851}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.33, y: 5.08, z: -4.08}
+  m_LocalPosition: {x: 1.98, y: 5.08, z: -4.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12076,14 +12076,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972178154}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.17883779, y: 0.000000029802322, z: -0, w: 0.9838787}
+  m_LocalRotation: {x: -0.12086608, y: 0.000000059604638, z: 0.0000000074505797, w: 0.99266887}
   m_LocalPosition: {x: 9.69, y: 3.81, z: 2.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 907720079}
   m_Father: {fileID: 1007504877}
-  m_LocalEulerAnglesHint: {x: -20.604, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -13.884, y: 0, z: 0}
 --- !u!1001 &979974927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14507,7 +14507,6 @@ MonoBehaviour:
   shootButton: {fileID: 442652937}
   zoomButton: {fileID: 1683239399}
   _cross: {fileID: 1756291374}
-  _mark: {fileID: 402967327}
   _tutorialHand2: {fileID: 450080672}
 --- !u!114 &1146711528
 MonoBehaviour:
@@ -21331,7 +21330,7 @@ Transform:
   m_GameObject: {fileID: 1854099334}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.42, y: 5, z: -1.09}
+  m_LocalPosition: {x: 31.5, y: 5, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22004,6 +22003,9 @@ MonoBehaviour:
   _tanksFabric: {fileID: 176839866}
   _interactiveArt: {fileID: 409680021}
   _indicatorr: {fileID: 2131290356}
+  _cross: {fileID: 1756291374}
+  _cross2: {fileID: 402967327}
+  _playerUIController: {fileID: 1146711527}
 --- !u!114 &1926640038
 MonoBehaviour:
   m_ObjectHideFlags: 0

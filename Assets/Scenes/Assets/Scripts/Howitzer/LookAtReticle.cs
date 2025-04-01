@@ -64,7 +64,7 @@ namespace Howitzer
             float targetYaw = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
             float targetPitch = Mathf.Atan2(direction.y, direction.z) * Mathf.Rad2Deg * -1f;
 
-            // Ограничение по горизонтали (Yaw)
+            //Ограничение по горизонтали(Yaw)
             targetYaw = Mathf.Clamp(targetYaw, minYawAngle, maxYawAngle);
 
             // Ограничение по вертикали (Pitch)

@@ -15,7 +15,8 @@ namespace UI
            
             Debug.Log($"Количество уничт-ных танков: {TankKillCounter.KillCount}");
 
-            var startCountTankKilled = 3;
+            var startCountTankKilled = 2;
+
             if(TankKillCounter.KillCount >= startCountTankKilled)
                 onStartCountTankKilled?.Invoke();
         }

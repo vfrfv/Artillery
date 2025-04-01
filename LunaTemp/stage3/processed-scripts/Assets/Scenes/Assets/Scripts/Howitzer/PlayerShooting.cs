@@ -1,8 +1,8 @@
 ﻿using BehaviourAI;
 using DG.Tweening;
 using Fabric;
+using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UI;
 using UnityEngine;
 
@@ -58,6 +58,7 @@ namespace Howitzer
         private bool _isZoomed = false;
         private bool _firstShot = false;
         private bool _newArt = false;
+        private Coroutine _coroutine;
 
         private int _shootCount = 0;
 
@@ -97,21 +98,27 @@ namespace Howitzer
             }
             else
             {
-                Shoot2();
+                if (_coroutine != null)
+                {
+                    StopCoroutine(_coroutine);
+                    _coroutine = null;
+                }
+
+                StartCoroutine(Shoot2());
             }
         }
 
         private void Shoot1()
         {
-            
+
             _shootCount++;
 
-           
+
             if (_shootCount >= 4)
             {
-                _playerZoom.ToggleZoom(); 
-                _shootCount = 0; 
-                return; 
+                _playerZoom.ToggleZoom();
+                _shootCount = 0;
+                return;
             }
 
             Vector3 shootDirection;
@@ -186,12 +193,14 @@ namespace Howitzer
             _managerCamers.WatchingBullet();
         }
 
-        private async void Shoot2()
+        private IEnumerator Shoot2()
         {
             List<TankAI> tankAIList = new List<TankAI>();
+
             foreach (var tankObj in _tanksFabric.Tanks)
             {
                 TankAI tankAI = tankObj.GetComponent<TankAI>();
+
                 if (tankAI != null)
                 {
                     tankAIList.Add(tankAI);
@@ -222,19 +231,19 @@ namespace Howitzer
                     muzzleFlash.GetComponent<ParticleSystem>().Play();
                 }
 
-                ShakeCamera();
                 lastProjectile = projectile;
 
-                await Task.Delay(50);
+                yield return new WaitForSeconds(0.05f);
             }
 
             if (lastProjectile != null)
             {
                 Projectile projectileComponent = lastProjectile.GetComponent<Projectile>();
+
                 if (projectileComponent != null)
                 {
                     _followBullet.GetBullet(lastProjectile);
-                    _managerCamers.GetBullet(projectileComponent, true); // Передаем Projectile вместо GameObject
+                    _managerCamers.GetBullet(projectileComponent, true);
                     _managerCamers.WatchingBullet();
                 }
             }
@@ -243,7 +252,6 @@ namespace Howitzer
             _pumping.RemoveSprites();
             _aim.gameObject.SetActive(false);
         }
-
 
         private void ShakeCamera()
         {
