@@ -57,6 +57,7 @@ namespace Howitzer
         public void OpenStore()
         {
             pumping.gameObject.SetActive(true);
+            _isStore = false;
         }
 
         public void Upgrade()
@@ -85,13 +86,14 @@ namespace Howitzer
 
         public void ToggleZoom()
         {
-            //if (_isStore)
-            //{
-            //    OpenStore();
-            //    pumping.SetNormalPositionArte();
-            //    _isStore = false;
-            //    return;
-            //}
+            if (!_isZoomed && _isStore)
+            {
+                OpenStore();
+                pumping.SetNormalPositionArte();
+                return; // Если магазин активен и мы не в зуме, то не переключаем
+
+
+            }
 
             _isZoomed = !_isZoomed;
             OnZoomChanged?.Invoke(_isZoomed);
@@ -181,7 +183,7 @@ namespace Howitzer
             Vector3 currentRotation = mainCamera.transform.eulerAngles;
             float currentX = (currentRotation.x > 180) ? currentRotation.x - 360 : currentRotation.x;
             float currentY = (currentRotation.y > 180) ? currentRotation.y - 360 : currentRotation.y;
-            float targetRotationX = Mathf.Clamp(currentX - joystickY * xSensitivity, 8f, 30f);
+            float targetRotationX = Mathf.Clamp(currentX - joystickY * xSensitivity, 6f, 20f);
             float targetRotationY = Mathf.Clamp(currentY + joystickX * ySensitivity, -90f, -30f);
             mainCamera.transform.DORotate(new Vector3(targetRotationX, targetRotationY, 0), duration)
                 .SetEase(Ease.OutQuad);

@@ -52,7 +52,7 @@ public class Pumping : MonoBehaviour
     private IEnumerator StartPumping()
     {
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
 
         SetNormalPositionArte();
         TurnPumpingCamera();
@@ -74,7 +74,7 @@ public class Pumping : MonoBehaviour
         _pumpingCamera.gameObject.SetActive(false);
         _UI.SetActive(true);
         _shopping.gameObject.SetActive(false);
-        _arm2.gameObject.SetActive(true);
+        _arm2.gameObject.SetActive(false);
 
         //foreach (var tank in _tacticsFabric.Tanks)
         //{

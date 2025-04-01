@@ -9,6 +9,8 @@ namespace Howitzer
         [SerializeField] private float rotationSpeed = 180f;
         [SerializeField] private float maxPitchAngle = 45f;
         [SerializeField] private float minPitchAngle = -10f;
+        [SerializeField] private float maxYawAngle = 60f;
+        [SerializeField] private float minYawAngle = -60f;
 
         private float _defaultPitch;
         private bool _isZoomed = false;
@@ -61,6 +63,11 @@ namespace Howitzer
 
             float targetYaw = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
             float targetPitch = Mathf.Atan2(direction.y, direction.z) * Mathf.Rad2Deg * -1f;
+
+            // Ограничение по горизонтали (Yaw)
+            targetYaw = Mathf.Clamp(targetYaw, minYawAngle, maxYawAngle);
+
+            // Ограничение по вертикали (Pitch)
             targetPitch = Mathf.Clamp(targetPitch, minPitchAngle, maxPitchAngle);
 
             Quaternion targetRotation = Quaternion.Euler(targetPitch, targetYaw, 0);

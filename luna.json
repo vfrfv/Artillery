@@ -128,6 +128,7 @@
             "includes": [
                 "Assets/Import/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/BigExplosion.prefab",
                 "Assets/Import/UnityTechnologies/ParticlePack/TextMesh Pro/Resources/TMP Settings.asset",
+                "Assets/Scenes/Assets/Prefabs/WFX_Explosion Simple.prefab",
                 "Assets/QuickOutline/",
                 "Assets/Resources/DOTweenSettings.asset",
                 "Assets/UnityTechnologies/ParticlePack/TextMesh Pro/Resources/TMP Settings.asset"
@@ -26656,10 +26657,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "OnCollisionEnter",
-                        "excluded": false
-                    },
-                    {
                         "name": "SpawnExplosionEffect",
                         "excluded": false
                     },
@@ -26669,6 +26666,10 @@
                     },
                     {
                         "name": "DestroyTank",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnTriggerEnter",
                         "excluded": false
                     }
                 ]

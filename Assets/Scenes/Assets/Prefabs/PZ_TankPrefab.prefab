@@ -175,7 +175,16 @@ MonoBehaviour:
   stopDistance: 5
   rotationSpeed: 1
   moveSpeed: 3
-  _exclamationMark: {fileID: 6660094577429114597}
+  avoidanceDistance: 2
+  tankLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  _tower: {fileID: 0}
+  _gun: {fileID: 0}
+  _target: {fileID: 0}
+  Tower: {fileID: 0}
+  Gun: {fileID: 0}
+  _arrived: 0
 --- !u!65 &4889854313427070277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -191,7 +200,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

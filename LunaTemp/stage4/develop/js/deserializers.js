@@ -1077,6 +1077,8 @@ Deserializers["Howitzer.LookAtReticle"] = function (request, data, root) {
   i674.rotationSpeed = i675[4]
   i674.maxPitchAngle = i675[5]
   i674.minPitchAngle = i675[6]
+  i674.maxYawAngle = i675[7]
+  i674.minYawAngle = i675[8]
   return i674
 }
 
@@ -1085,6 +1087,7 @@ Deserializers["FollowBullet"] = function (request, data, root) {
   var i677 = data
   i676._smoothSpeed = i677[0]
   i676._offset = new pc.Vec3( i677[1], i677[2], i677[3] )
+  request.r(i677[4], i677[5], 0, i676, '_aim')
   return i676
 }
 
@@ -2069,7 +2072,7 @@ Deserializers.productName = "My project";
 
 Deserializers.lunaInitializationTime = "03/12/2025 18:23:14";
 
-Deserializers.lunaDaysRunning = "15.9";
+Deserializers.lunaDaysRunning = "18.8";
 
 Deserializers.lunaVersion = "6.2.1";
 
@@ -2077,7 +2080,7 @@ Deserializers.lunaSHA = "28f227c1b455c28500de29df936f0d1376ee9c43";
 
 Deserializers.creativeName = "vfrfv";
 
-Deserializers.lunaAppID = "0";
+Deserializers.lunaAppID = "27856";
 
 Deserializers.projectId = "6c12a4f49c2e1c74dbc0beaf340cbc67";
 
@@ -2101,7 +2104,7 @@ Deserializers.isRuntimeAnalysisEnabledForCode = "True";
 
 Deserializers.runtimeAnalysisExcludedClassesCount = "1817";
 
-Deserializers.runtimeAnalysisExcludedMethodsCount = "3636";
+Deserializers.runtimeAnalysisExcludedMethodsCount = "3630";
 
 Deserializers.runtimeAnalysisExcludedModules = "mecanim-wasm";
 
@@ -2125,7 +2128,7 @@ Deserializers.graphicsConstraint = 28;
 
 Deserializers.linearColorSpace = false;
 
-Deserializers.buildID = "39d643a2-4342-40a4-b941-92f453f6aae7";
+Deserializers.buildID = "1ed85dbf-9989-4f7f-a3e1-e8580ad6a562";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["Cinemachine","PostFX","CinemachineVolumeSettings","InitializeModule"],["Cinemachine","PostFX","CinemachinePostProcessing","InitializeModule"],["Cinemachine","CinemachineCore","InitializeModule"],["Cinemachine","UpdateTracker","InitializeModule"],["Cinemachine","CinemachineStoryboard","InitializeModule"],["Cinemachine","CinemachineImpulseManager","InitializeModule"],["UnityEngine","Rendering","DebugUpdater","RuntimeInit"],["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"]],[],[["UnityEngine","Experimental","Rendering","XRSystem","XRSystemInit"]],[]];
 

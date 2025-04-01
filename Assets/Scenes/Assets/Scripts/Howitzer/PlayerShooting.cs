@@ -206,7 +206,7 @@ namespace Howitzer
                 GameObject projectile = _projectilePool.GetObject();
                 projectile.transform.position = projectilePosition.position;
 
-                Vector3 targetPosition = tankAIList[i].transform.position + Vector3.up * 3f;
+                Vector3 targetPosition = tankAIList[i].transform.position + Vector3.up * 2f;
                 Vector3 shootDirection = (targetPosition - projectilePosition.position).normalized;
 
                 projectile.transform.rotation = Quaternion.LookRotation(shootDirection, Vector3.up);
@@ -231,10 +231,11 @@ namespace Howitzer
             if (lastProjectile != null)
             {
                 Projectile projectileComponent = lastProjectile.GetComponent<Projectile>();
+
                 if (projectileComponent != null)
                 {
                     _followBullet.GetBullet(lastProjectile);
-                    _managerCamers.GetBullet(projectileComponent, true); // Передаем Projectile вместо GameObject
+                    _managerCamers.GetBullet(projectileComponent, true);
                     _managerCamers.WatchingBullet();
                 }
             }

@@ -4,7 +4,8 @@ using UnityEngine;
 public class FollowBullet : MonoBehaviour
 {
     [SerializeField] private float _smoothSpeed = 5f; 
-    [SerializeField] private Vector3 _offset; 
+    [SerializeField] private Vector3 _offset;
+    [SerializeField] private GameObject _aim;
 
     private GameObject _bullet;
     private Vector3 _startPosition;
@@ -27,10 +28,12 @@ public class FollowBullet : MonoBehaviour
     public void ReturnStartPosition()
     {
         transform.position = _startPosition;
+        _aim.gameObject.SetActive(true);
     }
 
     public void GetBullet(GameObject bullet)
     {
+        _aim.gameObject.SetActive(false);
         _bullet = bullet;
     }
 }

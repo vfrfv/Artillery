@@ -46,27 +46,27 @@ namespace Howitzer
             }
         }
 
-        private void OnCollisionEnter(Collision collision)
+        private void OnTriggerEnter(Collider other)
         {
             if (_targetTank != null) 
             {
-                if (collision.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
+                if (other.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
                 {
-                    if (hitTankAI == _targetTank) 
-                    {
+                    //if (hitTankAI == _targetTank) 
+                    //{
                         DestroyTank(hitTankAI);
-                    }
+                    //}
                 }
             }
             else 
             {
-                if (collision.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
+                if (other.gameObject.TryGetComponent<TankAI>(out TankAI hitTankAI))
                 {
                     DestroyTank(hitTankAI);
                 }
             }
 
-            if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Tree"))
+            if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Tree"))
             {
                 _playerUIController.ShowCross();
                 //_pumping.gameObject.SetActive(true);
