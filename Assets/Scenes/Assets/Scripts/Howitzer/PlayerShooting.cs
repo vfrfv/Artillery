@@ -176,7 +176,7 @@ namespace Howitzer
             }
 
             Projectile projectileComponent = projectile.GetComponent<Projectile>();
-            projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping, null, _playerZoom);
+            projectileComponent.Initialize(projectileSpeed, explosionEffect, _playerUIController, tankAIList, _pumping, null, _playerZoom);
 
             _managerCamers.GetBullet(projectileComponent);
 
@@ -222,7 +222,7 @@ namespace Howitzer
                 projectile.SetActive(true);
 
                 Projectile projectileComponent = projectile.GetComponent<Projectile>();
-                projectileComponent.Initialize(projectileSpeed, _explosionPool, explosionEffect, _playerUIController, tankAIList, _pumping, tankAIList[i], _playerZoom);
+                projectileComponent.Initialize(projectileSpeed, explosionEffect, _playerUIController, tankAIList, _pumping, tankAIList[i], _playerZoom);
 
                 playerShootingCooldown.StartCooldown();
 

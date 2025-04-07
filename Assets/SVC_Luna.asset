@@ -2777,7 +2777,7 @@ MonoBehaviour:
     - _NORMALMAP
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 1508
+  version: 1528
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0
@@ -44798,7 +44798,7 @@ MonoBehaviour:
   _sceneLightData:
     PointLightCount: 0
     SpotLightCount: 0
-    DirectionalLightCount: 2
+    DirectionalLightCount: 7
     LightmapOn: 1
     DirlightmapCombined: 1
     DirectionalCookieExists: 0

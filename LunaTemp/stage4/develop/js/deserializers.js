@@ -2082,7 +2082,7 @@ Deserializers.lunaSHA = "28f227c1b455c28500de29df936f0d1376ee9c43";
 
 Deserializers.creativeName = "vfrfv";
 
-Deserializers.lunaAppID = "27856";
+Deserializers.lunaAppID = "0";
 
 Deserializers.projectId = "6c12a4f49c2e1c74dbc0beaf340cbc67";
 
@@ -2130,7 +2130,7 @@ Deserializers.graphicsConstraint = 28;
 
 Deserializers.linearColorSpace = false;
 
-Deserializers.buildID = "0f5c7a76-87cb-4182-82db-8c8cadcfb286";
+Deserializers.buildID = "bee7c3de-c786-43d1-8080-a8918a68367d";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["Cinemachine","PostFX","CinemachineVolumeSettings","InitializeModule"],["Cinemachine","PostFX","CinemachinePostProcessing","InitializeModule"],["Cinemachine","CinemachineCore","InitializeModule"],["Cinemachine","UpdateTracker","InitializeModule"],["Cinemachine","CinemachineStoryboard","InitializeModule"],["Cinemachine","CinemachineImpulseManager","InitializeModule"],["UnityEngine","Rendering","DebugUpdater","RuntimeInit"],["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"]],[],[["UnityEngine","Experimental","Rendering","XRSystem","XRSystemInit"]],[]];
 
